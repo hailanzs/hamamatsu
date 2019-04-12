@@ -350,12 +350,13 @@ set_property PACKAGE_PIN M3 [get_ports {TG_RESET}]
 set_property IOSTANDARD LVCMOS33 [get_ports {TG_RESET}]
 
 # MC2-30 
-set_property PACKAGE_PIN M2 [get_ports {SPI_M_CLOCK}]   # SPI MASTER CLOCK
-set_property IOSTANDARD LVCMOS33 [get_ports {SPI_M_CLOCK}]
+set_property PACKAGE_PIN M2 [get_ports {M_CLOCK}]   # MASTER CLOCK
+set_property IOSTANDARD LVCMOS33 [get_ports {M_CLOCK}]
 
 # MC2-32 
 set_property PACKAGE_PIN K6 [get_ports {PLL_RESET}]
 set_property IOSTANDARD LVCMOS33 [get_ports {PLL_RESET}]
+
 
 # MC2-34 
 set_property PACKAGE_PIN J6 [get_ports {M_START}] #MASTER START
