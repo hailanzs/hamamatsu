@@ -1,5 +1,21 @@
 `timescale 1ns / 1ps
 
+//////////////////////////////////////////////////////////////////////////////////
+// Written by: Hailan and Filip 
+// 
+// Create Date: 04/12/2019 01:52:21 PM
+// Module Name: Clock Generator
+// Project Name: Hamamastu
+// Target Devices: S13101 
+// Description: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
 module ClockGenerator(
     input sys_clkn,
     input sys_clkp,    
