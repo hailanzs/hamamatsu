@@ -1,0 +1,125 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr 14 14:39:24 2019
+# Process ID: 5800
+# Current directory: C:/Users/cakulev2/ham/hamamatsu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1216 C:\Users\cakulev2\ham\hamamatsu\Christmas_Ham.xpr
+# Log file: C:/Users/cakulev2/ham/hamamatsu/vivado.log
+# Journal file: C:/Users/cakulev2/ham/hamamatsu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/hshanbha/ham/ham' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 678.906 ; gain = 114.578
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okTriggerIn.v} {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okTriggerOut.v} {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okRegisterBridge.v} {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okPipeOut.v} {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okBTPipeIn.v} {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.vhd} {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okWireIn.v} {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okWireOut.v} {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v} {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okBTPipeOut.v} {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v} {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okPipeIn.v}}
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting value property on PARAM_VALUE.ALL_PROBE_SAME_MU is not allowed in procedure update_gui_for_PARAM_VALUE.C_ADV_TRIGGER
+missing operand at _@_
+in expression "0+_@_"
+missing operand at _@_
+in expression "0+_@_"
+missing operand at _@_
+in expression "0+_@_"
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0 -dir c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip
+set_property -dict [list CONFIG.C_PROBE0_TYPE {1} CONFIG.C_PROBE1_WIDTH {2} CONFIG.C_PROBE0_WIDTH {21} CONFIG.C_NUM_OF_PROBES {2} CONFIG.C_EN_STRG_QUAL {1} CONFIG.C_ADV_TRIGGER {true} CONFIG.C_PROBE1_MU_CNT {2} CONFIG.C_PROBE0_MU_CNT {2} CONFIG.ALL_PROBE_SAME_MU_CNT {2}] [get_ips ila_0]
+generate_target {instantiation_template} [get_files c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci]
+launch_runs -jobs 4 ila_0_synth_1
+[Sun Apr 14 16:38:18 2019] Launched ila_0_synth_1...
+Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci] -directory C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.ip_user_files -ipstatic_source_dir C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.cache/compile_simlib/modelsim} {questa=C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.cache/compile_simlib/questa} {riviera=C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.cache/compile_simlib/riviera} {activehdl=C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting value property on PARAM_VALUE.ALL_PROBE_SAME_MU is not allowed in procedure update_gui_for_PARAM_VALUE.C_ADV_TRIGGER
+set_property -dict [list CONFIG.C_PROBE0_WIDTH {30}] [get_ips ila_0]
+generate_target all [get_files  c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+reset_run ila_0_synth_1
+launch_runs -jobs 4 ila_0_synth_1
+[Sun Apr 14 17:07:20 2019] Launched ila_0_synth_1...
+Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci] -directory C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.ip_user_files -ipstatic_source_dir C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.cache/compile_simlib/modelsim} {questa=C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.cache/compile_simlib/questa} {riviera=C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.cache/compile_simlib/riviera} {activehdl=C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr 14 17:08:54 2019] Launched ila_0_synth_1, synth_1...
+Run output will be captured here:
+ila_0_synth_1: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/ila_0_synth_1/runme.log
+synth_1: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/runme.log
+[Sun Apr 14 17:08:54 2019] Launched impl_1...
+Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr 14 17:12:45 2019] Launched synth_1...
+Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/runme.log
+[Sun Apr 14 17:12:45 2019] Launched impl_1...
+Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr 14 17:21:03 2019] Launched synth_1...
+Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/runme.log
+[Sun Apr 14 17:21:03 2019] Launched impl_1...
+Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 552 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.688 . Memory (MB): peak = 2749.063 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.689 . Memory (MB): peak = 2749.063 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2749.063 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 285 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 164 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 33 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 38 instances
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 8 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 10 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 2749.063 ; gain = 124.027
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr 14 17:37:56 2019] Launched synth_1...
+Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/runme.log
+[Sun Apr 14 17:37:56 2019] Launched impl_1...
+Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr 14 17:48:45 2019] Launched synth_1...
+Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/runme.log
+[Sun Apr 14 17:48:45 2019] Launched impl_1...
+Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/runme.log

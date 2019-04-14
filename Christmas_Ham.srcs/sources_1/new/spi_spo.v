@@ -36,7 +36,9 @@ module spi_spo(
         // register/data
         input [31:0] register_input,
         input [31:0] data_input,
-        output [31:0] data_output
+        output [31:0] data_output,
+        //debugging
+        output [8:0] State_cpy
     );
     
     localparam STATE_INIT = 9'b0;
@@ -52,7 +54,7 @@ module spi_spo(
     
     // transfering from state machine to imager
     assign SPI_RESET = RESET;
-    assign SPI_MISO = MOSI;
+    assign SPI_MOSI = MOSI;
     assign SPI_CS = CS;
     assign SPI_CLK = CLK;
     assign data_output = data_read;
@@ -60,12 +62,13 @@ module spi_spo(
     // debugging
     reg error_bit;
     assign led[7] = error_bit;
-    
+    assign State_cpy = State;
     // initial settings
     initial begin
         error_bit <= 1'b1;
         CLK <= 1'b0;
         CS <= 1'b1;
+        RESET <= 1'b1;
     end
     
     // transfering from imager to state machine

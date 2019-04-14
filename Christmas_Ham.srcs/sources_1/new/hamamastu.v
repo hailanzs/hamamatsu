@@ -72,14 +72,17 @@ module hamamastu(
     );
 
     // clock registers and wires
-    reg MASTER_CLK, SPI_gen_CLK;    // random clocks
-    wire clk;                       // total clock
-    wire clk_out;                   // clock for debugging
+    wire MASTER_CLK, SPI_gen_CLK, ILA_CLK;   // random clocks
+    wire [8:0] State_cpy;                   // SPI settings fsm state for debugging
+    wire TrigerEvent;                       // jtag debugging wire
+    wire [31:0] data_input_cpy, data_output_cpy; // more jtag debugging wires
+    wire clk;                               // total clock
+    wire clk_out;                           // clock for debugging
     
     // assigning statements
     assign VDD_A_EN = 1'b1;         // set up regulators VDD(D) and VDD(A)
     assign VDD_D_EN = 1'b1;
-
+    assign TrigerEvent = 1'b1;
 
     // okWire stuff!!
     wire okClk;             //These are FrontPanel wires needed to IO communication    
@@ -94,7 +97,9 @@ module hamamastu(
                         .okAA(okAA),
                         .okHE(okHE),
                         .okEH(okEH));
-                        
+    //ok memory spacing for block throttle and other opal kelly wires
+    localparam  endPt_count = 2;
+    wire [endPt_count*65-1:0] okEHx;                      
     // wires for communicating
     wire [31:0] rw_flag;                // read/write flag
     wire [31:0] register_input;         // register to read/write to
@@ -106,7 +111,9 @@ module hamamastu(
     ClockGenerator clock(   .sys_clkn(sys_clkn),
                             .sys_clkp(sys_clkp),    
                             .MASTER_CLK(MASTER_CLK),
-                            .SPI_gen_CLK(SPI_gen_CLK));
+                            .SPI_gen_CLK(SPI_gen_CLK),
+                            .ILA_CLK(ILA_CLK)
+                            );
                             
     // spi protocol instantitation                        
     spi_spo spi_rw(       .led(led),
@@ -117,27 +124,61 @@ module hamamastu(
                             .SPI_CLK(SPI_CLK),
                             .SPI_MISO(SPI_MISO),
                             .rw_flag(rw_flag),
-                            .data_input(data_input),
-                            .data_output(data_output));
+                            .data_input(data_input_cpy),
+                            .data_output(data_output_cpy),
+                            .State_cpy(State_cpy));
 
     // initial set up
     initial begin
         
     end
+    
+    ila_0 ila_sample12 ( 
+        .clk(ILA_CLK),
+        .probe0({SPI_CS, data_output_cpy, data_input_cpy, SPI_MISO, SPI_MOSI, SPI_RESET, State_cpy, SPI_CLK}),                             
+        .probe1({SPI_gen_CLK, TrigerEvent})
+        );                        
 
     // select io for lvds lines instantitation
-    selectio_wiz_0 lvds_input ( .data_in_from_pins_p(), 
-                                .data_in_from_pins_n(), 
-                                .clk_in(clk),
-                                .io_reset(), 
-                                .delay_clk(), 
-                                .in_delay_reset(), 
-                                .in_delay_tap_in(),
-                                .in_delay_data_ce(), 
-                                .in_delay_data_inc(), 
-                                .ref_clock(), 
-                                .in_delay_tap_out(),
-                                .delay_locked(), 
-                                .clk_out(clk_out));
+//    selectio_wiz_0 lvds_input ( 
+//        .data_in_from_pins_p(), 
+//        .data_in_from_pins_n(), 
+//        .clk_in(clk),
+//        .io_reset(), 
+//        .delay_clk(), 
+//        .in_delay_reset(), 
+//        .in_delay_tap_in(),
+//        .in_delay_data_ce(), 
+//        .in_delay_data_inc(), 
+//        .ref_clock(), 
+//        .in_delay_tap_out(),
+//        .delay_locked(), 
+//        .clk_out(clk_out));
+//    // fifo instantiation
+//    fifo_generator_0 FIFO_for_Counter_BTPipe_Interface (
+//        .wr_clk(),
+//        .wr_rst(),
+//        .rd_clk(okClk),
+//        .rd_rst(),
+//        .din(),
+//        .wr_en(),
+//        .rd_en(FIFO_read_enable),
+//        .dout(FIFO_data_out),
+//        .full(FIFO_full),
+//        .empty(FIFO_empty),       
+//        .prog_full(FIFO_BT_BlockSize_Full)        
+//    );
+//    // block throttle instantiation
+//    okBTPipeOut CounterToPC (
+//        .okHE(okHE), 
+//        .okEH(okEHx[ 0*65 +: 65 ]),
+//        .ep_addr(8'ha0), 
+//        .ep_datain(FIFO_data_out), 
+//        .ep_read(FIFO_read_enable),
+//        .ep_blockstrobe(BT_Strobe), 
+//        .ep_ready(FIFO_BT_BlockSize_Full)
+//    );                                      
+    
+
                                 
 endmodule

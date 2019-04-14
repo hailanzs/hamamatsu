@@ -1,0 +1,891 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 5800
+License: Customer
+
+Current time: 	Sun Apr 14 14:39:43 CDT 2019
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1600x1200
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 783 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	cakulev2
+User home directory: C:/Users/cakulev2
+User working directory: C:/Users/cakulev2/ham/hamamatsu
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/cakulev2/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/cakulev2/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/cakulev2/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/cakulev2/ham/hamamatsu/vivado.log
+Vivado journal file location: 	C:/Users/cakulev2/ham/hamamatsu/vivado.jou
+Engine tmp dir: 	C:/Users/cakulev2/ham/hamamatsu/.Xil/Vivado-5800-ECEB-4022-13
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+okFP_SDK: C:\Program Files\Opal Kelly\FrontPanelUSB\API
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 569 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\cakulev2\ham\hamamatsu\Christmas_Ham.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 64 MB (+64473kb) [00:00:09]
+// [Engine Memory]: 600 MB (+477981kb) [00:00:09]
+// [GUI Memory]: 83 MB (+17075kb) [00:00:09]
+// [GUI Memory]: 101 MB (+14484kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  2712 ms.
+// Tcl Message: open_project C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/hshanbha/ham/ham' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 45 MB. Current time: 4/14/19, 2:39:47 PM CDT
+// [Engine Memory]: 655 MB (+25394kb) [00:00:13]
+// Project name: Christmas_Ham; location: C:/Users/cakulev2/ham/hamamatsu; part: xc7a200tfbg484-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 678.906 ; gain = 114.578 
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 29 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v), spi_rw : spi_spo (spi_spo.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v), spi_rw : spi_spo (spi_spo.v)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// [GUI Memory]: 109 MB (+3082kb) [00:00:45]
+// HMemoryUtils.trashcanNow. Engine heap size: 684 MB. GUI used memory: 50 MB. Current time: 4/14/19, 2:40:21 PM CDT
+// Elapsed time: 61 seconds
+selectCodeEditor("spi_spo.v", 784, 273); // cl (w, cp)
+// [Engine Memory]: 703 MB (+16102kb) [00:01:46]
+// Elapsed time: 554 seconds
+selectCodeEditor("spi_spo.v", 181, 351); // cl (w, cp)
+selectCodeEditor("spi_spo.v", 181, 351, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("spi_spo.v", 180, 329); // cl (w, cp)
+selectCodeEditor("spi_spo.v", 180, 329, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("spi_spo.v", 197, 321); // cl (w, cp)
+selectCodeEditor("spi_spo.v", 197, 321, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 360 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("hamamastu.v", 362, 556); // cl (w, cp)
+// Elapsed time: 88 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_spo.v", 1); // k (j, cp)
+// Elapsed time: 63 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rw_bit"); // l (aT, cp)
+selectCodeEditor("spi_spo.v", 228, 505); // cl (w, cp)
+selectCodeEditor("spi_spo.v", 228, 505, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 186 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 2); // k (j, cp)
+// Elapsed time: 103 seconds
+typeControlKey((HResource) null, "hamamastu.v", 'v'); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 248, 403); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 398, 468); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 188, 502); // cl (w, cp)
+// Elapsed time: 37 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v)]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v)]", 1); // B (D, cp)
+// Elapsed time: 18 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// HMemoryUtils.trashcanNow. Engine heap size: 704 MB. GUI used memory: 56 MB. Current time: 4/14/19, 3:05:45 PM CDT
+// Elapsed time: 45 seconds
+String[] filenames31467 = {"C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okBTPipeIn.v", "C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okBTPipeOut.v", "C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v", "C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v", "C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.vhd", "C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okPipeIn.v", "C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okPipeOut.v", "C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okRegisterBridge.v", "C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okTriggerIn.v", "C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okTriggerOut.v", "C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okWireIn.v", "C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okWireOut.v"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 50 seconds
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v), hostIF : okHost (okLibrary.v)]", 2); // B (D, cp)
+// Elapsed time: 42 seconds
+selectCodeEditor("hamamastu.v", 152, 338); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 150, 360); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 34, 351); // cl (w, cp)
+typeControlKey((HResource) null, "hamamastu.v", 'v'); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 63, 437); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 362, 237); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 52, 369); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("hamamastu.v", 223, 109); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 79, 145, false, true, false, false, false); // cl (w, cp) - Control Key
+selectCodeEditor("hamamastu.v", 82, 144, false, true, false, false, false); // cl (w, cp) - Control Key
+selectCodeEditor("hamamastu.v", 248, 268); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 82, 132); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 58, 135); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 59, 146); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 54, 148, false, true, false, false, false); // cl (w, cp) - Control Key
+selectCodeEditor("hamamastu.v", 262, 276); // cl (w, cp)
+// Elapsed time: 329 seconds
+selectCodeEditor("hamamastu.v", 308, 540); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 275, 529); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 253, 517); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 263, 522); // cl (w, cp)
+typeControlKey((HResource) null, "hamamastu.v", 'v'); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 45, 530); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 295, 511); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("hamamastu.v", 269, 270); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 270, 276); // cl (w, cp)
+// Elapsed time: 66 seconds
+selectCodeEditor("hamamastu.v", 86, 517); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_spo.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 2); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 712 MB. GUI used memory: 50 MB. Current time: 4/14/19, 3:35:46 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 712 MB. GUI used memory: 48 MB. Current time: 4/14/19, 4:05:46 PM CDT
+// Elapsed time: 4124 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_spo.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 2); // k (j, cp)
+selectCodeEditor("hamamastu.v", 17, 346); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 87, 498, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectCodeEditor("hamamastu.v", 94, 472, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // X (al, Popup.HeavyWeightWindow)
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // X (al, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // af (al, Popup.HeavyWeightWindow)
+selectCodeEditor("hamamastu.v", 252, 376); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("hamamastu.v", 110, 209); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 110, 208, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("hamamastu.v", 102, 199); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 102, 199, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_spo.v", 1); // k (j, cp)
+// Elapsed time: 369 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bx (SwingUtilities.SharedOwnerFrame):  Open IP Catalog : addNotify
+dismissDialog("Open IP Catalog"); // bx (SwingUtilities.SharedOwnerFrame)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Debug & Verification ;  ;  ;  ; ", 9); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clock Verification IP ;  ; Production ; Included ; xilinx.com:ip:clk_vip:1.0", 10, "Clock Verification IP", 0, true); // O (Q, cp) - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Debug ;  ;  ;  ; ", 11); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ILA (Integrated Logic Analyzer) ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:ila:6.2", 14, "ILA (Integrated Logic Analyzer)", 0, true); // O (Q, cp) - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ILA (Integrated Logic Analyzer) ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:ila:6.2", 14, "ILA (Integrated Logic Analyzer)", 0, true, false, false, false, false, true); // O (Q, cp) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// l (cp):  Customize IP : addNotify
+// [Engine Memory]: 1,057 MB (+334649kb) [01:53:16]
+// r (cp): Customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1584 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 58 MB. Current time: 4/14/19, 4:32:53 PM CDT
+dismissDialog("Customize IP"); // l (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,320 MB. GUI used memory: 57 MB. Current time: 4/14/19, 4:33:31 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,456 MB. GUI used memory: 57 MB. Current time: 4/14/19, 4:33:46 PM CDT
+// [Engine Memory]: 1,456 MB (+362456kb) [01:54:13]
+// Elapsed time: 56 seconds
+setText("Number of Probes", "2"); // z (bh, r)
+selectComboBox("Number of Comparators (ALL_PROBE_SAME_MU_CNT)", "2", 1); // E (C, r)
+selectCheckBox((HResource) null, "Capture Control", true); // g (o, r): TRUE
+selectCheckBox((HResource) null, "Advanced Trigger", true); // g (o, r): TRUE
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Probe_Ports(0..1)", 1); // bg (C, r)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 59 MB. Current time: 4/14/19, 4:34:06 PM CDT
+selectCheckBox(PAResourceEtoH.HACGCIPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", false); // g (as, r): FALSE
+// Elapsed time: 31 seconds
+setText("Probe1 Width", "2"); // z (bh)
+// [Engine Memory]: 1,594 MB (+68649kb) [01:55:13]
+// Elapsed time: 78 seconds
+setText("Probe0 Width", (String) null); // z (bh, r)
+// [Engine Memory]: 1,699 MB (+26833kb) [01:56:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,699 MB. GUI used memory: 59 MB. Current time: 4/14/19, 4:36:01 PM CDT
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_spo.v", 1); // k (j, cp)
+// Elapsed time: 76 seconds
+selectCodeEditor("spi_spo.v", 183, 234); // cl (w, cp)
+// [GUI Memory]: 120 MB (+5365kb) [01:58:00]
+// Elapsed time: 34 seconds
+setText("Probe0 Width", "21"); // z (bh)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,726 MB. GUI used memory: 59 MB. Current time: 4/14/19, 4:38:01 PM CDT
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // r (cp)
+// Tcl Message: create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0 -dir c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip 
+// TclEventType: REPORT_IP_STATUS_STALE
+// bx (cp):  Customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.C_PROBE0_TYPE {1} CONFIG.C_PROBE1_WIDTH {2} CONFIG.C_PROBE0_WIDTH {21} CONFIG.C_NUM_OF_PROBES {2} CONFIG.C_EN_STRG_QUAL {1} CONFIG.C_ADV_TRIGGER {true} CONFIG.C_PROBE1_MU_CNT {2} CONFIG.C_PROBE0_MU_CNT {2} CONFIG.ALL_PROBE_SAME_MU_CNT {2}] [get_ips ila_0] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'... 
+// TclEventType: FILE_SET_CHANGE
+// aI (cp): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "4", 3); // e (bc, aI)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all ila_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci] 
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs -jobs 4 ila_0_synth_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 14 16:38:18 2019] Launched ila_0_synth_1... Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/ila_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 25 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 2); // k (j, cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hamamastu.v", 203, 237); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 50, 260); // cl (w, cp)
+typeControlKey((HResource) null, "hamamastu.v", 'v'); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 138, 298); // cl (w, cp)
+// [GUI Memory]: 129 MB (+3331kb) [01:59:36]
+// Elapsed time: 42 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v), clock : ClockGenerator (ClockGenerator.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v), clock : ClockGenerator (ClockGenerator.v)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("ClockGenerator.v", 171, 435); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("ClockGenerator.v", 183, 434); // cl (w, cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 48 seconds
+selectCodeEditor("ClockGenerator.v", 174, 274); // cl (w, cp)
+selectCodeEditor("ClockGenerator.v", 174, 274, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 44 seconds
+selectCodeEditor("ClockGenerator.v", 474, 248); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("ClockGenerator.v", 336, 296); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("ClockGenerator.v", 336, 296); // cl (w, cp)
+selectCodeEditor("ClockGenerator.v", 44, 269); // cl (w, cp)
+selectCodeEditor("ClockGenerator.v", 276, 301); // cl (w, cp)
+// [GUI Memory]: 136 MB (+291kb) [02:03:20]
+// Elapsed time: 27 seconds
+selectCodeEditor("ClockGenerator.v", 260, 457); // cl (w, cp)
+selectCodeEditor("ClockGenerator.v", 108, 404); // cl (w, cp)
+selectCodeEditor("ClockGenerator.v", 108, 413); // cl (w, cp)
+typeControlKey((HResource) null, "ClockGenerator.v", 'v'); // cl (w, cp)
+selectCodeEditor("ClockGenerator.v", 45, 416); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("ClockGenerator.v", 78, 608); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("ClockGenerator.v", 91, 294); // cl (w, cp)
+selectCodeEditor("ClockGenerator.v", 239, 324); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("ClockGenerator.v", 238, 252); // cl (w, cp)
+// Elapsed time: 70 seconds
+selectCodeEditor("ClockGenerator.v", 215, 204); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("ClockGenerator.v", 103, 504); // cl (w, cp)
+selectCodeEditor("ClockGenerator.v", 132, 303); // cl (w, cp)
+selectCodeEditor("ClockGenerator.v", 218, 291); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("ClockGenerator.v", 182, 199); // cl (w, cp)
+selectCodeEditor("ClockGenerator.v", 306, 279); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 2); // k (j, cp)
+// Elapsed time: 51 seconds
+selectCodeEditor("hamamastu.v", 405, 419); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 370, 416); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 391, 415); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 388, 483); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 214, 168); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("hamamastu.v", 158, 291); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 158, 291, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 148 seconds
+selectCodeEditor("hamamastu.v", 719, 396); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 417, 398); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("hamamastu.v", 655, 570); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("hamamastu.v", 400, 396); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_spo.v", 1); // k (j, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 2); // k (j, cp)
+selectCodeEditor("hamamastu.v", 110, 376); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 97, 369); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 291, 320); // cl (w, cp)
+// Elapsed time: 26 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("hamamastu.v", 446, 314); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("hamamastu.v", 53, 330); // cl (w, cp)
+// Elapsed time: 90 seconds
+selectCodeEditor("hamamastu.v", 249, 437); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 468, 419); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 362, 260); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("hamamastu.v", 346, 250); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 344, 400); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 291, 434); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("hamamastu.v", 421, 440); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 192, 433); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("hamamastu.v", 588, 438); // cl (w, cp)
+// Elapsed time: 59 seconds
+selectCodeEditor("hamamastu.v", 144, 377); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 181, 379); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("hamamastu.v", 364, 422); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 234, 449); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 442, 383); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 514, 375); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 574, 391); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 571, 382); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 665, 384); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 323, 377); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 238, 388); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ila_0 (ila_0.xci)]", 12, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ila_0 (ila_0.xci)]", 12, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cp): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Probe_Ports(0..1)", 1); // bg (C, r)
+// Elapsed time: 15 seconds
+selectCodeEditor("hamamastu.v", 432, 381); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 500, 389); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 557, 389); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ClockGenerator.v", 4); // k (j, cp)
+selectCodeEditor("ClockGenerator.v", 223, 221); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_spo.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+// [GUI Memory]: 148 MB (+5385kb) [02:17:42]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_spo.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 2); // k (j, cp)
+selectCodeEditor("hamamastu.v", 685, 335); // cl (w, cp)
+// Elapsed time: 137 seconds
+selectCodeEditor("hamamastu.v", 300, 450); // cl (w, cp)
+// Elapsed time: 222 seconds
+selectCodeEditor("hamamastu.v", 180, 285); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 180, 285, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "hamamastu.v", 'c'); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 147, 277); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 147, 277, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "hamamastu.v", 'v'); // cl (w, cp)
+// Elapsed time: 45 seconds
+selectCodeEditor("hamamastu.v", 611, 266); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("hamamastu.v", 390, 21); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 126, 468); // cl (w, cp)
+// Elapsed time: 77 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_spo.v", 1); // k (j, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("spi_spo.v", 244, 398); // cl (w, cp)
+typeControlKey((HResource) null, "spi_spo.v", 'v'); // cl (w, cp)
+selectCodeEditor("spi_spo.v", 250, 348); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("spi_spo.v", 141, 494); // cl (w, cp)
+selectCodeEditor("spi_spo.v", 81, 564); // cl (w, cp)
+typeControlKey((HResource) null, "spi_spo.v", 'v'); // cl (w, cp)
+selectCodeEditor("spi_spo.v", 42, 319); // cl (w, cp)
+selectCodeEditor("spi_spo.v", 260, 408); // cl (w, cp)
+selectCodeEditor("spi_spo.v", 252, 405); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 2); // k (j, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_spo.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 2); // k (j, cp)
+// Elapsed time: 13 seconds
+setText("Probe0 Width", "30"); // z (bh, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// Tcl Message: set_property -dict [list CONFIG.C_PROBE0_WIDTH {30}] [get_ips ila_0] 
+// TclEventType: FILE_SET_CHANGE
+// r (cp): Re-customize IP: addNotify
+// bx (r):  Re-customize IP : addNotify
+// TclEventType: FILESET_UPDATE_IP
+// aI (cp): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bx (r)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all ila_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run ila_0_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs -jobs 4 ila_0_synth_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 14 17:07:20 2019] Launched ila_0_synth_1... Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/ila_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 14 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,726 MB. GUI used memory: 76 MB. Current time: 4/14/19, 5:08:02 PM CDT
+// Elapsed time: 75 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// A (cp): No Implementation Results Available: addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// f (cp): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 14 17:08:54 2019] Launched ila_0_synth_1, synth_1... Run output will be captured here: ila_0_synth_1: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/ila_0_synth_1/runme.log synth_1: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/runme.log [Sun Apr 14 17:08:54 2019] Launched impl_1... Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,773 MB. GUI used memory: 76 MB. Current time: 4/14/19, 5:09:57 PM CDT
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 99 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'MASTER_CLK' should not be used in output port connection [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:113]. ]", 2, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'MASTER_CLK' should not be used in output port connection [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:113]. ]", 2, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'MASTER_CLK' should not be used in output port connection [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:113]. ]", 2, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'MASTER_CLK' should not be used in output port connection [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:113]. ]", 2, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'MASTER_CLK' should not be used in output port connection [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:113]. ]", 2, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'MASTER_CLK' should not be used in output port connection [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:113]. ]", 2, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+selectCodeEditor("hamamastu.v", 220, 77); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ClockGenerator.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 2); // k (j, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'MASTER_CLK' should not be used in output port connection [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:113]. ]", 2, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\cakulev2\ham\hamamatsu\Christmas_Ham.srcs\sources_1\new\hamamastu.v;-;;-;16;-;line;-;113;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 54 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ClockGenerator.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 2); // k (j, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("hamamastu.v", 36, 195); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 36, 195, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// A (cp): No Implementation Results Available: addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 14 17:12:45 2019] Launched synth_1... Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/runme.log [Sun Apr 14 17:12:45 2019] Launched impl_1... Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cp): Implementation Failed: addNotify
+// Elapsed time: 84 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net spi_rw/SPI_MISO has multiple drivers: SPI_MISO_IBUF_inst/O, and spi_rw/MOSI_reg/Q.. ]", 14, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net spi_rw/SPI_MISO has multiple drivers: SPI_MISO_IBUF_inst/O, and spi_rw/MOSI_reg/Q.. ]", 14, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net spi_rw/SPI_MISO has multiple drivers: SPI_MISO_IBUF_inst/O, and spi_rw/MOSI_reg/Q.. ]", 14, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net spi_rw/SPI_MISO has multiple drivers: SPI_MISO_IBUF_inst/O, and spi_rw/MOSI_reg/Q.. ]", 14, false); // ah (Q, cp)
+// Elapsed time: 18 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net spi_rw/SPI_MISO has multiple drivers: SPI_MISO_IBUF_inst/O, and spi_rw/MOSI_reg/Q.. ]", 14, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net spi_rw/SPI_MISO has multiple drivers: SPI_MISO_IBUF_inst/O, and spi_rw/MOSI_reg/Q.. ]", 14, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:101]. ]", 7, true); // ah (Q, cp) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\cakulev2\ham\hamamatsu\Christmas_Ham.srcs\constrs_1\imports\new\Hamamatsu.xdc;-;;-;16;-;line;-;101;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 2); // k (j, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net spi_rw/SPI_MISO has multiple drivers: SPI_MISO_IBUF_inst/O, and spi_rw/MOSI_reg/Q.. ]", 14, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net spi_rw/SPI_MISO has multiple drivers: SPI_MISO_IBUF_inst/O, and spi_rw/MOSI_reg/Q.. ]", 14, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net spi_rw/SPI_MISO has multiple drivers: SPI_MISO_IBUF_inst/O, and spi_rw/MOSI_reg/Q.. ]", 14, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net spi_rw/SPI_MISO has multiple drivers: SPI_MISO_IBUF_inst/O, and spi_rw/MOSI_reg/Q.. ]", 14, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net spi_rw/SPI_MISO has multiple drivers: SPI_MISO_IBUF_inst/O, and spi_rw/MOSI_reg/Q.. ]", 14, false); // ah (Q, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_spo.v", 1); // k (j, cp)
+// Elapsed time: 66 seconds
+selectCodeEditor("spi_spo.v", 139, 280); // cl (w, cp)
+// Elapsed time: 166 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "miso", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "miso"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "miso"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "miso"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "miso"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "miso"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "miso"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "miso"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "miso"); // l (aT, cp)
+// Elapsed time: 10 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "miso", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "miso"); // l (aT, cp)
+// Elapsed time: 45 seconds
+selectCodeEditor("spi_spo.v", 169, 486); // cl (w, cp)
+// Elapsed time: 46 seconds
+selectCodeEditor("spi_spo.v", 322, 525); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_CANCEL, "Cancel"); // a (al)
+dismissDialog("Save Project"); // al (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (cp): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 14 17:21:03 2019] Launched synth_1... Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/runme.log [Sun Apr 14 17:21:03 2019] Launched impl_1... Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cp): Bitstream Generation Failed: addNotify
+// Elapsed time: 319 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cp)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+selectCheckBox(PAResourceItoN.MsgView_ERROR_MESSAGES, (String) null, true); // g (aR, cp): TRUE
+// Elapsed time: 16 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 16, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "port;-;M_CLOCK;-;;-;10;-;"); // ah (Q, cp)
+selectButton("PAResourceItoN.MsgUtils_TO_SELECT_THIS_OBJECT_YOU_MUST_OPEN_Yes", "Yes"); // JButton (C, I)
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,810 MB. GUI used memory: 81 MB. Current time: 4/14/19, 5:26:57 PM CDT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,810 MB (+27047kb) [02:47:31]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,810 MB. GUI used memory: 78 MB. Current time: 4/14/19, 5:27:07 PM CDT
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.4s
+// [Engine Memory]: 1,917 MB (+17663kb) [02:47:34]
+// [GUI Memory]: 158 MB (+2977kb) [02:47:34]
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 166 MB (+239kb) [02:47:35]
+// WARNING: HEventQueue.dispatchEvent() is taking  3098 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 552 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7a200tfbg484-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.688 . Memory (MB): peak = 2749.063 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.689 . Memory (MB): peak = 2749.063 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2749.063 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 285 instances were transformed.   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 164 instances   IOBUF => IOBUF (IBUF, OBUFT): 33 instances   LUT6_2 => LUT6_2 (LUT5, LUT6): 38 instances   RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 8 instances   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 10 instances   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 2749.063 ; gain = 124.027 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// [Engine Memory]: 2,038 MB (+25994kb) [02:47:37]
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 175 MB (+1kb) [02:47:41]
+// [GUI Memory]: 183 MB (+18kb) [02:47:42]
+// [GUI Memory]: 193 MB (+17kb) [02:47:42]
+// [Engine Memory]: 2,153 MB (+13990kb) [02:47:42]
+// WARNING: HEventQueue.dispatchEvent() is taking  2421 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1268 ms.
+// Elapsed time: 33 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,182 MB. GUI used memory: 141 MB. Current time: 4/14/19, 5:27:22 PM CDT
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 16, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "port;-;SPI_RESET;-;;-;10;-;"); // ah (Q, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Hamamatsu.xdc", 5); // k (j, cp)
+// Run Command: RDIResourceCommand.RDICommands_FIND
+// g (cp): Find: addNotify
+setText(PAResourceTtoZ.TclFindDialog_RESULT_NAME, "find_1m_"); // j (g)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (g)
+dismissDialog("Find"); // g (cp)
+// Run Command: RDIResourceCommand.RDICommands_FIND
+// g (cp): Find: addNotify
+setText(PAResourceTtoZ.TclFindDialog_RESULT_NAME, (String) null); // j (g)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (g)
+dismissDialog("Find"); // g (cp)
+selectCodeEditor("Hamamatsu.xdc", 236, 228); // cl (w, cp)
+// Elapsed time: 41 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "m_STAR"); // l (aT, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 3); // k (j, cp)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v)]", 1, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectCodeEditor("hamamastu.v", 631, 220); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v), clock : ClockGenerator (ClockGenerator.v)]", 8, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectCodeEditor("hamamastu.v", 428, 138); // cl (w, cp)
+// Elapsed time: 125 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Hamamatsu.xdc", 5); // k (j, cp)
+// Elapsed time: 307 seconds
+selectCodeEditor("Hamamatsu.xdc", 30, 473); // cl (w, cp)
+// Elapsed time: 48 seconds
+selectCodeEditor("Hamamatsu.xdc", 197, 454); // cl (w, cp)
+// Elapsed time: 63 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+// A (cp): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 14 17:37:56 2019] Launched synth_1... Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/runme.log [Sun Apr 14 17:37:56 2019] Launched impl_1... Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cp): Bitstream Generation Failed: addNotify
+// Elapsed time: 272 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cp)
+// [GUI Memory]: 206 MB (+3334kb) [03:02:53]
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,376 MB. GUI used memory: 143 MB. Current time: 4/14/19, 5:43:07 PM CDT
+// [Engine Memory]: 2,376 MB (+120369kb) [03:03:49]
+// Elapsed time: 264 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ClockGenerator.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 3); // k (j, cp)
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Hamamatsu.xdc", 5); // k (j, cp)
+// Elapsed time: 48 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "spi_mosi"); // l (aT, cp)
+selectCodeEditor("Hamamatsu.xdc", 92, 470); // cl (w, cp)
+selectCodeEditor("Hamamatsu.xdc", 0, 486); // cl (w, cp)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Apr 14 17:48:45 2019] Launched synth_1... Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/runme.log [Sun Apr 14 17:48:45 2019] Launched impl_1... Run output will be captured here: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cp): Bitstream Generation Failed: addNotify
+// Elapsed time: 211 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cp)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ClockGenerator.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Hamamatsu.xdc", 5); // k (j, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Hamamatsu.xdc", 8, 505); // cl (w, cp)
+// Elapsed time: 348 seconds
+selectCodeEditor("Hamamatsu.xdc", 563, 367); // cl (w, cp)
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,396 MB. GUI used memory: 144 MB. Current time: 4/14/19, 5:58:37 PM CDT
