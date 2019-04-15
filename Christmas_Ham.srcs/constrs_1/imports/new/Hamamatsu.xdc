@@ -310,7 +310,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {JTAG7}]
 
 # MC1-75 
 set_property PACKAGE_PIN Y16 [get_ports {JTAG8}]
-set_property IOSTANDARD LVCMOS33 [get_ports {JTAG8}]
+set_property IOSTANDARD LVCMOS33 [get_ports {JTAG8}] 
 
 # MC2-7 
 set_property PACKAGE_PIN T13 [get_ports {JTAG_TMS}]
@@ -331,7 +331,7 @@ set_property IOSTANDARD  [get_ports {JTAG_TCK}]
 # SPI ########################################################################################################################
 # MC2-20 
 set_property PACKAGE_PIN P2 [get_ports {SPI_RESET}]  
-set_property IOSTANDARD LVCMOS33 [get_ports {SPI_RESET}]
+set_property IOSTANDARD LVCMOS33 [get_ports {SPI_RESET}] 
 
 # MC2-22 
 set_property PACKAGE_PIN N2 [get_ports {SPI_MOSI}]  

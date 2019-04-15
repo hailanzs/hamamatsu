@@ -30,15 +30,16 @@ module spi_spo(
         output SPI_CLK,
         input SPI_MISO,
         
-        // start flag for state machine
+        // start flag for state machine (OKWIRE)
         input [31:0] rw_flag,
         
-        // register/data
+        // register/data (OKWIRE)
         input [31:0] register_input,
         input [31:0] data_input,
         output [31:0] data_output,
+        
         //debugging
-        output [8:0] State_cpy
+        output [8:0] State_copy
     );
     
     localparam STATE_INIT = 9'b0;
@@ -62,7 +63,7 @@ module spi_spo(
     // debugging
     reg error_bit;
     assign led[7] = error_bit;
-    assign State_cpy = State;
+    assign State_copy = State;
     // initial settings
     initial begin
         error_bit <= 1'b1;
