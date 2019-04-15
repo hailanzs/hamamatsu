@@ -14,12 +14,12 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4628 
+INFO: Helper process launched with PID 980 
 WARNING: [Synth 8-2490] overwriting previous definition of module xpm_cdc_async_rst [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15361]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 433.133 ; gain = 112.805
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 432.777 ; gain = 111.355
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'hamamastu' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:18]
+INFO: [Synth 8-6157] synthesizing module 'hamamastu' [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:18]
 	Parameter endPt_count bound to: 2 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'okHost' [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v:10]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
@@ -270,7 +270,7 @@ INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized32' (25#1) [C:
 INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized33' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
 INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized34' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-350] instance 'hostIF' of module 'okHost' requires 9 connections, but only 7 given [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-350] instance 'hostIF' of module 'okHost' requires 9 connections, but only 7 given [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter DIFF_TERM bound to: FALSE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -279,23 +279,23 @@ WARNING: [Synth 8-350] instance 'hostIF' of module 'okHost' requires 9 connectio
 	Parameter STATE_INIT bound to: 9'b000000000 
 	Parameter READ bound to: 1'b0 
 	Parameter WRITE bound to: 1'b1 
-WARNING: [Synth 8-6104] Input port 'led' has an internal driver [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:64]
-WARNING: [Synth 8-350] instance 'spi_rw' of module 'spi_spo' requires 12 connections, but only 11 given [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:136]
-WARNING: [Synth 8-689] width (78) of port connection 'probe0' does not match port width (30) of module 'ila_0' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:138]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi_rw'. This will prevent further optimization [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_sample12'. This will prevent further optimization [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:136]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'clock'. This will prevent further optimization [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:111]
-WARNING: [Synth 8-3848] Net led in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:20]
-WARNING: [Synth 8-3848] Net VDD_C_EN in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:49]
-WARNING: [Synth 8-3848] Net N15_EN in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:50]
-WARNING: [Synth 8-3848] Net N2_EN in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:51]
-WARNING: [Synth 8-3848] Net TG_RESET in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:61]
-WARNING: [Synth 8-3848] Net M_CLOCK in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:62]
-WARNING: [Synth 8-3848] Net PLL_RESET in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:63]
-WARNING: [Synth 8-3848] Net M_START in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:64]
-WARNING: [Synth 8-3848] Net rw_flag in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:104]
-WARNING: [Synth 8-3848] Net okEH in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:90]
+WARNING: [Synth 8-6104] Input port 'led' has an internal driver [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:64]
+WARNING: [Synth 8-350] instance 'spi_rw' of module 'spi_spo' requires 12 connections, but only 11 given [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:136]
+WARNING: [Synth 8-689] width (78) of port connection 'probe0' does not match port width (30) of module 'ila_0' [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:138]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi_rw'. This will prevent further optimization [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_sample12'. This will prevent further optimization [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:136]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'clock'. This will prevent further optimization [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:111]
+WARNING: [Synth 8-3848] Net led in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:20]
+WARNING: [Synth 8-3848] Net VDD_C_EN in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:49]
+WARNING: [Synth 8-3848] Net N15_EN in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:50]
+WARNING: [Synth 8-3848] Net N2_EN in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:51]
+WARNING: [Synth 8-3848] Net TG_RESET in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:61]
+WARNING: [Synth 8-3848] Net M_CLOCK in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:62]
+WARNING: [Synth 8-3848] Net PLL_RESET in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:63]
+WARNING: [Synth 8-3848] Net M_START in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:64]
+WARNING: [Synth 8-3848] Net rw_flag in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:104]
+WARNING: [Synth 8-3848] Net okEH in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:90]
 WARNING: [Synth 8-3917] design hamamastu has port VDD_A_EN driven by constant 1
 WARNING: [Synth 8-3917] design hamamastu has port VDD_D_EN driven by constant 1
 WARNING: [Synth 8-3331] design spi_spo has unconnected port led[6]
@@ -400,7 +400,7 @@ WARNING: [Synth 8-3331] design fifo_generator_v13_2_0 has unconnected port prog_
 WARNING: [Synth 8-3331] design fifo_generator_v13_2_0 has unconnected port prog_full_thresh_assert[1]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 492.156 ; gain = 171.828
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 493.289 ; gain = 171.867
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -409,115 +409,115 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[64] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[63] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[62] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[61] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[60] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[59] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[58] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[57] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[56] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[55] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[54] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[53] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[52] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[51] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[50] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[49] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[48] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[47] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[46] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[45] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[44] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[43] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[42] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[41] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[40] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[39] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[38] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[37] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[36] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[35] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[34] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[33] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[32] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[31] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[30] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[29] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[28] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[27] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[26] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[25] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[24] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[23] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[22] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[21] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[20] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[19] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[18] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[17] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[16] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[15] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[14] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[13] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[12] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[11] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[10] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[9] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[8] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[7] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[6] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[5] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[4] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[3] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[2] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[1] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[0] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:led[7] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[31] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[30] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[29] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[28] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[27] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[26] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[25] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[24] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[23] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[22] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[21] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[20] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[19] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[18] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[17] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[16] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[15] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[14] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[13] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[12] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[11] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[10] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[9] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[8] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[7] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[6] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[5] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[4] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[3] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[2] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[1] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[0] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[6] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[5] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[64] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[63] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[62] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[61] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[60] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[59] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[58] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[57] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[56] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[55] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[54] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[53] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[52] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[51] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[50] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[49] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[48] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[47] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[46] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[45] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[44] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[43] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[42] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[41] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[40] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[39] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[38] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[37] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[36] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[35] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[34] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[33] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[32] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[31] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[30] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[29] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[28] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[27] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[26] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[25] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[24] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[23] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[22] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[21] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[20] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[19] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[18] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[17] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[16] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[15] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[14] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[13] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[12] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[11] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[10] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[9] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[8] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[7] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[6] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[5] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[4] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[3] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[2] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[1] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin hostIF:okEH[0] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:led[7] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[31] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[30] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[29] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[28] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[27] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[26] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[25] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[24] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[23] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[22] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[21] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[20] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[19] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[18] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[17] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[16] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[15] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[14] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[13] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[12] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[11] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[10] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[9] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[8] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[7] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[6] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[5] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[4] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[3] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[2] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[1] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[0] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[6] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[5] to constant 0 [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:119]
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 492.156 ; gain = 171.828
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 493.289 ; gain = 171.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 492.156 ; gain = 171.828
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 493.289 ; gain = 171.867
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 147 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -526,202 +526,196 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
-Finished Parsing XDC File [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
-Parsing XDC File [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
-INFO: [Timing 38-2] Deriving generated clocks [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:96]
-WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:101]
-WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:102]
-WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:103]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#OUTPUTS' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:107]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:227]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#4' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:231]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#PIXEL' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:235]
-WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:272]
-WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:273]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:276]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:280]
-WARNING: [Vivado 12-584] No ports matched 'JTAG1'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:284]
-WARNING: [Vivado 12-584] No ports matched 'JTAG1'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:285]
-WARNING: [Vivado 12-584] No ports matched 'JTAG2'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:288]
-WARNING: [Vivado 12-584] No ports matched 'JTAG2'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:289]
-WARNING: [Vivado 12-584] No ports matched 'JTAG3'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:292]
-WARNING: [Vivado 12-584] No ports matched 'JTAG3'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:293]
-WARNING: [Vivado 12-584] No ports matched 'JTAG4'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:296]
-WARNING: [Vivado 12-584] No ports matched 'JTAG4'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:297]
-WARNING: [Vivado 12-584] No ports matched 'JTAG5'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:300]
-WARNING: [Vivado 12-584] No ports matched 'JTAG5'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:301]
-WARNING: [Vivado 12-584] No ports matched 'JTAG6'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:304]
-WARNING: [Vivado 12-584] No ports matched 'JTAG6'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:305]
-WARNING: [Vivado 12-584] No ports matched 'JTAG7'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:308]
-WARNING: [Vivado 12-584] No ports matched 'JTAG7'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:309]
-WARNING: [Vivado 12-584] No ports matched 'JTAG8'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:312]
-WARNING: [Vivado 12-584] No ports matched 'JTAG8'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:313]
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TMS'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:316]
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TMS'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:317]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:317]
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TDO'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:320]
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TDO'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:321]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:321]
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TDI'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:324]
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TDI'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:325]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:325]
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TCK'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:328]
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TCK'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:329]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:329]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#SPI' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:333]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:353]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#MASTER' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:362]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#MASTER' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:366]
-WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:381]
-WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:382]
-WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:383]
-WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:384]
-WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:385]
-WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:386]
-WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:387]
-WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:388]
-WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:389]
-WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:390]
-WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:391]
-WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:392]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:395]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:396]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:397]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:398]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:399]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:400]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:401]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:402]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:403]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:404]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:405]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:406]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:407]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:408]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:409]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:410]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:411]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:412]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:413]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[19]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:414]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[20]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:415]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[21]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:416]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[22]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:417]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[23]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:418]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[24]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:419]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[25]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:420]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[26]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:421]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[27]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:422]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[28]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:423]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[29]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:424]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[30]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:425]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[31]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:426]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:427]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:428]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[0]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:430]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[1]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:431]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[2]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:432]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[3]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:433]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[4]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:434]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[5]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:435]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[6]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:436]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[7]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:437]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[8]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:438]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[9]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:439]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[10]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:440]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[11]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:441]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[12]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:442]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[13]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:443]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[14]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:444]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:445]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:446]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[0]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:448]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[1]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:449]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[2]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:450]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:451]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:452]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:454]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:455]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:456]
-INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:456]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:502]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:503]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:506]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:507]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:510]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:511]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:514]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:515]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:518]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:519]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:522]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:523]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:526]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:527]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:534]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:535]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:539]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:542]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:543]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:547]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:550]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:551]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:554]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:555]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:557]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:558]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:561]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:562]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:618]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:619]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:622]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:623]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:646]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:647]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:654]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:655]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:658]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:659]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:662]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:663]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:666]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:667]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:670]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:671]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:674]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:675]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:690]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:691]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:694]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:695]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:702]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:703]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:706]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:707]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:778]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:779]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:782]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:783]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:870]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:871]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:878]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:879]
-Finished Parsing XDC File [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/hamamastu_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hamamastu_propImpl.xdc].
+Parsing XDC File [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
+Finished Parsing XDC File [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
+Parsing XDC File [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:103]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#OUTPUTS' specified for 'objects'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:107]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:227]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#4' specified for 'objects'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:231]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#PIXEL' specified for 'objects'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:235]
+WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:272]
+WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:273]
+WARNING: [Vivado 12-584] No ports matched 'JTAG1'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:284]
+WARNING: [Vivado 12-584] No ports matched 'JTAG1'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:285]
+WARNING: [Vivado 12-584] No ports matched 'JTAG2'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:288]
+WARNING: [Vivado 12-584] No ports matched 'JTAG2'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:289]
+WARNING: [Vivado 12-584] No ports matched 'JTAG3'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:292]
+WARNING: [Vivado 12-584] No ports matched 'JTAG3'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:293]
+WARNING: [Vivado 12-584] No ports matched 'JTAG4'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:296]
+WARNING: [Vivado 12-584] No ports matched 'JTAG4'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:297]
+WARNING: [Vivado 12-584] No ports matched 'JTAG5'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:300]
+WARNING: [Vivado 12-584] No ports matched 'JTAG5'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:301]
+WARNING: [Vivado 12-584] No ports matched 'JTAG6'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:304]
+WARNING: [Vivado 12-584] No ports matched 'JTAG6'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:305]
+WARNING: [Vivado 12-584] No ports matched 'JTAG7'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:308]
+WARNING: [Vivado 12-584] No ports matched 'JTAG7'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:309]
+WARNING: [Vivado 12-584] No ports matched 'JTAG8'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:312]
+WARNING: [Vivado 12-584] No ports matched 'JTAG8'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:313]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TMS'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:316]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TMS'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:317]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:317]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TDO'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:320]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TDO'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:321]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:321]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TDI'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:324]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TDI'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:325]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:325]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TCK'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:328]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TCK'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:329]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:329]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:385]
+WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:386]
+WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:387]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:388]
+WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:389]
+WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:390]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:391]
+WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:392]
+WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:393]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:394]
+WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:395]
+WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:396]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:399]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:400]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:401]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:402]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:403]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:404]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:405]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:406]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:407]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:408]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:409]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:410]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:411]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:412]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:413]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:414]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:415]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:416]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:417]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[19]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:418]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[20]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:419]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[21]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:420]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[22]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:421]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[23]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:422]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[24]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:423]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[25]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:424]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[26]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:425]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[27]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:426]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[28]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:427]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[29]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:428]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[30]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:429]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[31]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:430]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:431]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:432]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[0]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:434]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[1]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:435]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[2]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:436]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[3]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:437]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[4]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:438]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[5]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:439]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[6]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:440]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[7]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:441]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[8]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:442]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[9]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:443]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[10]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:444]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[11]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:445]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[12]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:446]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[13]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:447]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[14]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:448]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:449]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:450]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[0]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:452]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[1]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:453]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[2]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:454]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:455]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:456]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:458]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:459]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:460]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:460]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:507]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:508]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:511]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:512]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:515]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:516]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:519]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:520]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:523]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:524]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:527]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:528]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:531]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:532]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:539]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:540]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:544]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:547]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:548]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:552]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:555]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:556]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:559]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:560]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:562]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:563]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:566]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:567]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:623]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:624]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:627]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:628]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:651]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:652]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:659]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:660]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:663]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:664]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:667]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:668]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:671]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:672]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:675]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:676]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:679]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:680]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:695]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:696]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:699]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:700]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:707]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:708]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:711]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:712]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:783]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:784]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:787]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:788]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:875]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:876]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:883]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:884]
+Finished Parsing XDC File [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/hamamastu_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hamamastu_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/hamamastu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 872.016 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 872.844 ; gain = 0.000
 Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hamamastu_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/hamamastu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 872.016 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 872.844 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 872.016 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 872.844 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 98 instances were transformed.
   IBUFG => IBUF: 1 instances
@@ -732,17 +726,17 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 8 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 872.016 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 872.016 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 872.844 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 872.844 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 872.016 ; gain = 551.688
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 872.844 ; gain = 551.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 872.016 ; gain = 551.688
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 872.844 ; gain = 551.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -750,7 +744,7 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for ila_sample12. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for hostIF/core0/core0/\a0/cb0 /U0/\inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 872.016 ; gain = 551.688
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 872.844 ; gain = 551.422
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "MASTER_CLK" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ILA_CLK" won't be mapped to RAM because it is too sparse
@@ -839,7 +833,7 @@ INFO: [Synth 8-5546] ROM "State" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'spi_spo'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 872.016 ; gain = 551.688
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 872.844 ; gain = 551.422
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -981,10 +975,10 @@ WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_re
 WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[7]) is unused and will be removed from module okCore.
 WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[8]) is unused and will be removed from module okCore.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led[7] with 1st driver pin 'spi_rw/error_bit_reg/Q' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:64]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led[7] with 2nd driver pin 'spi_rw/led[7]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:19]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led[7] with 1st driver pin 'spi_rw/error_bit_reg/Q' [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led[7] with 2nd driver pin 'spi_rw/led[7]' [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:19]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 872.016 ; gain = 551.688
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 872.844 ; gain = 551.422
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -998,13 +992,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst' to pin 'hostIF/core0/core0/a0/l62a5479e7989ce7f4d5507c695cc69cf_reg/Q'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 872.016 ; gain = 551.688
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 872.844 ; gain = 551.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 879.023 ; gain = 558.695
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 879.375 ; gain = 557.953
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1016,7 +1010,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 880.313 ; gain = 559.984
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 880.141 ; gain = 558.719
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1039,9 +1033,9 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:59]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:59]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 880.313 ; gain = 559.984
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 880.141 ; gain = 558.719
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1054,7 +1048,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 880.313 ; gain = 559.984
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 880.141 ; gain = 558.719
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1066,25 +1060,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 880.313 ; gain = 559.984
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 880.141 ; gain = 558.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 880.313 ; gain = 559.984
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 880.141 ; gain = 558.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 880.313 ; gain = 559.984
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 880.141 ; gain = 558.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 880.313 ; gain = 559.984
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 880.141 ; gain = 558.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1130,17 +1124,17 @@ Report Cell Usage:
 |27    |OBUFT       |    15|
 +------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 880.313 ; gain = 559.984
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 880.141 ; gain = 558.719
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 2 critical warnings and 302 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 880.313 ; gain = 180.125
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 880.313 ; gain = 559.984
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 880.141 ; gain = 179.164
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 880.141 ; gain = 558.719
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 165 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 890.484 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 882.012 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 98 instances were transformed.
   IBUFG => IBUF: 1 instances
@@ -1152,12 +1146,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-249 Infos, 426 Warnings, 78 Critical Warnings and 0 Errors encountered.
+249 Infos, 426 Warnings, 72 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 890.492 ; gain = 571.898
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 890.492 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 882.012 ; gain = 562.320
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 882.012 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/hamamastu.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/synth_1/hamamastu.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file hamamastu_utilization_synth.rpt -pb hamamastu_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 14 17:49:23 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 15 09:50:00 2019...

@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun Apr 14 17:49:23 2019
-| Host         : ECEB-4022-13 running 64-bit major release  (build 9200)
+| Date         : Mon Apr 15 09:50:00 2019
+| Host         : ECEB-4022-12 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file hamamastu_utilization_synth.rpt -pb hamamastu_utilization_synth.pb
 | Design       : hamamastu
 | Device       : 7a200tfbg484-1

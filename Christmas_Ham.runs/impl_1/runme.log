@@ -12,406 +12,400 @@ source hamamastu.tcl -notrace
 Command: link_design -top hamamastu -part xc7a200tfbg484-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'ila_sample12'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'ila_sample12'
 INFO: [Netlist 29-17] Analyzing 552 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2018.3
 INFO: [Device 21-403] Loading part xc7a200tfbg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Chipscope 16-324] Core: ila_sample12 UUID: 9519c717-4c8d-54cd-9dd6-10fccd54d6d8 
-Parsing XDC File [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_sample12/inst'
-Finished Parsing XDC File [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_sample12/inst'
-Parsing XDC File [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_sample12/inst'
-Finished Parsing XDC File [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_sample12/inst'
-Parsing XDC File [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
-INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:96]
-INFO: [Timing 38-2] Deriving generated clocks [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:96]
-get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1333.922 ; gain = 602.828
-WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:101]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:101]
+Parsing XDC File [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_sample12/inst'
+Finished Parsing XDC File [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_sample12/inst'
+Parsing XDC File [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_sample12/inst'
+Finished Parsing XDC File [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_sample12/inst'
+Parsing XDC File [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:96]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:96]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1334.691 ; gain = 602.992
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:101]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:102]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:102]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:103]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:103]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-CRITICAL WARNING: [Common 17-161] Invalid option value '#OUTPUTS' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:107]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:227]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#4' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:231]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#PIXEL' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:235]
-WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:272]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:272]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#OUTPUTS' specified for 'objects'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:107]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:227]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#4' specified for 'objects'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:231]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#PIXEL' specified for 'objects'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:235]
+WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:272]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:272]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:273]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:273]
+WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:273]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:273]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:276]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:280]
-WARNING: [Vivado 12-584] No ports matched 'JTAG1'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:284]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:284]
+WARNING: [Vivado 12-584] No ports matched 'JTAG1'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:284]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:284]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG1'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:285]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:285]
+WARNING: [Vivado 12-584] No ports matched 'JTAG1'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:285]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:285]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG2'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:288]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:288]
+WARNING: [Vivado 12-584] No ports matched 'JTAG2'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:288]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:288]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG2'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:289]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:289]
+WARNING: [Vivado 12-584] No ports matched 'JTAG2'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:289]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:289]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG3'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:292]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:292]
+WARNING: [Vivado 12-584] No ports matched 'JTAG3'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:292]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:292]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG3'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:293]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:293]
+WARNING: [Vivado 12-584] No ports matched 'JTAG3'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:293]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:293]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG4'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:296]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:296]
+WARNING: [Vivado 12-584] No ports matched 'JTAG4'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:296]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:296]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG4'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:297]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:297]
+WARNING: [Vivado 12-584] No ports matched 'JTAG4'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:297]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:297]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG5'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:300]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:300]
+WARNING: [Vivado 12-584] No ports matched 'JTAG5'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:300]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:300]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG5'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:301]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:301]
+WARNING: [Vivado 12-584] No ports matched 'JTAG5'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:301]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:301]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG6'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:304]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:304]
+WARNING: [Vivado 12-584] No ports matched 'JTAG6'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:304]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:304]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG6'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:305]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:305]
+WARNING: [Vivado 12-584] No ports matched 'JTAG6'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:305]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:305]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG7'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:308]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:308]
+WARNING: [Vivado 12-584] No ports matched 'JTAG7'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:308]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:308]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG7'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:309]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:309]
+WARNING: [Vivado 12-584] No ports matched 'JTAG7'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:309]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:309]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG8'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:312]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:312]
+WARNING: [Vivado 12-584] No ports matched 'JTAG8'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:312]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:312]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG8'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:313]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:313]
+WARNING: [Vivado 12-584] No ports matched 'JTAG8'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:313]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:313]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TMS'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:316]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:316]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TMS'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:316]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:316]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TMS'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:317]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:317]
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TDO'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:320]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:320]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TMS'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:317]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:317]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TDO'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:320]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:320]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TDO'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:321]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:321]
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TDI'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:324]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:324]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TDO'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:321]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:321]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TDI'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:324]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:324]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TDI'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:325]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:325]
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TCK'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:328]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:328]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TDI'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:325]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:325]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TCK'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:328]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:328]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JTAG_TCK'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:329]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:329]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#SPI' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:333]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:353]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#MASTER' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:362]
-CRITICAL WARNING: [Common 17-161] Invalid option value '#MASTER' specified for 'objects'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:366]
-WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:381]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:381]
+WARNING: [Vivado 12-584] No ports matched 'JTAG_TCK'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:329]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:329]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:385]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:385]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:382]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:382]
+WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:386]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:386]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:383]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:383]
+WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:387]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:387]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:384]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:384]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:388]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:388]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:385]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:385]
+WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:389]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:389]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:386]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:386]
+WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:390]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:390]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:387]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:387]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:391]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:391]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:388]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:388]
+WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:392]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:392]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:389]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:389]
+WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:393]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:393]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:390]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:390]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:394]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:394]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:391]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:391]
+WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:395]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:395]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:392]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:392]
+WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:396]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:396]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:395]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:395]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:399]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:399]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:396]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:396]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:400]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:400]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:397]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:397]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:401]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:401]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:398]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:398]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:402]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:402]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:399]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:399]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:403]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:403]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:400]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:400]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:404]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:404]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:401]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:401]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:405]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:405]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:402]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:402]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:406]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:406]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:403]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:403]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:407]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:407]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:404]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:404]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:408]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:408]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:405]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:405]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:409]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:409]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:406]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:406]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:410]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:410]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:407]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:407]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:411]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:411]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:408]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:408]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:412]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:412]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:409]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:409]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:413]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:413]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:410]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:410]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:414]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:414]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:411]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:411]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:415]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:415]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:412]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:412]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:416]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:416]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:413]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:413]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:417]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:417]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[19]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:414]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:414]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[19]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:418]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:418]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[20]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:415]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:415]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[20]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:419]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:419]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[21]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:416]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:416]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[21]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:420]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:420]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[22]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:417]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:417]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[22]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:421]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:421]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[23]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:418]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:418]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[23]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:422]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:422]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[24]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:419]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:419]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[24]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:423]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:423]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[25]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:420]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:420]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[25]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:424]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:424]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[26]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:421]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:421]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[26]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:425]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:425]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[27]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:422]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:422]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[27]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:426]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:426]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[28]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:423]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:423]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[28]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:427]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:427]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[29]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:424]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:424]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[29]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:428]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:428]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[30]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:425]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:425]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[30]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:429]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:429]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[31]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:426]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:426]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[31]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:430]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:430]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:427]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:427]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:431]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:431]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:428]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:428]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:432]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:432]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[0]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:430]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:430]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[0]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:434]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:434]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[1]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:431]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:431]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[1]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:435]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:435]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[2]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:432]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:432]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[2]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:436]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:436]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[3]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:433]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:433]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[3]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:437]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:437]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[4]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:434]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:434]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[4]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:438]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:438]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[5]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:435]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:435]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[5]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:439]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:439]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[6]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:436]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:436]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[6]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:440]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:440]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[7]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:437]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:437]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[7]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:441]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:441]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[8]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:438]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:438]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[8]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:442]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:442]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[9]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:439]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:439]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[9]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:443]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:443]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[10]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:440]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:440]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[10]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:444]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:444]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[11]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:441]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:441]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[11]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:445]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:445]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[12]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:442]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:442]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[12]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:446]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:446]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[13]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:443]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:443]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[13]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:447]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:447]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[14]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:444]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:444]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[14]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:448]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:448]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:445]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:445]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:449]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:449]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:446]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:446]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:450]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:450]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[0]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:448]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:448]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[0]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:452]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:452]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[1]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:449]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:449]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[1]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:453]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:453]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[2]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:450]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:450]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[2]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:454]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:454]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:451]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:451]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:455]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:455]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:452]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:452]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:456]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:456]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:454]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:454]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:458]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:458]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:455]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:455]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:459]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:459]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:456]
-INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:456]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:456]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:460]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:460]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:460]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:458]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:462]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:459]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:463]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:460]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:464]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:462]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:466]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:462]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:502]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:503]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:506]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:507]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:510]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:511]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:514]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:515]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:518]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:519]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:522]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:523]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:526]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:527]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:534]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:535]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:539]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:542]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:543]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:547]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:550]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:551]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:554]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:555]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:557]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:558]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:561]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:562]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:618]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:619]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:622]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:623]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:646]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:647]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:654]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:655]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:658]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:659]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:662]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:663]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:666]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:667]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:670]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:671]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:674]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:675]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:690]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:691]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:694]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:695]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:702]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:703]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:706]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:707]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:778]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:779]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:782]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:783]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:870]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:871]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:878]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:879]
-Finished Parsing XDC File [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:466]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:507]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:508]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:511]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:512]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:515]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:516]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:519]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:520]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:523]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:524]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:527]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:528]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:531]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:532]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:539]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:540]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:544]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:547]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:548]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:552]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:555]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:556]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:559]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:560]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:562]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:563]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:566]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:567]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:623]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:624]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:627]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:628]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:651]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:652]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:659]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:660]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:663]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:664]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:667]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:668]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:671]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:672]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:675]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:676]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:679]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:680]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:695]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:696]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:699]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:700]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:707]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:708]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:711]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:712]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:783]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:784]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:787]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:788]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:875]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:876]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:883]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:884]
+Finished Parsing XDC File [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
 Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1334.219 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1335.137 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 291 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 164 instances
@@ -421,9 +415,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
 
-13 Infos, 102 Warnings, 176 Critical Warnings and 0 Errors encountered.
+13 Infos, 102 Warnings, 170 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1334.219 ; gain = 1013.922
+link_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1335.137 ; gain = 1015.313
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
@@ -434,15 +428,15 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.728 . Memory (MB): peak = 1334.219 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.728 . Memory (MB): peak = 1335.137 ; gain = 0.000
 
 Starting Cache Timing Information Task
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 21132e7bd
+Ending Cache Timing Information Task | Checksum: 1bd6ab9d7
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.302 . Memory (MB): peak = 1345.066 ; gain = 10.848
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.305 . Memory (MB): peak = 1345.617 ; gain = 10.480
 
 Starting Logic Optimization Task
 
@@ -450,52 +444,52 @@ Phase 1 Generate And Synthesize Debug Cores
 INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
 INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
 INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "9737a01f08907ad5".
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-10720-ECEB-4022-13/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-5008-ECEB-4022-12/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:10]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 CRITICAL WARNING: [Common 17-1548] Command failed: can't read "wr_clk_period": no such variable
- [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-10720-ECEB-4022-13/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:12]
+ [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-5008-ECEB-4022-12/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:12]
 CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value": no such variable
- [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-10720-ECEB-4022-13/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-10720-ECEB-4022-13/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:19]
+ [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-5008-ECEB-4022-12/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-5008-ECEB-4022-12/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:19]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value": no such variable
- [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-10720-ECEB-4022-13/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-10720-ECEB-4022-13/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:24]
+ [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-5008-ECEB-4022-12/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-5008-ECEB-4022-12/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:24]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 CRITICAL WARNING: [Common 17-1548] Command failed: can't read "rd_clk_period_2": no such variable
- [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-10720-ECEB-4022-13/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-10720-ECEB-4022-13/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:32]
+ [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-5008-ECEB-4022-12/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-5008-ECEB-4022-12/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:32]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value_2": no such variable
- [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-10720-ECEB-4022-13/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:33]
+ [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-5008-ECEB-4022-12/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:33]
 CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value_2": no such variable
- [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-10720-ECEB-4022-13/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:36]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1450.941 ; gain = 0.000
-Phase 1 Generate And Synthesize Debug Cores | Checksum: 1e4546b5f
+ [c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/.Xil/Vivado-5008-ECEB-4022-12/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:36]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1449.234 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 1908c3d79
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1450.941 ; gain = 14.734
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1449.234 ; gain = 14.871
 
 Phase 2 Retarget
 INFO: [Opt 31-138] Pushed 2 inverter(s) to 45 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 2 Retarget | Checksum: 1d3d0588b
+Phase 2 Retarget | Checksum: 180082aa5
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1450.941 ; gain = 14.734
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1449.234 ; gain = 14.871
 INFO: [Opt 31-389] Phase Retarget created 74 cells and removed 88 cells
 INFO: [Opt 31-1021] In phase Retarget, 233 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 3 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 3 Constant propagation | Checksum: 202bdb5e8
+Phase 3 Constant propagation | Checksum: 1aef58802
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1450.941 ; gain = 14.734
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1449.234 ; gain = 14.871
 INFO: [Opt 31-389] Phase Constant propagation created 13 cells and removed 176 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 208 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 Sweep
-Phase 4 Sweep | Checksum: 2308a2691
+Phase 4 Sweep | Checksum: 1dcc1f8ab
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1450.941 ; gain = 14.734
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1449.234 ; gain = 14.871
 INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 133 cells
 INFO: [Opt 31-1021] In phase Sweep, 961 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
@@ -503,21 +497,21 @@ Phase 5 BUFG optimization
 INFO: [Opt 31-194] Inserted BUFG hostIF/mmcm0_clk0_BUFG_inst to drive 0 load(s) on clock net hostIF/mmcm0_clk0_BUFG
 INFO: [Opt 31-194] Inserted BUFG clock/ILA_CLK_BUFG_inst to drive 3683 load(s) on clock net ILA_CLK
 INFO: [Opt 31-193] Inserted 2 BUFG(s) on clock nets
-Phase 5 BUFG optimization | Checksum: 1bff3ab8a
+Phase 5 BUFG optimization | Checksum: 16c2b7da4
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1450.941 ; gain = 14.734
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1449.234 ; gain = 14.871
 INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
 
 Phase 6 Shift Register Optimization
-Phase 6 Shift Register Optimization | Checksum: 1c789eb7a
+Phase 6 Shift Register Optimization | Checksum: 173c1bd94
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1450.941 ; gain = 14.734
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1449.234 ; gain = 14.871
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 7 Post Processing Netlist
-Phase 7 Post Processing Netlist | Checksum: 1f24a3ace
+Phase 7 Post Processing Netlist | Checksum: 19e820ce8
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1450.941 ; gain = 14.734
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1449.234 ; gain = 14.871
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 100 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 Opt_design Change Summary
@@ -539,15 +533,15 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1450.941 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 1eed69036
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1449.234 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 19b0e6250
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1450.941 ; gain = 14.734
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1449.234 ; gain = 14.871
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
@@ -564,51 +558,51 @@ INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
 Number of BRAM Ports augmented: 2 newly gated: 1 Total Ports: 8
 Number of Flops added for Enable Generation: 3
 
-Ending PowerOpt Patch Enables Task | Checksum: 1e872e4e5
+Ending PowerOpt Patch Enables Task | Checksum: 194aab6ff
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1703.105 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 1e872e4e5
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1704.512 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 194aab6ff
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1703.105 ; gain = 252.164
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1704.512 ; gain = 255.277
 
 Starting Final Cleanup Task
 
 Starting Logic Optimization Task
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Opt 31-194] Inserted BUFG hostIF/mmcm0_clk0_BUFG_inst to drive 0 load(s) on clock net hostIF/mmcm0_clk0_BUFG
 INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
-Ending Logic Optimization Task | Checksum: 1b524531d
+Ending Logic Optimization Task | Checksum: 1615c2537
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.727 . Memory (MB): peak = 1703.105 ; gain = 0.000
-Ending Final Cleanup Task | Checksum: 1b524531d
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.727 . Memory (MB): peak = 1704.512 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 1615c2537
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1703.105 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 1b524531d
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1704.512 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1615c2537
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1704.512 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-54 Infos, 112 Warnings, 186 Critical Warnings and 0 Errors encountered.
+54 Infos, 112 Warnings, 180 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1703.105 ; gain = 368.887
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1703.105 ; gain = 0.000
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1704.512 ; gain = 369.375
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1704.512 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1703.105 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1703.105 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu_opt.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1704.512 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1704.512 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file hamamastu_drc_opted.rpt -pb hamamastu_drc_opted.pb -rpx hamamastu_drc_opted.rpx
 Command: report_drc -file hamamastu_drc_opted.rpt -pb hamamastu_drc_opted.pb -rpx hamamastu_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu_drc_opted.rpt.
 report_drc completed successfully
 INFO: [Chipscope 16-240] Debug cores have already been implemented
 Command: place_design
@@ -670,40 +664,40 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1703.105 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1adaf8441
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1704.512 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 159e7565b
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1703.105 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1704.512 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus LVDS_OUT_A are not locked:  'LVDS_OUT_A[0]' 
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: a8926228
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: b01e0269
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 11d7cfda2
+Phase 1.3 Build Placer Netlist Model | Checksum: 15a0d5386
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 11d7cfda2
+Phase 1.4 Constrain Clocks/Macros | Checksum: 15a0d5386
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1703.105 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 11d7cfda2
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1704.512 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 15a0d5386
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: d39ea9dd
+Phase 2.1 Floorplanning | Checksum: 157712ad4
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 2.2 Physical Synthesis In Placer
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
@@ -717,7 +711,7 @@ INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found i
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for HD net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -735,125 +729,125 @@ Summary of Physical Synthesis Optimizations
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.2 Physical Synthesis In Placer | Checksum: 17987648a
+Phase 2.2 Physical Synthesis In Placer | Checksum: 13f47df9e
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1703.105 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 1fe89d842
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1704.512 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1762111a5
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1fe89d842
+Phase 3.1 Commit Multi Column Macros | Checksum: 1762111a5
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1f1cbbbba
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 18378a7fb
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 17179bb73
+Phase 3.3 Area Swap Optimization | Checksum: 1f77fe88a
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 1ea6dc402
+Phase 3.4 Pipeline Register Optimization | Checksum: 1705be019
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 19c721ce3
+Phase 3.5 Fast Optimization | Checksum: 229c1baff
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 1a178126a
+Phase 3.6 Small Shape Detail Placement | Checksum: 1cdd1ca74
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 1ecf0a3da
+Phase 3.7 Re-assign LUT pins | Checksum: 1687cbf43
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 265849b4b
+Phase 3.8 Pipeline Register Optimization | Checksum: e100c7b2
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: 17399fe38
+Phase 3.9 Fast Optimization | Checksum: ed5d38d5
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1703.105 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 17399fe38
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1704.512 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: ed5d38d5
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 Post Commit Optimization
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 2a8860d18
+Post Placement Optimization Initialization | Checksum: 1a4a92fb9
 
 Phase 4.1.1.1 BUFG Insertion
 INFO: [Place 46-46] BUFG insertion identified 0 candidate nets, 0 success, 0 bufg driver replicated, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
-Phase 4.1.1.1 BUFG Insertion | Checksum: 2a8860d18
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1a4a92fb9
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1704.512 ; gain = 0.000
 INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.441. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 27d5e8502
+Phase 4.1.1 Post Placement Optimization | Checksum: 1bb3e97ab
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1703.105 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 27d5e8502
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1704.512 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1bb3e97ab
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 27d5e8502
+Phase 4.2 Post Placement Cleanup | Checksum: 1bb3e97ab
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 27d5e8502
+Phase 4.3 Placer Reporting | Checksum: 1bb3e97ab
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1704.512 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1703.105 ; gain = 0.000
-Phase 4.4 Final Placement Cleanup | Checksum: 203088ff7
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1704.512 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 140e8a2a0
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1703.105 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 203088ff7
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1704.512 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 140e8a2a0
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1703.105 ; gain = 0.000
-Ending Placer Task | Checksum: 130a422ef
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1704.512 ; gain = 0.000
+Ending Placer Task | Checksum: 8da5dbf3
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1704.512 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-85 Infos, 159 Warnings, 186 Critical Warnings and 0 Errors encountered.
+85 Infos, 159 Warnings, 180 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 1703.105 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1703.105 ; gain = 0.000
+place_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1704.512 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1704.512 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1703.105 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1704.512 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.650 . Memory (MB): peak = 1703.105 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu_placed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.647 . Memory (MB): peak = 1704.512 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file hamamastu_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1703.105 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1704.512 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file hamamastu_utilization_placed.rpt -pb hamamastu_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file hamamastu_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1703.105 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1704.512 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
@@ -866,110 +860,111 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: e0748ad3 ConstDB: 0 ShapeSum: 502f981c RouteDB: 0
+Checksum: PlaceDB: 3d7643d7 ConstDB: 0 ShapeSum: 502f981c RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 14890f8af
+Phase 1 Build RT Design | Checksum: edf34b43
 
-Time (s): cpu = 00:01:05 ; elapsed = 00:00:57 . Memory (MB): peak = 1711.895 ; gain = 8.789
-Post Restoration Checksum: NetGraph: 853fcaec NumContArr: c3512dc3 Constraints: 0 Timing: 0
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1717.938 ; gain = 13.426
+Post Restoration Checksum: NetGraph: 59ecc37c NumContArr: 940687c7 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 14890f8af
+Phase 2.1 Create Timer | Checksum: edf34b43
 
-Time (s): cpu = 00:01:05 ; elapsed = 00:00:57 . Memory (MB): peak = 1741.797 ; gain = 38.691
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1747.844 ; gain = 43.332
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 14890f8af
+Phase 2.2 Fix Topology Constraints | Checksum: edf34b43
 
-Time (s): cpu = 00:01:06 ; elapsed = 00:00:57 . Memory (MB): peak = 1750.543 ; gain = 47.438
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1756.852 ; gain = 52.340
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 14890f8af
+Phase 2.3 Pre Route Cleanup | Checksum: edf34b43
 
-Time (s): cpu = 00:01:06 ; elapsed = 00:00:57 . Memory (MB): peak = 1750.543 ; gain = 47.438
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1756.852 ; gain = 52.340
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 292f83610
+Phase 2.4 Update Timing | Checksum: 183ecc258
 
-Time (s): cpu = 00:01:09 ; elapsed = 00:01:00 . Memory (MB): peak = 1804.734 ; gain = 101.629
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.041  | TNS=0.000  | WHS=-0.242 | THS=-47.725|
+Time (s): cpu = 00:01:09 ; elapsed = 00:01:00 . Memory (MB): peak = 1805.527 ; gain = 101.016
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.041  | TNS=0.000  | WHS=-0.248 | THS=-47.787|
 
-Phase 2 Router Initialization | Checksum: 1e73ec2e0
+Phase 2 Router Initialization | Checksum: 1850b6a22
 
-Time (s): cpu = 00:01:10 ; elapsed = 00:01:00 . Memory (MB): peak = 1804.734 ; gain = 101.629
+Time (s): cpu = 00:01:10 ; elapsed = 00:01:01 . Memory (MB): peak = 1805.527 ; gain = 101.016
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 1ceb8d5a1
+Phase 3 Initial Routing | Checksum: 1de8ccae5
 
-Time (s): cpu = 00:01:11 ; elapsed = 00:01:01 . Memory (MB): peak = 1804.734 ; gain = 101.629
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:02 . Memory (MB): peak = 1805.527 ; gain = 101.016
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 618
- Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 599
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 4
  Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.041  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 224e5480b
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:04 . Memory (MB): peak = 1805.527 ; gain = 101.016
+
+Phase 4.2 Global Iteration 1
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.041  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 26c7d8a41
+Phase 4.2 Global Iteration 1 | Checksum: 23260dbfe
 
-Time (s): cpu = 00:01:14 ; elapsed = 00:01:03 . Memory (MB): peak = 1804.734 ; gain = 101.629
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:04 . Memory (MB): peak = 1805.527 ; gain = 101.016
+Phase 4 Rip-up And Reroute | Checksum: 23260dbfe
 
-Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.041  | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-Phase 4.2 Global Iteration 1 | Checksum: f58cd201
-
-Time (s): cpu = 00:01:14 ; elapsed = 00:01:04 . Memory (MB): peak = 1804.734 ; gain = 101.629
-Phase 4 Rip-up And Reroute | Checksum: f58cd201
-
-Time (s): cpu = 00:01:14 ; elapsed = 00:01:04 . Memory (MB): peak = 1804.734 ; gain = 101.629
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:04 . Memory (MB): peak = 1805.527 ; gain = 101.016
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: f58cd201
+Phase 5.1 Delay CleanUp | Checksum: 23260dbfe
 
-Time (s): cpu = 00:01:14 ; elapsed = 00:01:04 . Memory (MB): peak = 1804.734 ; gain = 101.629
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:04 . Memory (MB): peak = 1805.527 ; gain = 101.016
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: f58cd201
+Phase 5.2 Clock Skew Optimization | Checksum: 23260dbfe
 
-Time (s): cpu = 00:01:14 ; elapsed = 00:01:04 . Memory (MB): peak = 1804.734 ; gain = 101.629
-Phase 5 Delay and Skew Optimization | Checksum: f58cd201
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:04 . Memory (MB): peak = 1805.527 ; gain = 101.016
+Phase 5 Delay and Skew Optimization | Checksum: 23260dbfe
 
-Time (s): cpu = 00:01:14 ; elapsed = 00:01:04 . Memory (MB): peak = 1804.734 ; gain = 101.629
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:04 . Memory (MB): peak = 1805.527 ; gain = 101.016
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 1d13a9c54
+Phase 6.1.1 Update Timing | Checksum: 202fc266e
 
-Time (s): cpu = 00:01:15 ; elapsed = 00:01:04 . Memory (MB): peak = 1804.734 ; gain = 101.629
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.041  | TNS=0.000  | WHS=0.056  | THS=0.000  |
+Time (s): cpu = 00:01:16 ; elapsed = 00:01:04 . Memory (MB): peak = 1805.527 ; gain = 101.016
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.041  | TNS=0.000  | WHS=0.055  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 1d13a9c54
+Phase 6.1 Hold Fix Iter | Checksum: 202fc266e
 
-Time (s): cpu = 00:01:15 ; elapsed = 00:01:04 . Memory (MB): peak = 1804.734 ; gain = 101.629
-Phase 6 Post Hold Fix | Checksum: 1d13a9c54
+Time (s): cpu = 00:01:16 ; elapsed = 00:01:04 . Memory (MB): peak = 1805.527 ; gain = 101.016
+Phase 6 Post Hold Fix | Checksum: 202fc266e
 
-Time (s): cpu = 00:01:15 ; elapsed = 00:01:04 . Memory (MB): peak = 1804.734 ; gain = 101.629
+Time (s): cpu = 00:01:16 ; elapsed = 00:01:05 . Memory (MB): peak = 1805.527 ; gain = 101.016
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.348234 %
-  Global Horizontal Routing Utilization  = 0.466986 %
+  Global Vertical Routing Utilization    = 0.340541 %
+  Global Horizontal Routing Utilization  = 0.461897 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -978,71 +973,71 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 108429c68
+Phase 7 Route finalize | Checksum: 22dbea051
 
-Time (s): cpu = 00:01:15 ; elapsed = 00:01:04 . Memory (MB): peak = 1804.734 ; gain = 101.629
+Time (s): cpu = 00:01:16 ; elapsed = 00:01:05 . Memory (MB): peak = 1805.527 ; gain = 101.016
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 108429c68
+Phase 8 Verifying routed nets | Checksum: 22dbea051
 
-Time (s): cpu = 00:01:15 ; elapsed = 00:01:04 . Memory (MB): peak = 1804.734 ; gain = 101.629
+Time (s): cpu = 00:01:16 ; elapsed = 00:01:05 . Memory (MB): peak = 1805.527 ; gain = 101.016
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 17fad3eba
+Phase 9 Depositing Routes | Checksum: 21ae835c9
 
-Time (s): cpu = 00:01:15 ; elapsed = 00:01:05 . Memory (MB): peak = 1804.734 ; gain = 101.629
+Time (s): cpu = 00:01:16 ; elapsed = 00:01:05 . Memory (MB): peak = 1805.527 ; gain = 101.016
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.041  | TNS=0.000  | WHS=0.056  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.041  | TNS=0.000  | WHS=0.055  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 17fad3eba
+Phase 10 Post Router Timing | Checksum: 21ae835c9
 
-Time (s): cpu = 00:01:15 ; elapsed = 00:01:05 . Memory (MB): peak = 1804.734 ; gain = 101.629
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:05 . Memory (MB): peak = 1805.527 ; gain = 101.016
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:01:15 ; elapsed = 00:01:05 . Memory (MB): peak = 1804.734 ; gain = 101.629
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:05 . Memory (MB): peak = 1805.527 ; gain = 101.016
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-103 Infos, 160 Warnings, 186 Critical Warnings and 0 Errors encountered.
+103 Infos, 160 Warnings, 180 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:06 . Memory (MB): peak = 1804.734 ; gain = 101.629
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1804.734 ; gain = 0.000
+route_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:07 . Memory (MB): peak = 1805.527 ; gain = 101.016
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1805.527 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1804.734 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1805.527 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.803 . Memory (MB): peak = 1804.734 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu_routed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.845 . Memory (MB): peak = 1805.527 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu_routed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file hamamastu_drc_routed.rpt -pb hamamastu_drc_routed.pb -rpx hamamastu_drc_routed.rpx
 Command: report_drc -file hamamastu_drc_routed.rpt -pb hamamastu_drc_routed.pb -rpx hamamastu_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu_drc_routed.rpt.
 report_drc completed successfully
 INFO: [runtcl-4] Executing : report_methodology -file hamamastu_methodology_drc_routed.rpt -pb hamamastu_methodology_drc_routed.pb -rpx hamamastu_methodology_drc_routed.rpx
 Command: report_methodology -file hamamastu_methodology_drc_routed.rpt -pb hamamastu_methodology_drc_routed.pb -rpx hamamastu_methodology_drc_routed.rpx
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu_methodology_drc_routed.rpt.
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu_methodology_drc_routed.rpt.
 report_methodology completed successfully
 INFO: [runtcl-4] Executing : report_power -file hamamastu_power_routed.rpt -pb hamamastu_power_summary_routed.pb -rpx hamamastu_power_routed.rpx
 Command: report_power -file hamamastu_power_routed.rpt -pb hamamastu_power_summary_routed.pb -rpx hamamastu_power_routed.rpx
 INFO: [Power 33-23] Power model is not available for a0/d0/dna0
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-116 Infos, 164 Warnings, 186 Critical Warnings and 0 Errors encountered.
+116 Infos, 164 Warnings, 180 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file hamamastu_route_status.rpt -pb hamamastu_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file hamamastu_timing_summary_routed.rpt -pb hamamastu_timing_summary_routed.pb -rpx hamamastu_timing_summary_routed.rpx -warn_on_violation 
@@ -1060,8 +1055,6 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 Running DRC as a precondition to command write_bitstream
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-ERROR: [DRC NSTD-1] Unspecified I/O Standard: 1 out of 65 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: SPI_MOSI.
-ERROR: [DRC UCIO-1] Unconstrained Logical Port: 7 out of 65 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: M_CLOCK, M_START, N15_EN, N2_EN, SPI_MISO, SPI_MOSI, and SPI_RESET.
 WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer hostIF/iob_regs[16].iobf0/IBUF has no loads. It is recommended to have an input buffer drive an internal load.
 WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer hostIF/iob_regs[17].iobf0/IBUF has no loads. It is recommended to have an input buffer drive an internal load.
 WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer hostIF/iob_regs[18].iobf0/IBUF has no loads. It is recommended to have an input buffer drive an internal load.
@@ -1121,12 +1114,21 @@ WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/c
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[2] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_19_out) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[3] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_19_out) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC RTSTAT-10] No routable loads: 38 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], data_input_cpy[17], data_input_cpy[18], data_input_cpy[19], data_input_cpy[20], data_input_cpy[21], data_input_cpy[22], data_input_cpy[23], data_input_cpy[24], data_input_cpy[25], data_input_cpy[26], data_input_cpy[27]... and (the first 15 of 36 listed).
-INFO: [Vivado 12-3199] DRC finished with 2 Errors, 59 Warnings
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 59 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
-ERROR: [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 63559008 bits.
+Writing bitstream ./hamamastu.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-132 Infos, 223 Warnings, 186 Critical Warnings and 3 Errors encountered.
-write_bitstream failed
-ERROR: [Common 17-39] 'write_bitstream' failed due to earlier errors.
-
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 14 17:51:58 2019...
+135 Infos, 223 Warnings, 180 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 2317.359 ; gain = 499.930
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 15 09:52:56 2019...

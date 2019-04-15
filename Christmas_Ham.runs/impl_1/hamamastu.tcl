@@ -68,14 +68,14 @@ set rc [catch {
   create_project -in_memory -part xc7a200tfbg484-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.cache/wt [current_project]
-  set_property parent.project_path C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.xpr [current_project]
-  set_property ip_output_repo C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.cache/wt [current_project]
+  set_property parent.project_path C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.xpr [current_project]
+  set_property ip_output_repo C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/hamamastu.dcp
-  read_ip -quiet c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci
-  read_xdc C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc
+  add_files -quiet C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/synth_1/hamamastu.dcp
+  read_ip -quiet C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0.xci
+  read_xdc C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc
   link_design -top hamamastu -part xc7a200tfbg484-1
   close_msg_db -file init_design.pb
 } RESULT]
