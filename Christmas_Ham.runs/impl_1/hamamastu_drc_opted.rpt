@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Apr 15 10:07:58 2019
-| Host         : ECEB-4022-12 running 64-bit major release  (build 9200)
+| Date         : Mon Apr 15 16:26:32 2019
+| Host         : ECEB-4022-14 running 64-bit major release  (build 9200)
 | Command      : report_drc -file hamamastu_drc_opted.rpt -pb hamamastu_drc_opted.pb -rpx hamamastu_drc_opted.rpx
 | Design       : hamamastu
 | Device       : xc7a200tfbg484-1
@@ -24,16 +24,15 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 59
-+-----------+----------+------------------------------------------------+------------+
-| Rule      | Severity | Description                                    | Violations |
-+-----------+----------+------------------------------------------------+------------+
-| BUFC-1    | Warning  | Input Buffer Connections                       | 16         |
-| CHECK-3   | Warning  | Report rule limit reached                      | 2          |
-| PLIO-3    | Warning  | Placement Constraints Check for IO constraints | 1          |
-| REQP-1839 | Warning  | RAMB36 async control check                     | 20         |
-| REQP-1840 | Warning  | RAMB18 async control check                     | 20         |
-+-----------+----------+------------------------------------------------+------------+
+             Violations found: 58
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| BUFC-1    | Warning  | Input Buffer Connections   | 16         |
+| CHECK-3   | Warning  | Report rule limit reached  | 2          |
+| REQP-1839 | Warning  | RAMB36 async control check | 20         |
+| REQP-1840 | Warning  | RAMB18 async control check | 20         |
++-----------+----------+----------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -125,11 +124,6 @@ Related violations: <none>
 CHECK-3#2 Warning
 Report rule limit reached  
 REQP-1840 rule limit reached: 20 violations have been found.
-Related violations: <none>
-
-PLIO-3#1 Warning
-Placement Constraints Check for IO constraints  
-Partially locked IO Bus is found. Following components of the IO Bus LVDS_OUT_A[2:0] are not locked:  LVDS_OUT_A[0]
 Related violations: <none>
 
 REQP-1839#1 Warning

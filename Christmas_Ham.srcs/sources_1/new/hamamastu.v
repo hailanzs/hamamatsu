@@ -101,7 +101,13 @@ module hamamastu(
     // assigning statements
     assign VDD_A_EN = 1'b1;                         // set up regulators VDD(D) and VDD(A)
     assign VDD_D_EN = 1'b1;
-    assign TrigerEvent = 1'b1;
+    
+    reg [27:0] counter;
+    assign TrigerEvent = counter[27];
+    
+    always @(*) begin
+        counter <= counter + 1'b1;
+    end
 
 /* INSTANTIATING MODULES */
 
@@ -172,7 +178,7 @@ module hamamastu(
         .clk(ILA_CLK),
         .probe0({SPI_CS, data_output, data_input, SPI_MISO, SPI_MOSI, SPI_RESET, State_copy, SPI_CLK}),                             
         .probe1({SPI_gen_CLK, TrigerEvent})
-    );                        
+    );
 
     // select io for lvds lines instantitation
 /*    selectio_wiz_0 lvds_input ( 

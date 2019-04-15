@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Apr 15 10:09:27 2019
-| Host         : ECEB-4022-12 running 64-bit major release  (build 9200)
+| Date         : Mon Apr 15 16:28:04 2019
+| Host         : ECEB-4022-14 running 64-bit major release  (build 9200)
 | Command      : report_drc -file hamamastu_drc_routed.rpt -pb hamamastu_drc_routed.pb -rpx hamamastu_drc_routed.rpx
 | Design       : hamamastu
 | Device       : xc7a200tfbg484-1
@@ -24,17 +24,16 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 60
-+-----------+----------+------------------------------------------------+------------+
-| Rule      | Severity | Description                                    | Violations |
-+-----------+----------+------------------------------------------------+------------+
-| BUFC-1    | Warning  | Input Buffer Connections                       | 16         |
-| CHECK-3   | Warning  | Report rule limit reached                      | 2          |
-| PLIO-3    | Warning  | Placement Constraints Check for IO constraints | 1          |
-| REQP-1839 | Warning  | RAMB36 async control check                     | 20         |
-| REQP-1840 | Warning  | RAMB18 async control check                     | 20         |
-| RTSTAT-10 | Warning  | No routable loads                              | 1          |
-+-----------+----------+------------------------------------------------+------------+
+             Violations found: 59
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| BUFC-1    | Warning  | Input Buffer Connections   | 16         |
+| CHECK-3   | Warning  | Report rule limit reached  | 2          |
+| REQP-1839 | Warning  | RAMB36 async control check | 20         |
+| REQP-1840 | Warning  | RAMB18 async control check | 20         |
+| RTSTAT-10 | Warning  | No routable loads          | 1          |
++-----------+----------+----------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -126,11 +125,6 @@ Related violations: <none>
 CHECK-3#2 Warning
 Report rule limit reached  
 REQP-1840 rule limit reached: 20 violations have been found.
-Related violations: <none>
-
-PLIO-3#1 Warning
-Placement Constraints Check for IO constraints  
-Partially locked IO Bus is found. Following components of the IO Bus LVDS_OUT_A[2:0] are not locked:  LVDS_OUT_A[0]
 Related violations: <none>
 
 REQP-1839#1 Warning
@@ -335,7 +329,7 @@ Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-38 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], data_input_cpy[17], data_input_cpy[18], data_input_cpy[19], data_input_cpy[20], data_input_cpy[21], data_input_cpy[22], data_input_cpy[23], data_input_cpy[24], data_input_cpy[25], data_input_cpy[26], data_input_cpy[27] (the first 15 of 36 listed).
+38 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], data_input[17], data_input[18], data_input[19], data_input[20], data_input[21], data_input[22], data_input[23], data_input[24], data_input[25], data_input[26], data_input[27] (the first 15 of 36 listed).
 Related violations: <none>
 
 

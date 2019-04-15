@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Apr 15 10:07:01 2019
-| Host         : ECEB-4022-12 running 64-bit major release  (build 9200)
+| Date         : Mon Apr 15 16:25:35 2019
+| Host         : ECEB-4022-14 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file hamamastu_utilization_synth.rpt -pb hamamastu_utilization_synth.pb
 | Design       : hamamastu
 | Device       : 7a200tfbg484-1
@@ -159,7 +159,7 @@ Table of Contents
 | LUT5       |  173 |                 LUT |
 | FDCE       |  158 |        Flop & Latch |
 | LUT1       |   94 |                 LUT |
-| CARRY4     |   64 |          CarryLogic |
+| CARRY4     |   71 |          CarryLogic |
 | LUT3       |   61 |                 LUT |
 | LUT2       |   56 |                 LUT |
 | OBUFT      |   48 |                  IO |
