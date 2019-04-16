@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Apr 15 16:26:32 2019
+| Date         : Tue Apr 16 11:25:51 2019
 | Host         : ECEB-4022-14 running 64-bit major release  (build 9200)
 | Command      : report_drc -file hamamastu_drc_opted.rpt -pb hamamastu_drc_opted.pb -rpx hamamastu_drc_opted.rpx
 | Design       : hamamastu
@@ -24,11 +24,10 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 58
+             Violations found: 42
 +-----------+----------+----------------------------+------------+
 | Rule      | Severity | Description                | Violations |
 +-----------+----------+----------------------------+------------+
-| BUFC-1    | Warning  | Input Buffer Connections   | 16         |
 | CHECK-3   | Warning  | Report rule limit reached  | 2          |
 | REQP-1839 | Warning  | RAMB36 async control check | 20         |
 | REQP-1840 | Warning  | RAMB18 async control check | 20         |
@@ -36,86 +35,6 @@ Table of Contents
 
 2. REPORT DETAILS
 -----------------
-BUFC-1#1 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[16].iobf0/IBUF (in hostIF/iob_regs[16].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#2 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[17].iobf0/IBUF (in hostIF/iob_regs[17].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#3 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[18].iobf0/IBUF (in hostIF/iob_regs[18].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#4 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[19].iobf0/IBUF (in hostIF/iob_regs[19].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#5 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[20].iobf0/IBUF (in hostIF/iob_regs[20].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#6 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[21].iobf0/IBUF (in hostIF/iob_regs[21].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#7 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[22].iobf0/IBUF (in hostIF/iob_regs[22].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#8 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[23].iobf0/IBUF (in hostIF/iob_regs[23].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#9 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[24].iobf0/IBUF (in hostIF/iob_regs[24].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#10 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[25].iobf0/IBUF (in hostIF/iob_regs[25].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#11 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[26].iobf0/IBUF (in hostIF/iob_regs[26].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#12 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[27].iobf0/IBUF (in hostIF/iob_regs[27].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#13 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[28].iobf0/IBUF (in hostIF/iob_regs[28].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#14 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[29].iobf0/IBUF (in hostIF/iob_regs[29].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#15 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[30].iobf0/IBUF (in hostIF/iob_regs[30].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#16 Warning
-Input Buffer Connections  
-Input buffer hostIF/iob_regs[31].iobf0/IBUF (in hostIF/iob_regs[31].iobf0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
 CHECK-3#1 Warning
 Report rule limit reached  
 REQP-1839 rule limit reached: 20 violations have been found.

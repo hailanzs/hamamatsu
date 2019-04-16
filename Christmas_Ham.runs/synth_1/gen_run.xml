@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1555363497">
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1555431853">
   <File Type="PA-TCL" Name="hamamastu.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="hamamastu_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="hamamastu_reports.tcl"/>
@@ -28,6 +28,20 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../../../../Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okWireIn.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okWireOut.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -95,22 +109,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okWireIn.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../../../../Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okWireOut.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/../../../../Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okBTPipeOut.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -130,7 +128,6 @@
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="hamamastu"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

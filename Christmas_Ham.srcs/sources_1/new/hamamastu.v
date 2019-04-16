@@ -89,6 +89,7 @@ module hamamastu(
     //ok memory spacing for block throttle and other opal kelly wires
     localparam  endPt_count = 2;
     wire [endPt_count*65-1:0] okEHx;
+    okWireOR # (.N(endPt_count)) wireOR (okEH, okEHx);
                           
     // wires for communicating
     wire [31:0] rw_flag;                // read/write flag
@@ -101,7 +102,7 @@ module hamamastu(
     // assigning statements
     assign VDD_A_EN = 1'b1;                         // set up regulators VDD(D) and VDD(A)
     assign VDD_D_EN = 1'b1;
-    
+    assign led [4] = 1'b0;
     reg [27:0] counter;
     assign TrigerEvent = counter[27];
     
@@ -122,7 +123,25 @@ module hamamastu(
         .okHE(okHE),
         .okEH(okEH)
     );
+    
+   okWireIn wire10 (    .okHE(okHE), 
+                        .ep_addr(8'h00), 
+                        .ep_dataout(data_input));
+   
+   okWireIn wire11 (    .okHE(okHE), 
+                        .ep_addr(8'h01), 
+                        .ep_dataout(register_input));
                         
+   okWireIn wire12 (    .okHE(okHE), 
+                        .ep_addr(8'h02), 
+                        .ep_dataout(rw_flag));
+                       
+    okWireOut wire21 (  .okHE(okHE), 
+                        .okEH(okEHx[ 1*65 +: 65 ]),
+                        .ep_addr(8'h21), 
+                        .ep_datain(data_output));
+
+                    
       // FIFO instantiation
 /*    fifo_generator_0 FIFO_for_Counter_BTPipe_Interface (
         .wr_clk(),
@@ -176,7 +195,7 @@ module hamamastu(
     
     ila_0 ila_sample12 ( 
         .clk(ILA_CLK),
-        .probe0({SPI_CS, data_output, data_input, SPI_MISO, SPI_MOSI, SPI_RESET, State_copy, SPI_CLK}),                             
+        .probe0({SPI_CS, data_output[7:0], data_input[7:0], SPI_MISO, SPI_MOSI, SPI_RESET, State_copy, SPI_CLK}),                             
         .probe1({SPI_gen_CLK, TrigerEvent})
     );
 

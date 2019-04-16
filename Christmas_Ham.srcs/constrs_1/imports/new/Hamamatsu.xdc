@@ -11,7 +11,6 @@
 set_property CFGBVS GND [current_design]
 set_property CONFIG_VOLTAGE 1.8 [current_design]
 set_property BITSTREAM.GENERAL.COMPRESS True [current_design]
-set_property BITSTREAM.CONFIG.UNUSEDPIN Pulldown [current_design]
 
 ############################################################################
 ## FrontPanel Host Interface
@@ -281,54 +280,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {N15_EN}]
 set_property PACKAGE_PIN M1 [get_ports {N2_EN}] 
 set_property IOSTANDARD LVCMOS33 [get_ports {N2_EN}]
 # JTAG ###################################################################################################################
-# MC1-64 
-set_property PACKAGE_PIN Y13 [get_ports {JTAG1}]
-set_property IOSTANDARD LVCMOS33 [get_ports {JTAG1}]
-
-# MC1-66 
-set_property PACKAGE_PIN AA14 [get_ports {JTAG2}]
-set_property IOSTANDARD LVCMOS33 [get_ports {JTAG2}]
-
-# MC1-68 
-set_property PACKAGE_PIN AA13 [get_ports {JTAG3}]
-set_property IOSTANDARD LVCMOS33 [get_ports {JTAG3}]
-
-# MC1-70 
-set_property PACKAGE_PIN AB13 [get_ports {JTAG4}]
-set_property IOSTANDARD LVCMOS33 [get_ports {JTAG4}]
-
-# MC1-72 
-set_property PACKAGE_PIN W15 [get_ports {JTAG5}]
-set_property IOSTANDARD LVCMOS33 [get_ports {JTAG5}]
-
-# MC1-74 
-set_property PACKAGE_PIN W16 [get_ports {JTAG6}]
-set_property IOSTANDARD LVCMOS33 [get_ports {JTAG6}]
-
-# MC1-76 
-set_property PACKAGE_PIN AA16 [get_ports {JTAG7}]
-set_property IOSTANDARD LVCMOS33 [get_ports {JTAG7}]
-
-# MC1-75 
-set_property PACKAGE_PIN Y16 [get_ports {JTAG8}]
-set_property IOSTANDARD LVCMOS33 [get_ports {JTAG8}] 
-
-# MC2-7 
-set_property PACKAGE_PIN T13 [get_ports {JTAG_TMS}]
-set_property IOSTANDARD  [get_ports {JTAG_TMS}]
-
-# MC2-8 
-set_property PACKAGE_PIN U13 [get_ports {JTAG_TDO}]
-set_property IOSTANDARD  [get_ports {JTAG_TDO}]
-
-# MC2-9 
-set_property PACKAGE_PIN R13 [get_ports {JTAG_TDI}]
-set_property IOSTANDARD  [get_ports {JTAG_TDI}]
-
-# MC2-5 
-set_property PACKAGE_PIN V12 [get_ports {JTAG_TCK}]
-set_property IOSTANDARD  [get_ports {JTAG_TCK}]
-
+#
 # SPI ########################################################################################################################
 # MC2-20 
 set_property PACKAGE_PIN P2 [get_ports {SPI_RESET}]  

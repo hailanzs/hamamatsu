@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date                      : Mon Apr 15 16:26:53 2019
+| Date                      : Tue Apr 16 11:26:12 2019
 | Host                      : ECEB-4022-14 running 64-bit major release  (build 9200)
 | Command                   : report_io -file hamamastu_io_placed.rpt
 | Design                    : hamamastu
@@ -115,9 +115,9 @@ Table of Contents
 | B12        |                |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | B13        | led[1]         | High Range | IO_L8N_T1_16                 | TRISTATE      | LVCMOS15    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | B14        |                | High Range | VCCO_16                      | VCCO          |             |      16 |            |      |                     |                      |    1.50 |            |           |          |      |                  |              |                   |              |
-| B15        | led[4]         | High Range | IO_L7P_T1_16                 | TRISTATE      | LVCMOS15    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| B15        | led[4]         | High Range | IO_L7P_T1_16                 | OUTPUT        | LVCMOS15    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | B16        | led[6]         | High Range | IO_L7N_T1_16                 | TRISTATE      | LVCMOS15    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| B17        | led[7]         | High Range | IO_L11P_T1_SRCC_16           | TRISTATE      | LVCMOS15    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| B17        | led[7]         | High Range | IO_L11P_T1_SRCC_16           | OUTPUT        | LVCMOS15    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | B18        |                | High Range | IO_L11N_T1_SRCC_16           | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | B19        |                |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | B20        |                | High Range | IO_L16P_T2_16                | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

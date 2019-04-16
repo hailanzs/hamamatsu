@@ -18,7 +18,7 @@
 
 module spi_spo(
         // leds for debugging
-        input [7:0] led,
+        output [7:0] led,
         
         // 20 MHz clock
         input clock,
