@@ -1,0 +1,99 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr 16 10:07:21 2019
+# Process ID: 11244
+# Current directory: C:/Users/hshanbha/ham/hamamatsu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4220 C:\Users\hshanbha\ham\hamamatsu\Christmas_Ham.xpr
+# Log file: C:/Users/hshanbha/ham/hamamatsu/vivado.log
+# Journal file: C:/Users/hshanbha/ham/hamamatsu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top hamamastu [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018afb0f601]
+close_hw
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018af7f5c01]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Xilinx/000018af7f5c01]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu.bit} [get_hw_devices xc7a200t_0]
+set_property PROBES.FILE {C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu.ltx} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu.ltx} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018af7f5c01]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Xilinx/000018af7f5c01]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu.bit} [get_hw_devices xc7a200t_0]
+close_hw
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018af7f5c01]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Xilinx/000018af7f5c01]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu.bit} [get_hw_devices xc7a200t_0]
+close_hw
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018af7f5c01]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Xilinx/000018af7f5c01]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu.bit} [get_hw_devices xc7a200t_0]
+close_hw
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018af7f5c01]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Xilinx/000018af7f5c01]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.runs/impl_1/hamamastu.bit} [get_hw_devices xc7a200t_0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file mkdir C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sim_1/new/testbench.v w ]
+add_files -fileset sim_1 C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sim_1/new/testbench.v
+update_compile_order -fileset sim_1

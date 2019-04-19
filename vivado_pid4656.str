@@ -1,0 +1,461 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 4656
+License: Customer
+
+Current time: 	Fri Apr 19 11:07:29 CDT 2019
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1600x1200
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 781 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	cakulev2
+User home directory: C:/Users/cakulev2
+User working directory: C:/Users/cakulev2/ham/hamamatsu
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/cakulev2/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/cakulev2/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/cakulev2/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/cakulev2/ham/hamamatsu/vivado.log
+Vivado journal file location: 	C:/Users/cakulev2/ham/hamamatsu/vivado.jou
+Engine tmp dir: 	C:/Users/cakulev2/ham/hamamatsu/.Xil/Vivado-4656-ECEB-4022-14
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+okFP_SDK: C:\Program Files\Opal Kelly\FrontPanelUSB\API
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 566 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\cakulev2\ham\hamamatsu\Christmas_Ham.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 591 MB. GUI used memory: 42 MB. Current time: 4/19/19, 11:07:31 AM CDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 96 MB (+98381kb) [00:00:10]
+// [Engine Memory]: 613 MB (+491076kb) [00:00:10]
+// [Engine Memory]: 653 MB (+10325kb) [00:00:12]
+// [GUI Memory]: 102 MB (+822kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  3127 ms.
+// Tcl Message: open_project C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/hshanbha/ham/hamamatsu' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// Project name: Christmas_Ham; location: C:/Users/cakulev2/ham/hamamatsu; part: xc7a200tfbg484-1
+// [Engine Memory]: 863 MB (+185439kb) [00:00:15]
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 909.535 ; gain = 350.285 
+dismissDialog("Open Project"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 922 MB (+16651kb) [00:00:20]
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 923 MB. GUI used memory: 52 MB. Current time: 4/19/19, 11:07:46 AM CDT
+// [GUI Memory]: 108 MB (+1353kb) [00:06:07]
+// [GUI Memory]: 114 MB (+94kb) [00:08:10]
+// Elapsed time: 1532 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 19 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 21); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Hamamatsu.xdc]", 23, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Hamamatsu.xdc]", 23, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 11 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aT, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 923 MB. GUI used memory: 59 MB. Current time: 4/19/19, 11:37:46 AM CDT
+// Elapsed time: 646 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Hamamatsu.xdc]", 23, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Hamamatsu.xdc]", 23, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 37 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aT, cp)
+// Elapsed time: 35 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aT, cp)
+// Elapsed time: 99 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 1); // k (j, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("hamamastu.v", 193, 434); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("hamamastu.v", 214, 444); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 120, 470); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 68, 455); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("hamamastu.v", 29, 344); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 24, 469); // cl (w, cp)
+typeControlKey((HResource) null, "hamamastu.v", 'v'); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("hamamastu.v", 162, 525); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 230, 483); // cl (w, cp)
+// Elapsed time: 69 seconds
+selectCodeEditor("hamamastu.v", 685, 302); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 156, 474); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("hamamastu.v", 246, 156); // cl (w, cp)
+typeControlKey((HResource) null, "hamamastu.v", 'v'); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 261, 196); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("hamamastu.v", 100, 493); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 108, 474); // cl (w, cp)
+// Elapsed time: 58 seconds
+selectCodeEditor("hamamastu.v", 362, 516); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 234, 493); // cl (w, cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("hamamastu.v", 582, 454); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("hamamastu.v", 380, 490); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 65, 423); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 76, 442); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 77, 437); // cl (w, cp)
+typeControlKey((HResource) null, "hamamastu.v", 'v'); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 91, 406); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 480, 200); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 208, 144); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 365, 244); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("hamamastu.v", 162, 414); // cl (w, cp)
+typeControlKey((HResource) null, "hamamastu.v", 'v'); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 146, 422); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 109, 430); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 112, 448); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 110, 465); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 146, 418); // cl (w, cp)
+// Elapsed time: 43 seconds
+selectCodeEditor("hamamastu.v", 723, 267); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 52, 250); // cl (w, cp)
+typeControlKey((HResource) null, "hamamastu.v", 'v'); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 154, 250); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("hamamastu.v", 75, 350); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("hamamastu.v", 131, 165); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 131, 165, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("hamamastu.v", 89, 178); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("hamamastu.v", 217, 256); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 292, 233); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("hamamastu.v", 90, 260); // cl (w, cp)
+// Elapsed time: 56 seconds
+selectCodeEditor("hamamastu.v", 491, 233); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 318, 290); // cl (w, cp)
+// Elapsed time: 35 seconds
+selectCodeEditor("hamamastu.v", 109, 351); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("hamamastu.v", 525, 374); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 104, 362); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("hamamastu.v", 499, 458); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 209, 368); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("hamamastu.v", 80, 363); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("hamamastu.v", 212, 382); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("hamamastu.v", 705, 347); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 287, 423); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("hamamastu.v", 328, 287); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v), clock : ClockGenerator (ClockGenerator.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v), clock : ClockGenerator (ClockGenerator.v)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 1); // k (j, cp)
+// Elapsed time: 221 seconds
+selectCodeEditor("hamamastu.v", 139, 300); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 221, 2); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 277, 303); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 283, 317); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("hamamastu.v", 313, 313); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("hamamastu.v", 233, 327); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 353, 435); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("hamamastu.v", 287, 435); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 567, 446); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 540, 436); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("hamamastu.v", 109, 471, false, true, false, false, false); // cl (w, cp) - Control Key
+selectCodeEditor("hamamastu.v", 165, 450); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 144, 472); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("hamamastu.v", 525, 326); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("hamamastu.v", 228, 482); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 923 MB. GUI used memory: 57 MB. Current time: 4/19/19, 12:07:46 PM CDT
+// Elapsed time: 36 seconds
+selectCodeEditor("hamamastu.v", 162, 477); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 162, 477, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("hamamastu.v", 200, 492); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 126, 211); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 143, 484); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 143, 484, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("hamamastu.v", 172, 484); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("hamamastu.v", 242, 180); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 313, 369); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 313, 369, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("hamamastu.v", 344, 369); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 161, 501); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 269, 528); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 271, 557); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 279, 556); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 278, 573); // cl (w, cp)
+// Elapsed time: 62 seconds
+selectCodeEditor("hamamastu.v", 208, 395); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 227, 609); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("hamamastu.v", 254, 400); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 362, 519); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 362, 519, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("hamamastu.v", 194, 519); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 235, 607); // cl (w, cp)
+// Elapsed time: 87 seconds
+selectCodeEditor("hamamastu.v", 241, 231); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 271, 367); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("hamamastu.v", 238, 194); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 194, 191); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("hamamastu.v", 153, 199); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 253, 317); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 322, 316); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 215, 199); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 141, 116); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 254, 573); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 325, 573); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 220, 450); // cl (w, cp)
+// Elapsed time: 85 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Hamamatsu.xdc", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 1); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v), clock : ClockGenerator (ClockGenerator.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v), spi_rw : spi_spo (spi_spo.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hamamastu (hamamastu.v), spi_rw : spi_spo (spi_spo.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 11 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l (aT, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l (aT, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Hamamatsu.xdc", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 1); // k (j, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("hamamastu.v", 249, 96); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 53, 76); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 53, 76, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("hamamastu.v", 53, 76); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 57, 79); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 53, 83); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 156, 59); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 88, 275); // cl (w, cp)
+// Elapsed time: 44 seconds
+selectCodeEditor("hamamastu.v", 203, 80); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("hamamastu.v", 26, 339); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("hamamastu.v", 172, 414); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 172, 414, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("hamamastu.v", 188, 418); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 135, 366); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 126, 351); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 126, 423); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 130, 229); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 129, 227); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 126, 228); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 127, 317); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 149, 214); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 144, 229); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 188, 248); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 131, 244); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 147, 248); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 143, 268); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 116, 228); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 104, 282); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 168, 283); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("hamamastu.v", 113, 315); // cl (w, cp)
+// Elapsed time: 28 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 10 seconds
+selectCodeEditor("hamamastu.v", 278, 284); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("hamamastu.v", 51, 381); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_spo.v", 4); // k (j, cp)
+selectCodeEditor("spi_spo.v", 53, 233); // cl (w, cp)
+selectCodeEditor("spi_spo.v", 20, 431); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l (aT, cp)
+selectCodeEditor("spi_spo.v", 47, 384); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("spi_spo.v", 390, 399); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 1); // k (j, cp)
+// Elapsed time: 85 seconds
+selectCodeEditor("hamamastu.v", 23, 133, false, true, false, false, false); // cl (w, cp) - Control Key
+// Elapsed time: 22 seconds
+selectCodeEditor("hamamastu.v", 19, 352); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 250, 196); // cl (w, cp)
+// Elapsed time: 77 seconds
+selectCodeEditor("hamamastu.v", 482, 162); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 251, 194); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 170, 513); // cl (w, cp)
+// Elapsed time: 613 seconds
+selectCodeEditor("hamamastu.v", 802, 350); // cl (w, cp)
+// Elapsed time: 58 seconds
+selectCodeEditor("hamamastu.v", 669, 417); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 143, 232); // cl (w, cp)
+// Elapsed time: 60 seconds
+selectCodeEditor("hamamastu.v", 591, 467); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_spo.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Hamamatsu.xdc", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hamamastu.v", 1); // k (j, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("hamamastu.v", 176, 589); // cl (w, cp)
+// Elapsed time: 43 seconds
+selectCodeEditor("hamamastu.v", 684, 610); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("hamamastu.v", 629, 273); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("hamamastu.v", 166, 576); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("hamamastu.v", 173, 347); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 95, 368); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 923 MB. GUI used memory: 57 MB. Current time: 4/19/19, 12:37:47 PM CDT
+selectCodeEditor("hamamastu.v", 194, 532); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("hamamastu.v", 125, 371); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 125, 371, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("hamamastu.v", 216, 352); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("hamamastu.v", 108, 539); // cl (w, cp)
+selectCodeEditor("hamamastu.v", 119, 532); // cl (w, cp)
