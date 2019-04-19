@@ -97,9 +97,19 @@ module hamamastu(
     wire [31:0] data_input;             // data to write
     wire [31:0] data_output;            // data to read from
     
+    //fifo controller registers
+    reg write_reset, read_reset, write_enable;
+    //reset registers
+    reg TG_RESET_REG, SPI_RESET_REG;
+    //delay counters
+    reg [2:0] delay0, delay1, tg_counter;
+    
 /* ASSIGNING WIRES AND REGISTERS TO VALUES */
     
     // assigning statements
+    assign TG_RESET = TG_RESET_REG;
+    assign SPI_RESET = SPI_RESET_REG;
+    assign M_CLOCK = MASTER_CLK;
     assign VDD_A_EN = 1'b1;                         // set up regulators VDD(D) and VDD(A)
     assign VDD_D_EN = 1'b1;
     assign led [4] = 1'b0;
@@ -109,7 +119,15 @@ module hamamastu(
     always @(*) begin
         counter <= counter + 1'b1;
     end
-
+    
+    //state parameters
+    localparam STATE_INIT = 8'd0;
+    localparam STATE_SPI_RESET = 8'd1;
+    localparam STATE_DELAY0 = 8'd2;
+    localparam STATE_TG_RESET = 8'd3;
+    localparam STATE_DELAY1 = 8'd4;
+    
+    reg [7:0] State = STATE_INIT;
 /* INSTANTIATING MODULES */
 
     /* OKWIRE INSTANTIATIONS */
@@ -140,34 +158,12 @@ module hamamastu(
                         .okEH(okEHx[ 1*65 +: 65 ]),
                         .ep_addr(8'h21), 
                         .ep_datain(data_output));
-
-                    
-      // FIFO instantiation
-/*    fifo_generator_0 FIFO_for_Counter_BTPipe_Interface (
-        .wr_clk(),
-        .wr_rst(),
-        .rd_clk(okClk),
-        .rd_rst(),
-        .din(),
-        .wr_en(),
-        .rd_en(FIFO_read_enable),
-        .dout(FIFO_data_out),
-        .full(FIFO_full),
-        .empty(FIFO_empty),       
-        .prog_full(FIFO_BT_BlockSize_Full)        
-    );
     
-    // block throttle instantiation
-    okBTPipeOut CounterToPC (
-        .okHE(okHE), 
-        .okEH(okEHx[ 0*65 +: 65 ]),
-        .ep_addr(8'ha0), 
-        .ep_datain(FIFO_data_out), 
-        .ep_read(FIFO_read_enable),
-        .ep_blockstrobe(BT_Strobe), 
-        .ep_ready(FIFO_BT_BlockSize_Full)
-    ); 
- */
+    
+    
+                    
+    
+
     /* CLOCK INSTATIATION */
     ClockGenerator clock(   
         .sys_clkn(sys_clkn),
@@ -182,7 +178,7 @@ module hamamastu(
     spi_spo spi_rw(       
         .led(led),
         .clock(SPI_gen_CLK),
-        .SPI_RESET(SPI_RESET),
+       // .SPI_RESET(SPI_RESET),
         .SPI_MOSI(SPI_MOSI),
         .SPI_CS(SPI_CS),
         .SPI_CLK(SPI_CLK),
@@ -192,13 +188,104 @@ module hamamastu(
         .data_output(data_output),
         .State_copy(State_copy)
     );
-    
+    initial
+        begin 
+            SPI_RESET_REG <= 1'b1;
+            TG_RESET_REG <= 1'b0;
+            delay0 <= 3'b0;
+            delay1 <= 3'b0;
+            tg_counter <= 3'b0;
+        end
+   always @(posedge MASTER_CLK) begin
+       case(State)
+           STATE_INIT:
+               begin
+                   write_reset <= 1'b1;
+                   read_reset <= 1'b1;
+                   write_enable <= 1'b0;
+                   State <= STATE_SPI_RESET;
+               end
+           STATE_SPI_RESET:
+               begin
+                   SPI_RESET_REG <= 1'b0;
+               end
+           STATE_DELAY0:
+               begin
+                   if(delay0 == 3'd4)
+                       begin
+                           SPI_RESET_REG <= 1'b1;
+                           State <= STATE_TG_RESET;
+                       end
+                   else
+                       begin
+                           delay0 <= delay0 + 1'b1;
+                       end
+               end
+            STATE_TG_RESET:
+               begin
+                   if(tg_counter == 3'd4)
+                       begin
+                           TG_RESET_REG <= 1'b1;
+                           State <= STATE_DELAY1;
+                       end
+                   else
+                       begin
+                           tg_counter <= tg_counter + 1'b1;
+                       end
+               end
+           STATE_DELAY1: 
+               begin
+                   if(delay1 == 3'd4)
+                       begin
+                           TG_RESET_REG <= 1'b0;
+                           State <= STATE_SPI;
+                       end
+                   else
+                       begin
+                           delay1 <= delay1 + 1'b1;
+                       end
+                end
+           
+                    
+             
+            
+       
+       
+        endcase
+    end   
+   
+        
     ila_0 ila_sample12 ( 
         .clk(ILA_CLK),
         .probe0({SPI_CS, data_output[7:0], data_input[7:0], SPI_MISO, SPI_MOSI, SPI_RESET, State_copy, SPI_CLK}),                             
         .probe1({SPI_gen_CLK, TrigerEvent})
     );
 
+
+      fifo_generator_0 FIFO_for_Counter_BTPipe_Interface (
+        .wr_clk(),
+        .wr_rst(write_reset),
+        .rd_clk(okClk),
+        .rd_rst(read_reset),
+        .din(),
+        .wr_en(write_enable),
+        .rd_en(FIFO_read_enable),
+        .dout(FIFO_data_out),
+        .full(FIFO_full),
+        .empty(FIFO_empty),       
+        .prog_full(FIFO_BT_BlockSize_Full)        
+    );
+      
+    okBTPipeOut CounterToPC (
+        .okHE(okHE), 
+        .okEH(okEHx[ 0*65 +: 65 ]),
+        .ep_addr(8'ha0), 
+        .ep_datain(FIFO_data_out), 
+        .ep_read(FIFO_read_enable),
+        .ep_blockstrobe(BT_Strobe), 
+        .ep_ready(FIFO_BT_BlockSize_Full)
+    );       
+            
     // select io for lvds lines instantitation
 /*    selectio_wiz_0 lvds_input ( 
         .data_in_from_pins_p(), 

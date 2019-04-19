@@ -24,7 +24,7 @@ module spi_spo(
         input clock,
         
         // SPI inputs
-        output SPI_RESET,
+        //output SPI_RESET,
         output SPI_MOSI,
         output SPI_CS,
         output SPI_CLK,
@@ -54,7 +54,7 @@ module spi_spo(
     reg [7:0] data_write, data_read;
     
     // transfering from state machine to imager
-    assign SPI_RESET = RESET;
+   // assign SPI_RESET = RESET;
     assign SPI_MOSI = MOSI;
     assign SPI_CS = CS;
     assign SPI_CLK = CLK;
@@ -69,7 +69,7 @@ module spi_spo(
         error_bit <= 1'b1;
         CLK <= 1'b0;
         CS <= 1'b1;
-        RESET <= 1'b1;
+       // RESET <= 1'b1;
     end
     
     // transfering from imager to state machine
