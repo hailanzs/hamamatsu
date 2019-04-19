@@ -54,7 +54,7 @@ module spi_spo(
     reg [7:0] data_write, data_read;
     
     // transfering from state machine to imager
-   // assign SPI_RESET = RESET;
+    // assign SPI_RESET = RESET;
     assign SPI_MOSI = MOSI;
     assign SPI_CS = CS;
     assign SPI_CLK = CLK;

@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Tue Apr 16 11:24:53 2019
-| Host         : ECEB-4022-14 running 64-bit major release  (build 9200)
+| Date         : Fri Apr 19 16:41:55 2019
+| Host         : ECEB-4022-13 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file hamamastu_utilization_synth.rpt -pb hamamastu_utilization_synth.pb
 | Design       : hamamastu
 | Device       : 7a200tfbg484-1
@@ -35,8 +35,8 @@ Table of Contents
 |   LUT as Memory            |   32 |     0 |     46200 |  0.07 |
 |     LUT as Distributed RAM |   32 |     0 |           |       |
 |     LUT as Shift Register  |    0 |     0 |           |       |
-| Slice Registers            | 1169 |   103 |    269200 |  0.43 |
-|   Register as Flip Flop    | 1169 |   103 |    269200 |  0.43 |
+| Slice Registers            | 1109 |   103 |    269200 |  0.41 |
+|   Register as Flip Flop    | 1109 |   103 |    269200 |  0.41 |
 |   Register as Latch        |    0 |     0 |    269200 |  0.00 |
 | F7 Muxes                   |    8 |     0 |     67300 |  0.01 |
 | F8 Muxes                   |    0 |     0 |     33650 |  0.00 |
@@ -59,7 +59,7 @@ Table of Contents
 | 37    |          Yes |           - |          Set |
 | 226   |          Yes |           - |        Reset |
 | 22    |          Yes |         Set |            - |
-| 884   |          Yes |       Reset |            - |
+| 824   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -153,22 +153,22 @@ Table of Contents
 +------------+------+---------------------+
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
-| FDRE       |  884 |        Flop & Latch |
+| FDRE       |  824 |        Flop & Latch |
 | LUT6       |  485 |                 LUT |
 | FDCE       |  226 |        Flop & Latch |
 | LUT4       |  213 |                 LUT |
 | LUT5       |  175 |                 LUT |
 | LUT2       |   89 |                 LUT |
-| CARRY4     |   71 |          CarryLogic |
 | LUT3       |   65 |                 LUT |
+| CARRY4     |   64 |          CarryLogic |
 | LUT1       |   62 |                 LUT |
-| OBUFT      |   46 |                  IO |
+| OBUFT      |   44 |                  IO |
 | IBUF       |   39 |                  IO |
 | FDPE       |   37 |        Flop & Latch |
 | RAMD32     |   24 |  Distributed Memory |
 | FDSE       |   22 |        Flop & Latch |
 | RAMS64E    |   16 |  Distributed Memory |
-| OBUF       |   11 |                  IO |
+| OBUF       |   13 |                  IO |
 | RAMS32     |    8 |  Distributed Memory |
 | MUXF7      |    8 |               MuxFx |
 | BUFG       |    3 |               Clock |

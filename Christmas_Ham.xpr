@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="a23dd77a67804c489df7de27be1e5396"/>
@@ -110,6 +110,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/../../../../Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okBTPipeOut.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/../../../../Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okTriggerIn.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -154,14 +162,6 @@
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../../../Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okBTPipeOut.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>

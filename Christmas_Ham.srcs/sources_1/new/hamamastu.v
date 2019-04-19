@@ -79,7 +79,7 @@ module hamamastu(
     wire clk_out;                                   // clock for debugging
     
     wire [8:0] State_copy;                          // SPI settings fsm state for debugging
-    wire TrigerEvent;                               // jtag debugging wire
+    wire TrigerEvent = 1'b0;                               // jtag debugging wire
     
     // okWire stuff!!
     wire okClk;                                     //These are FrontPanel wires needed to IO communication    
@@ -112,15 +112,16 @@ module hamamastu(
     assign M_CLOCK = MASTER_CLK;
     assign VDD_A_EN = 1'b1;                         // set up regulators VDD(D) and VDD(A)
     assign VDD_D_EN = 1'b1;
-    assign led [4] = 1'b0;
+    assign led[4] = 1'b0;
     reg [27:0] counter;
     assign TrigerEvent = counter[27];
+    assign rw_flag = TrigerEvent;
     
     always @(*) begin
         counter <= counter + 1'b1;
     end
     
-    //state parameters
+    // state parameters
     localparam STATE_INIT = 8'd0;
     localparam STATE_SPI_RESET = 8'd1;
     localparam STATE_DELAY0 = 8'd2;
@@ -128,6 +129,7 @@ module hamamastu(
     localparam STATE_DELAY1 = 8'd4;
     
     reg [7:0] State = STATE_INIT;
+    
 /* INSTANTIATING MODULES */
 
     /* OKWIRE INSTANTIATIONS */
@@ -154,14 +156,12 @@ module hamamastu(
                         .ep_addr(8'h02), 
                         .ep_dataout(rw_flag));
                        
-    okWireOut wire21 (  .okHE(okHE), 
+   okWireOut wire20 (  .okHE(okHE), 
                         .okEH(okEHx[ 1*65 +: 65 ]),
-                        .ep_addr(8'h21), 
+                        .ep_addr(8'h20), 
                         .ep_datain(data_output));
     
-    
-    
-                    
+        
     
 
     /* CLOCK INSTATIATION */
@@ -196,6 +196,7 @@ module hamamastu(
             delay1 <= 3'b0;
             tg_counter <= 3'b0;
         end
+        
    always @(posedge MASTER_CLK) begin
        case(State)
            STATE_INIT:
@@ -238,13 +239,14 @@ module hamamastu(
                    if(delay1 == 3'd4)
                        begin
                            TG_RESET_REG <= 1'b0;
-                           State <= STATE_SPI;
+                           //State <= STATE_SPI;
                        end
                    else
                        begin
                            delay1 <= delay1 + 1'b1;
                        end
                 end
+           
            
                     
              
@@ -262,29 +264,29 @@ module hamamastu(
     );
 
 
-      fifo_generator_0 FIFO_for_Counter_BTPipe_Interface (
-        .wr_clk(),
-        .wr_rst(write_reset),
-        .rd_clk(okClk),
-        .rd_rst(read_reset),
-        .din(),
-        .wr_en(write_enable),
-        .rd_en(FIFO_read_enable),
-        .dout(FIFO_data_out),
-        .full(FIFO_full),
-        .empty(FIFO_empty),       
-        .prog_full(FIFO_BT_BlockSize_Full)        
-    );
+//      fifo_generator_0 FIFO_for_Counter_BTPipe_Interface (
+//        .wr_clk(),
+//        .wr_rst(write_reset),
+//        .rd_clk(okClk),
+//        .rd_rst(read_reset),
+//        .din(),
+//        .wr_en(write_enable),
+//        .rd_en(FIFO_read_enable),
+//        .dout(FIFO_data_out),
+//        .full(FIFO_full),
+//        .empty(FIFO_empty),       
+//        .prog_full(FIFO_BT_BlockSize_Full)        
+//    );
       
-    okBTPipeOut CounterToPC (
-        .okHE(okHE), 
-        .okEH(okEHx[ 0*65 +: 65 ]),
-        .ep_addr(8'ha0), 
-        .ep_datain(FIFO_data_out), 
-        .ep_read(FIFO_read_enable),
-        .ep_blockstrobe(BT_Strobe), 
-        .ep_ready(FIFO_BT_BlockSize_Full)
-    );       
+//    okBTPipeOut CounterToPC (
+//        .okHE(okHE), 
+//        .okEH(okEHx[ 0*65 +: 65 ]),
+//        .ep_addr(8'ha0), 
+//        .ep_datain(FIFO_data_out), 
+//        .ep_read(FIFO_read_enable),
+//        .ep_blockstrobe(BT_Strobe), 
+//        .ep_ready(FIFO_BT_BlockSize_Full)
+//    );       
             
     // select io for lvds lines instantitation
 /*    selectio_wiz_0 lvds_input ( 

@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date                      : Tue Apr 16 11:26:12 2019
-| Host                      : ECEB-4022-14 running 64-bit major release  (build 9200)
+| Date                      : Fri Apr 19 16:43:13 2019
+| Host                      : ECEB-4022-13 running 64-bit major release  (build 9200)
 | Command                   : report_io -file hamamastu_io_placed.rpt
 | Design                    : hamamastu
 | Device                    : xc7a200t
@@ -322,8 +322,8 @@ Table of Contents
 | L21        |                | High Range | IO_L10N_T1_AD11N_15          | User IO       |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | L22        |                |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | M1         | N2_EN          | High Range | IO_L15P_T2_DQS_35            | TRISTATE      | LVCMOS33    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| M2         | M_CLOCK        | High Range | IO_L16N_T2_35                | TRISTATE      | LVCMOS33    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| M3         | TG_RESET       | High Range | IO_L16P_T2_35                | TRISTATE      | LVCMOS33    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| M2         | M_CLOCK        | High Range | IO_L16N_T2_35                | OUTPUT        | LVCMOS33    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| M3         | TG_RESET       | High Range | IO_L16P_T2_35                | OUTPUT        | LVCMOS33    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | M4         |                | High Range | VCCO_35                      | VCCO          |             |      35 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | M5         | P_CLK_N        | High Range | IO_L23N_T3_35                | INPUT         | LVDS_25     |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | M6         | P_CLK          | High Range | IO_L23P_T3_35                | INPUT         | LVDS_25     |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
