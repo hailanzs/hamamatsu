@@ -87,7 +87,7 @@ module hamamastu(
     wire [64:0] okEH;       //These are FrontPanel wires needed to IO communication     
     
     //ok memory spacing for block throttle and other opal kelly wires
-    localparam  endPt_count = 2;
+    localparam  endPt_count = 1;
     wire [endPt_count*65-1:0] okEHx;
     okWireOR # (.N(endPt_count)) wireOR (okEH, okEHx);
                           
@@ -157,7 +157,7 @@ module hamamastu(
                         .ep_dataout(rw_flag));
                        
    okWireOut wire20 (  .okHE(okHE), 
-                        .okEH(okEHx[ 1*65 +: 65 ]),
+                        .okEH(okEHx[ 0*65 +: 65 ]),
                         .ep_addr(8'h20), 
                         .ep_datain(data_output));
     
