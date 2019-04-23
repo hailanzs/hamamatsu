@@ -14,304 +14,85 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10444 
-WARNING: [Synth 8-2490] overwriting previous definition of module xpm_cdc_async_rst [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15361]
+INFO: Helper process launched with PID 3352 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 432.926 ; gain = 111.984
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 418.668 ; gain = 96.809
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'hamamastu' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:18]
-	Parameter endPt_count bound to: 2 - type: integer 
+	Parameter endPt_count bound to: 1 - type: integer 
 	Parameter STATE_INIT bound to: 8'b00000000 
 	Parameter STATE_SPI_RESET bound to: 8'b00000001 
 	Parameter STATE_DELAY0 bound to: 8'b00000010 
 	Parameter STATE_TG_RESET bound to: 8'b00000011 
 	Parameter STATE_DELAY1 bound to: 8'b00000100 
 INFO: [Synth 8-6157] synthesizing module 'okWireOR' [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v:119]
-	Parameter N bound to: 2 - type: integer 
+	Parameter N bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'okWireOR' (1#1) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v:119]
-INFO: [Synth 8-6157] synthesizing module 'okHost' [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v:10]
-INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
-	Parameter DRIVE bound to: 12 - type: integer 
-	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
-	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (2#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
-INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
-	Parameter INIT bound to: 1'b0 
-	Parameter IS_C_INVERTED bound to: 1'b0 
-	Parameter IS_D_INVERTED bound to: 1'b0 
-	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'FDRE' (3#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
-INFO: [Synth 8-6157] synthesizing module 'IBUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20852]
-	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
-	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
-	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
-	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IBUFG' (4#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20852]
-INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26837]
-	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
-	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKIN1_PERIOD bound to: 9.920000 - type: float 
-	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
-	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT0_PHASE bound to: 54.000000 - type: float 
-	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
-	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
-	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
-	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
-	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (5#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26837]
-WARNING: [Synth 8-350] instance 'mmcm0' of module 'MMCME2_BASE' requires 18 connections, but only 6 given [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v:53]
-INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (6#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
-INFO: [Synth 8-6157] synthesizing module 'GND' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4950]
-INFO: [Synth 8-6155] done synthesizing module 'GND' (7#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4950]
-INFO: [Synth 8-6157] synthesizing module 'VCC' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:53064]
-INFO: [Synth 8-6155] done synthesizing module 'VCC' (8#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:53064]
-INFO: [Synth 8-6157] synthesizing module 'LUT5' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5' (9#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6157] synthesizing module 'LUT6' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6' (10#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized0' (10#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
-INFO: [Synth 8-6155] done synthesizing module 'LUT3' (11#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
-INFO: [Synth 8-6157] synthesizing module 'LUT2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
-INFO: [Synth 8-6155] done synthesizing module 'LUT2' (12#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized1' (12#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized0' (12#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized1' (12#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6157] synthesizing module 'LUT4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4' (13#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
-INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (13#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized2' (13#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized3' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized3' (13#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26416]
-INFO: [Synth 8-6155] done synthesizing module 'LUT1' (14#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26416]
-INFO: [Synth 8-6157] synthesizing module 'FDSE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4107]
-INFO: [Synth 8-6155] done synthesizing module 'FDSE' (15#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4107]
-INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:968]
-INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (16#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:968]
-INFO: [Synth 8-6157] synthesizing module 'fifo_generator_v13_2_0' [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15469]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15982]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15983]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15984]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15985]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized2' (16#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
-INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (16#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
-INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
-INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized1' (16#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
-INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
-INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (16#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
-INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (16#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized3' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized3' (16#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized4' (16#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT1__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26416]
-INFO: [Synth 8-6155] done synthesizing module 'LUT1__parameterized0' (16#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26416]
-INFO: [Synth 8-6157] synthesizing module 'FDPE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
-INFO: [Synth 8-6155] done synthesizing module 'FDPE' (17#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
-INFO: [Synth 8-6157] synthesizing module 'FDCE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3755]
-INFO: [Synth 8-6155] done synthesizing module 'FDCE' (18#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3755]
-INFO: [Synth 8-6157] synthesizing module 'RAMB18E1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:49848]
-INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:49848]
-INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
-INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:17097]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15361]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15371]
-INFO: [Synth 8-6157] synthesizing module 'FDPE__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
-INFO: [Synth 8-6155] done synthesizing module 'FDPE__parameterized0' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (20#1) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15361]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized4' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized5' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized5' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized6' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized6' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized7' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized7' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized8' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized8' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized9' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized9' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized10' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized10' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized11' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized11' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized5' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized5' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_v13_2_0' (21#1) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15469]
-INFO: [Synth 8-6157] synthesizing module 'DNA_PORT' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3039]
-INFO: [Synth 8-6155] done synthesizing module 'DNA_PORT' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3039]
-INFO: [Synth 8-6157] synthesizing module 'FDCE__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3755]
-INFO: [Synth 8-6155] done synthesizing module 'FDCE__parameterized0' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3755]
-INFO: [Synth 8-6157] synthesizing module 'FDPE__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
-INFO: [Synth 8-6155] done synthesizing module 'FDPE__parameterized1' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized12' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized12' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized0' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized13' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized13' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized14' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized14' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized1' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized2' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized3' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized3' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized15' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized15' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized4' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized16' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized16' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized5' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized5' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized17' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized17' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'RAM128X1S' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:44873]
-INFO: [Synth 8-6155] done synthesizing module 'RAM128X1S' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:44873]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized6' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized6' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized18' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized18' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized7' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized7' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'RAM32M' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:45120]
-INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:45120]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized8' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized8' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized9' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized9' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized10' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized10' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized11' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized11' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized19' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized19' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized20' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized20' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized12' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized12' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized13' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized13' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized21' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized21' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized14' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized14' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized15' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized15' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized16' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized16' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized22' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized22' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized17' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized17' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized18' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized18' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized19' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized19' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized20' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized20' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized23' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized23' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized24' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized24' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized21' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized21' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'RAMB18E1__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:49848]
-INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1__parameterized0' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:49848]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized25' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized25' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized26' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized26' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized27' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized27' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized28' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized28' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized29' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized29' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized30' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized30' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized31' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized31' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized32' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized33' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-350] instance 'hostIF' of module 'okHost' requires 9 connections, but only 7 given [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:137]
+INFO: [Synth 8-6157] synthesizing module 'ClockGenerator' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/imports/Downloads/ClockGenerator.v:19]
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter DIFF_TERM bound to: FALSE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (2#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
+INFO: [Synth 8-6155] done synthesizing module 'ClockGenerator' (3#1) [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/imports/Downloads/ClockGenerator.v:19]
+INFO: [Synth 8-6157] synthesizing module 'spi_spo' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:19]
 	Parameter STATE_INIT bound to: 9'b000000000 
 	Parameter READ bound to: 1'b0 
 	Parameter WRITE bound to: 1'b1 
-WARNING: [Synth 8-350] instance 'spi_rw' of module 'spi_spo' requires 11 connections, but only 10 given [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:178]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:201]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:260]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi_rw'. This will prevent further optimization [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:178]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_sample12'. This will prevent further optimization [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:260]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'clock'. This will prevent further optimization [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:168]
-WARNING: [Synth 8-6014] Unused sequential element write_reset_reg was removed.  [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:204]
-WARNING: [Synth 8-6014] Unused sequential element read_reset_reg was removed.  [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:205]
-WARNING: [Synth 8-6014] Unused sequential element write_enable_reg was removed.  [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:206]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v-18.7 with 1st driver pin 'hamamastu:/spi_rw/led[4]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:18]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v-18.7 with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:18]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v-18.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:18]
+WARNING: [Synth 8-6014] Unused sequential element data_write_reg was removed.  [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'spi_spo' (4#1) [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:19]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:207]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:267]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/.Xil/Vivado-2912-ECEB-4022-14/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (5#1) [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/.Xil/Vivado-2912-ECEB-4022-14/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi_rw'. This will prevent further optimization [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:177]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_sample12'. This will prevent further optimization [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:267]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'clock'. This will prevent further optimization [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:167]
+WARNING: [Synth 8-6014] Unused sequential element write_reset_reg was removed.  [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:210]
+WARNING: [Synth 8-6014] Unused sequential element read_reset_reg was removed.  [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:211]
+WARNING: [Synth 8-6014] Unused sequential element write_enable_reg was removed.  [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:212]
 WARNING: [Synth 8-3848] Net VDD_C_EN in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:49]
 WARNING: [Synth 8-3848] Net N15_EN in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:50]
 WARNING: [Synth 8-3848] Net N2_EN in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:51]
 WARNING: [Synth 8-3848] Net PLL_RESET in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:63]
 WARNING: [Synth 8-3848] Net M_START in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:64]
-WARNING: [Synth 8-3917] design hamamastu has port led[4] driven by constant 0
+WARNING: [Synth 8-3848] Net okHU in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:68]
+WARNING: [Synth 8-3848] Net okEHx in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'hamamastu' (6#1) [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:18]
 WARNING: [Synth 8-3917] design hamamastu has port VDD_A_EN driven by constant 1
 WARNING: [Synth 8-3917] design hamamastu has port VDD_D_EN driven by constant 1
-WARNING: [Synth 8-3331] design spi_spo has unconnected port led[6]
-WARNING: [Synth 8-3331] design spi_spo has unconnected port led[5]
-WARNING: [Synth 8-3331] design spi_spo has unconnected port led[4]
-WARNING: [Synth 8-3331] design spi_spo has unconnected port led[3]
-WARNING: [Synth 8-3331] design spi_spo has unconnected port led[2]
-WARNING: [Synth 8-3331] design spi_spo has unconnected port led[1]
-WARNING: [Synth 8-3331] design spi_spo has unconnected port led[0]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[31]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[30]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[29]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[28]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[27]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[26]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[25]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[24]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[23]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[22]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[21]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[20]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[19]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[18]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[17]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[16]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[15]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[14]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[13]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[12]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[11]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[10]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[9]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[8]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[7]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[6]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[5]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[4]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[3]
+WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[2]
 WARNING: [Synth 8-3331] design spi_spo has unconnected port register_input[31]
 WARNING: [Synth 8-3331] design spi_spo has unconnected port register_input[30]
 WARNING: [Synth 8-3331] design spi_spo has unconnected port register_input[29]
@@ -369,45 +150,22 @@ WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[3]
 WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[2]
 WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[1]
 WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[0]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[112]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[111]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[110]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[109]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[108]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[107]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[106]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[105]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[104]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[103]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[102]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[101]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[100]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[99]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[98]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[97]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[96]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[95]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[94]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[93]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[92]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[91]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[90]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[89]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[88]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[87]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[86]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[85]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[84]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[83]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[82]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[81]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[80]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[79]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[78]
-WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[77]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port VDD_C_EN
+WARNING: [Synth 8-3331] design hamamastu has unconnected port N15_EN
+WARNING: [Synth 8-3331] design hamamastu has unconnected port N2_EN
+WARNING: [Synth 8-3331] design hamamastu has unconnected port PLL_RESET
+WARNING: [Synth 8-3331] design hamamastu has unconnected port M_START
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okHU[2]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okHU[1]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okHU[0]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[31]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[30]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[29]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[28]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[27]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 495.250 ; gain = 174.309
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 473.742 ; gain = 151.883
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -481,23 +239,17 @@ WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[3] to constant 0 [C:/Use
 WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[2] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
 WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[1] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
 WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[0] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[6] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:178]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[5] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:178]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[4] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:178]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[3] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:178]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[2] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:178]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[1] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:178]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[0] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:178]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[1] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:177]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 495.250 ; gain = 174.309
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 473.742 ; gain = 151.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 495.250 ; gain = 174.309
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 473.742 ; gain = 151.883
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 147 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7a200tfbg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -509,7 +261,7 @@ Finished Parsing XDC File [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/so
 Parsing XDC File [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
 WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
 WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
-INFO: [Timing 38-2] Deriving generated clocks [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:96]
+WARNING: [Vivado 12-627] No clocks matched 'mmcm0_clk0'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:96]
 WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:101]
 WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:102]
 WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:103]
@@ -615,55 +367,41 @@ Finished Parsing XDC File [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/co
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/hamamastu_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hamamastu_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/hamamastu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 874.559 ; gain = 0.000
-Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hamamastu_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/hamamastu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 874.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 831.164 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 874.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 831.164 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 98 instances were transformed.
-  IBUFG => IBUF: 1 instances
+  A total of 1 instances were transformed.
   IBUFGDS => IBUFDS: 1 instances
-  IOBUF => IOBUF (IBUF, OBUFT): 33 instances
-  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
-  MMCME2_BASE => MMCME2_ADV: 1 instances
-  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 8 instances
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 874.559 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 874.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 831.164 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 831.164 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 874.559 ; gain = 553.617
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 831.164 ; gain = 509.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 874.559 ; gain = 553.617
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 831.164 ; gain = 509.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for ila_sample12. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hostIF/core0/core0/\a0/cb0 /U0/\inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 874.559 ; gain = 553.617
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 831.164 ; gain = 509.305
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "MASTER_CLK" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ILA_CLK" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "SPI_gen_CLK" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'spi_spo'
-INFO: [Synth 8-5545] ROM "rw_bit" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "error_bit" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "MOSI" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "CS" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "CLK" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MOSI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "error_bit0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'hamamastu'
 INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -675,88 +413,15 @@ INFO: [Synth 8-5546] ROM "SPI_RESET_REG_reg0" won't be mapped to RAM because it 
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-              STATE_INIT | 00000000000000000000000000000000000000000000000000000000000000000000001 |                        000000000
-                iSTATE48 | 00000000000000000000000000000000000000000000000000000000000000000000010 |                        000000001
-                iSTATE45 | 00000000000000000000000000000000000000000000000000000000000000000000100 |                        000000010
-                iSTATE44 | 00000000000000000000000000000000000000000000000000000000000000000001000 |                        000000011
-                iSTATE41 | 00000000000000000000000000000000000000000000000000000000000000000010000 |                        000000100
-                iSTATE40 | 00000000000000000000000000000000000000000000000000000000000000000100000 |                        000000101
-                iSTATE37 | 00000000000000000000000000000000000000000000000000000000000000001000000 |                        000000110
-                iSTATE35 | 00000000000000000000000000000000000000000000000000000000000000010000000 |                        000000111
-                 iSTATE0 | 00000000000000000000000000000000000000000000000000000000000000100000000 |                        000001000
-                  iSTATE | 00000000000000000000000000000000000000000000000000000000000001000000000 |                        000001001
-                iSTATE66 | 00000000000000000000000000000000000000000000000000000000000010000000000 |                        000001010
-                iSTATE65 | 00000000000000000000000000000000000000000000000000000000000100000000000 |                        000001011
-                iSTATE58 | 00000000000000000000000000000000000000000000000000000000001000000000000 |                        000001100
-                iSTATE57 | 00000000000000000000000000000000000000000000000000000000010000000000000 |                        000001101
-                iSTATE53 | 00000000000000000000000000000000000000000000000000000000100000000000000 |                        000001110
-                iSTATE51 | 00000000000000000000000000000000000000000000000000000001000000000000000 |                        000001111
-                 iSTATE2 | 00000000000000000000000000000000000000000000000000000010000000000000000 |                        000010000
-                 iSTATE1 | 00000000000000000000000000000000000000000000000000000100000000000000000 |                        000010001
-                iSTATE68 | 00000000000000000000000000000000000000000000000000001000000000000000000 |                        000010010
-                iSTATE67 | 00000000000000000000000000000000000000000000000000010000000000000000000 |                        000010011
-                iSTATE60 | 00000000000000000000000000000000000000000000000000100000000000000000000 |                        000010100
-                iSTATE59 | 00000000000000000000000000000000000000000000000001000000000000000000000 |                        000010101
-                iSTATE56 | 00000000000000000000000000000000000000000000000010000000000000000000000 |                        000010110
-                iSTATE55 | 00000000000000000000000000000000000000000000000100000000000000000000000 |                        000010111
-                iSTATE25 | 00000000000000000000000000000000000000000000001000000000000000000000000 |                        000011000
-                iSTATE24 | 00000000000000000000000000000000000000000000010000000000000000000000000 |                        000011001
-                iSTATE23 | 00000000000000000000000000000000000000000000100000000000000000000000000 |                        000011010
-                iSTATE22 | 00000000000000000000000000000000000000000001000000000000000000000000000 |                        000011011
-                iSTATE10 | 00000000000000000000000000000000000000000010000000000000000000000000000 |                        000011100
-                 iSTATE9 | 00000000000000000000000000000000000000000100000000000000000000000000000 |                        000011101
-                 iSTATE8 | 00000000000000000000000000000000000000001000000000000000000000000000000 |                        000011110
-                 iSTATE7 | 00000000000000000000000000000000000000010000000000000000000000000000000 |                        000011111
-                 iSTATE6 | 00000000000000000000000000000000000000100000000000000000000000000000000 |                        000100000
-                 iSTATE5 | 00000000000000000000000000000000000001000000000000000000000000000000000 |                        000100001
-                 iSTATE4 | 00000000000000000000000000000000000010000000000000000000000000000000000 |                        000100010
-                 iSTATE3 | 00000000000000000000000000000000000100000000000000000000000000000000000 |                        000100011
-                iSTATE64 | 00000000000000000000000000000000001000000000000000000000000000000000000 |                        000100100
-                iSTATE63 | 00000000000000000000000000000000010000000000000000000000000000000000000 |                        000100101
-                iSTATE62 | 00000000000000000000000000000000100000000000000000000000000000000000000 |                        000100110
-                iSTATE61 | 00000000000000000000000000000001000000000000000000000000000000000000000 |                        000100111
-                iSTATE36 | 00000000000000000000000000000010000000000000000000000000000000000000000 |                        000101000
-                iSTATE34 | 00000000000000000000000000000100000000000000000000000000000000000000000 |                        000101001
-                iSTATE29 | 00000000000000000000000000001000000000000000000000000000000000000000000 |                        000101010
-                iSTATE28 | 00000000000000000000000000010000000000000000000000000000000000000000000 |                        000101011
-                iSTATE19 | 00000000000000000000000000100000000000000000000000000000000000000000000 |                        000101100
-                iSTATE18 | 00000000000000000000000001000000000000000000000000000000000000000000000 |                        000101101
-                iSTATE13 | 00000000000000000000000010000000000000000000000000000000000000000000000 |                        000101110
-                iSTATE12 | 00000000000000000000000100000000000000000000000000000000000000000000000 |                        000101111
-                iSTATE39 | 00000000000000000000001000000000000000000000000000000000000000000000000 |                        000110000
-                iSTATE38 | 00000000000000000000010000000000000000000000000000000000000000000000000 |                        000110001
-                iSTATE32 | 00000000000000000000100000000000000000000000000000000000000000000000000 |                        000110010
-                iSTATE30 | 00000000000000000001000000000000000000000000000000000000000000000000000 |                        000110011
-                iSTATE21 | 00000000000000000010000000000000000000000000000000000000000000000000000 |                        000110100
-                iSTATE20 | 00000000000000000100000000000000000000000000000000000000000000000000000 |                        000110101
-                iSTATE16 | 00000000000000001000000000000000000000000000000000000000000000000000000 |                        000110110
-                iSTATE14 | 00000000000000010000000000000000000000000000000000000000000000000000000 |                        000110111
-                iSTATE54 | 00000000000000100000000000000000000000000000000000000000000000000000000 |                        000111000
-                iSTATE52 | 00000000000001000000000000000000000000000000000000000000000000000000000 |                        000111001
-                iSTATE50 | 00000000000010000000000000000000000000000000000000000000000000000000000 |                        000111010
-                iSTATE49 | 00000000000100000000000000000000000000000000000000000000000000000000000 |                        000111011
-                iSTATE47 | 00000000001000000000000000000000000000000000000000000000000000000000000 |                        000111100
-                iSTATE46 | 00000000010000000000000000000000000000000000000000000000000000000000000 |                        000111101
-                iSTATE43 | 00000000100000000000000000000000000000000000000000000000000000000000000 |                        000111110
-                iSTATE42 | 00000001000000000000000000000000000000000000000000000000000000000000000 |                        000111111
-                iSTATE33 | 00000010000000000000000000000000000000000000000000000000000000000000000 |                        001000000
-                iSTATE31 | 00000100000000000000000000000000000000000000000000000000000000000000000 |                        001000001
-                iSTATE27 | 00001000000000000000000000000000000000000000000000000000000000000000000 |                        001000010
-                iSTATE26 | 00010000000000000000000000000000000000000000000000000000000000000000000 |                        001000011
-                iSTATE17 | 00100000000000000000000000000000000000000000000000000000000000000000000 |                        001000100
-                iSTATE15 | 01000000000000000000000000000000000000000000000000000000000000000000000 |                        001000101
-                iSTATE11 | 10000000000000000000000000000000000000000000000000000000000000000000000 |                        001000110
+              STATE_INIT |                            00001 |                         00000000
+         STATE_SPI_RESET |                            00010 |                         00000001
+            STATE_DELAY0 |                            00100 |                         00000010
+          STATE_TG_RESET |                            01000 |                         00000011
+            STATE_DELAY1 |                            10000 |                         00000100
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'spi_spo'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-              STATE_INIT |                                0 |                         00000000
-         STATE_SPI_RESET |                                1 |                         00000001
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'hamamastu'
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'hamamastu'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 874.559 ; gain = 553.617
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 831.164 ; gain = 509.305
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -767,12 +432,63 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	  72 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	  72 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module hamamastu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 6     
+Module ClockGenerator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module spi_spo 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  72 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  72 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -792,211 +508,33 @@ Warning: Parallel synthesis criteria is not met
 INFO: [Synth 8-5546] ROM "MASTER_CLK" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "SPI_gen_CLK" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ILA_CLK" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "D1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "rw_bit" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-3917] design hamamastu has port led[4] driven by constant 0
+INFO: [Synth 8-5546] ROM "error_bit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "delay1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tg_counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TG_RESET_REG" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "delay0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 WARNING: [Synth 8-3917] design hamamastu has port VDD_A_EN driven by constant 1
 WARNING: [Synth 8-3917] design hamamastu has port VDD_D_EN driven by constant 1
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (TG_RESET_REG_reg)
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin counter[27] with 1st driver pin 'TrigerEvent_orig0_inferred/counter[27]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:121]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin counter[27] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:121]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net counter[27] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:121]
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[0]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[10]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[11]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[12]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[13]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[14]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[15]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[16]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[17]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[18]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[19]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[1]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[20]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[21]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[22]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[23]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[24]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[25]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[26]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[27]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[28]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[29]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[2]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[30]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[31]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[3]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[4]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[5]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[6]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[7]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[8]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[9]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[0]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[10]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[11]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[12]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[13]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[14]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[15]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[16]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[17]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[18]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[19]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[1]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[20]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[21]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[22]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[23]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[24]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[25]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[26]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[27]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[28]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[29]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[2]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[30]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[31]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[3]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[4]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[5]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[6]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[7]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[8]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[9]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[10]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[11]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[12]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[13]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[14]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[15]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[16]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[17]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[18]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[19]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[1]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[20]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[21]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[22]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[23]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[24]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[25]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[26]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[27]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[28]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[29]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[2]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[30]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[31]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[3]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[4]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[5]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[6]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[7]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[8]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[9]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[10]) is unused and will be removed from module okWireIn.
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[10] with 1st driver pin 'wire12/ep_dataout[10]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[10] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[10] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[11]) is unused and will be removed from module okWireIn.
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[11] with 1st driver pin 'wire12/ep_dataout[11]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[11] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[11] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[12]) is unused and will be removed from module okWireIn.
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[12] with 1st driver pin 'wire12/ep_dataout[12]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[12] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[12] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[13]) is unused and will be removed from module okWireIn.
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[13] with 1st driver pin 'wire12/ep_dataout[13]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[13] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[13] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[14]) is unused and will be removed from module okWireIn.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[14] with 1st driver pin 'wire12/ep_dataout[14]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[14] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[14] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[15] with 1st driver pin 'wire12/ep_dataout[15]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[15] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[15] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[16] with 1st driver pin 'wire12/ep_dataout[16]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[16] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[16] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[17] with 1st driver pin 'wire12/ep_dataout[17]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[17] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[17] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[18] with 1st driver pin 'wire12/ep_dataout[18]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[18] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[18] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[19] with 1st driver pin 'wire12/ep_dataout[19]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[19] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[19] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[1] with 1st driver pin 'wire12/ep_dataout[1]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[1] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[20] with 1st driver pin 'wire12/ep_dataout[20]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[20] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[20] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[21] with 1st driver pin 'wire12/ep_dataout[21]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[21] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[21] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[22] with 1st driver pin 'wire12/ep_dataout[22]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[22] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[22] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[23] with 1st driver pin 'wire12/ep_dataout[23]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[23] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[23] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[24] with 1st driver pin 'wire12/ep_dataout[24]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[24] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[24] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[25] with 1st driver pin 'wire12/ep_dataout[25]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[25] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[25] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[26] with 1st driver pin 'wire12/ep_dataout[26]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[26] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[26] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[27] with 1st driver pin 'wire12/ep_dataout[27]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[27] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[27] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[28] with 1st driver pin 'wire12/ep_dataout[28]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[28] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[28] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[29] with 1st driver pin 'wire12/ep_dataout[29]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[29] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[29] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[2] with 1st driver pin 'wire12/ep_dataout[2]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[2] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[30] with 1st driver pin 'wire12/ep_dataout[30]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[30] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[30] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[31] with 1st driver pin 'wire12/ep_dataout[31]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[31] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[31] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[3] with 1st driver pin 'wire12/ep_dataout[3]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[3] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[4] with 1st driver pin 'wire12/ep_dataout[4]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[4] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[5] with 1st driver pin 'wire12/ep_dataout[5]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[5] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[6] with 1st driver pin 'wire12/ep_dataout[6]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[6] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[6] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[7] with 1st driver pin 'wire12/ep_dataout[7]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[7] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[7] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[8] with 1st driver pin 'wire12/ep_dataout[8]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[8] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[8] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[9] with 1st driver pin 'wire12/ep_dataout[9]' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ep_dataout[9] with 2nd driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ep_dataout[9] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:155]
+INFO: [Synth 8-3886] merging instance 'spi_rw/State_reg[7]' (FDE) to 'spi_rw/State_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_rw/\State_reg[8] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 874.559 ; gain = 553.617
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 831.164 ; gain = 509.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|spi_spo     | CLK        | 128x1         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1007,16 +545,14 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5578] Moved timing constraint from pin 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst' to pin 'hostIF/core0/core0/a0/l62a5479e7989ce7f4d5507c695cc69cf_reg/Q'
-INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 874.559 ; gain = 553.617
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 843.613 ; gain = 521.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 883.840 ; gain = 562.898
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 863.953 ; gain = 542.094
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1028,7 +564,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 885.164 ; gain = 564.223
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 864.723 ; gain = 542.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1051,30 +587,57 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[6] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[5] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[4] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[3] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[2] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[1] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:register_input[0] to constant 0
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:60]
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rw_flag_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_input_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_input_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_input_inferred:in0[29] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:78]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 885.164 ; gain = 564.223
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin rw_flag[0] with 1st driver pin 'GND' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:91]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 885.164 ; gain = 564.223
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1086,25 +649,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 885.164 ; gain = 564.223
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 885.164 ; gain = 564.223
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 885.164 ; gain = 564.223
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 885.164 ; gain = 564.223
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1118,66 +681,58 @@ Report BlackBoxes:
 +------+--------------+----------+
 
 Report Cell Usage: 
-+------+------------+------+
-|      |Cell        |Count |
-+------+------------+------+
-|1     |ila_0       |     1|
-|2     |BUFG        |     3|
-|3     |CARRY4      |    64|
-|4     |DNA_PORT    |     1|
-|5     |LUT1        |    62|
-|6     |LUT2        |    89|
-|7     |LUT3        |    65|
-|8     |LUT4        |   213|
-|9     |LUT5        |   125|
-|10    |LUT6        |   435|
-|11    |LUT6_2      |    50|
-|12    |MMCME2_BASE |     1|
-|13    |RAM128X1S   |     8|
-|14    |RAM32M      |     4|
-|15    |RAMB18E1    |     1|
-|16    |RAMB18E1_1  |     1|
-|17    |RAMB36E1    |     1|
-|18    |FDCE        |   226|
-|19    |FDPE        |    37|
-|20    |FDRE        |   824|
-|21    |FDSE        |    22|
-|22    |IBUF        |     5|
-|23    |IBUFG       |     1|
-|24    |IBUFGDS     |     1|
-|25    |IOBUF       |    33|
-|26    |OBUF        |    13|
-|27    |OBUFT       |    11|
-+------+------------+------+
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |ila_0   |     1|
+|2     |BUFG    |     1|
+|3     |CARRY4  |    26|
+|4     |LUT1    |    76|
+|5     |LUT2    |     8|
+|6     |LUT3    |     6|
+|7     |LUT4    |    30|
+|8     |LUT5    |    18|
+|9     |LUT6    |    18|
+|10    |FDRE    |   150|
+|11    |IBUF    |     1|
+|12    |IBUFGDS |     1|
+|13    |OBUF    |    16|
+|14    |OBUFT   |     8|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+---------------+------+
+|      |Instance |Module         |Cells |
++------+---------+---------------+------+
+|1     |top      |               |   359|
+|2     |  clock  |ClockGenerator |   127|
+|3     |  spi_rw |spi_spo        |    65|
++------+---------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 885.164 ; gain = 564.223
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 97 critical warnings and 415 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 885.164 ; gain = 184.914
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 885.164 ; gain = 564.223
+Synthesis finished with 0 errors, 0 critical warnings and 237 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 864.723 ; gain = 185.441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 165 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 890.238 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 867.027 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 98 instances were transformed.
-  IBUFG => IBUF: 1 instances
+  A total of 1 instances were transformed.
   IBUFGDS => IBUFDS: 1 instances
-  IOBUF => IOBUF (IBUF, OBUFT): 33 instances
-  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
-  MMCME2_BASE => MMCME2_ADV: 1 instances
-  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 8 instances
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-258 Infos, 403 Warnings, 100 Critical Warnings and 0 Errors encountered.
+62 Infos, 321 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 890.238 ; gain = 571.027
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 890.238 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 867.027 ; gain = 546.895
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 867.027 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/hamamastu.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file hamamastu_utilization_synth.rpt -pb hamamastu_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 19 16:41:55 2019...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 23 11:49:10 2019...

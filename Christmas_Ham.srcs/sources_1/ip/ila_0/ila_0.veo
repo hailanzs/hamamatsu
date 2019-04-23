@@ -57,7 +57,7 @@ ila_0 your_instance_name (
 	.clk(clk), // input wire clk
 
 
-	.probe0(probe0), // input wire [29:0]  probe0  
+	.probe0(probe0), // input wire [31:0]  probe0  
 	.probe1(probe1) // input wire [1:0]  probe1
 );
 

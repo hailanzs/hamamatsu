@@ -69,7 +69,7 @@ module ClockGenerator(
 
     // spi clock signal
     always @(posedge clk) begin        
-        if (ClkDiv_S == 4) begin                // 2*(4+1) = 10. 200 MHz / 10 = 20 MHz
+        if (ClkDiv_S == 21) begin                // 2*(10+1) = ??. 200 MHz / 22 = ?? MHz
             SPI_gen_CLK <= !SPI_gen_CLK;                       
             ClkDiv_S <= 0;
         end else begin                        

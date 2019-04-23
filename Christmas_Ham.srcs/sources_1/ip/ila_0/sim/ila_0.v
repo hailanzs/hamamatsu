@@ -57,7 +57,7 @@ probe1
 input clk;
 
 
-input [29 : 0] probe0;
+input [31 : 0] probe0;
 input [1 : 0] probe1;
 
 

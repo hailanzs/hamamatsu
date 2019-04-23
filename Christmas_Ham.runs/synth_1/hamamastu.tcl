@@ -17,6 +17,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param tcl.collectionResultDisplayLimit 0
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a200tfbg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,10 +34,7 @@ set_property ip_output_repo c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.cache/
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/imports/Downloads/ClockGenerator.v
-  {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v}
   {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v}
-  {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okWireIn.v}
-  {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okWireOut.v}
   C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v
   C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v
 }

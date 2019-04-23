@@ -18,7 +18,7 @@
 
 module spi_spo(
         // leds for debugging
-        output [7:0] led,
+        output error,
         
         // 20 MHz clock
         input clock,
@@ -47,32 +47,34 @@ module spi_spo(
     localparam WRITE = 1'b1;
     
     // state machine registers
-    reg [8:0] State = STATE_INIT;       // state register
+    reg [8:0] State;       // state register
     reg rw_bit;                         // read or write bit
     reg RESET, MOSI, CS, CLK, MISO;     // copys of imager pins
     reg [6:0] register;
     reg [7:0] data_write, data_read;
-    
+    // debugging
+    reg error_bit;  
     // transfering from state machine to imager
     // assign SPI_RESET = RESET;
     assign SPI_MOSI = MOSI;
     assign SPI_CS = CS;
     assign SPI_CLK = CLK;
     assign data_output = data_read;
+    assign error = error_bit;
     
-    // debugging
-    reg error_bit;
-    assign led[7] = error_bit;
+
+    //assign led[7] = error_bit;
     assign State_copy = State;
     // initial settings
     initial begin
         error_bit <= 1'b1;
         CLK <= 1'b0;
         CS <= 1'b1;
+        State <= STATE_INIT;
     end
     
     // transfering from imager to state machine
-    always @(*) begin
+    always @(posedge clock) begin
         MISO <= SPI_MISO;
         register <= register_input;
         data_write <= data_input;
@@ -87,13 +89,13 @@ module spi_spo(
         
             STATE_INIT: begin
                 // 1 is read
-                if (rw_flag == 31'd1) begin 
+                if (rw_flag[0] == 1'b1) begin 
                     State <= 9'b1;
                     rw_bit <= READ;
                 end
                 
                 // 2 is write
-                else if (rw_flag == 31'd2) begin 
+                else if (rw_flag[1] == 1'b1) begin 
                     State <= 9'b1;
                     rw_bit <= WRITE;
                 end
@@ -104,6 +106,7 @@ module spi_spo(
             
             // begin write sequence
             9'd1: begin
+               
                 CLK <= 1'b0;                // init states of the lines
                 CS <= 1'b1;
                 State <= State + 1'b1;
@@ -500,20 +503,21 @@ module spi_spo(
             
             9'd68: begin
                 CLK <= 1'b0;
+                CS <= 1'b1;
                 State <= State + 1'b1;
             end
             
             9'd69: begin
-                CS <= 1'b1;
+               // CS <= 1'b1;
                 State <= State + 1'b1;
             end
             
             9'd70: begin
                 State <= STATE_INIT;
+                error_bit <= 1'b0;
             end
             
             default: begin 
-                error_bit <= 1'b0;
             end
         
         endcase
