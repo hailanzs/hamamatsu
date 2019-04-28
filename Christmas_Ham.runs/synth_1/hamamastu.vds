@@ -2,12 +2,12 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Apr 23 11:48:38 2019
-# Process ID: 2912
-# Current directory: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1
+# Start of session at: Sun Apr 28 15:52:26 2019
+# Process ID: 12980
+# Current directory: C:/Users/hshanbha/ham/ham/Christmas_Ham.runs/synth_1
 # Command line: vivado.exe -log hamamastu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hamamastu.tcl
-# Log file: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/hamamastu.vds
-# Journal file: C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1\vivado.jou
+# Log file: C:/Users/hshanbha/ham/ham/Christmas_Ham.runs/synth_1/hamamastu.vds
+# Journal file: C:/Users/hshanbha/ham/ham/Christmas_Ham.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source hamamastu.tcl -notrace
 Command: synth_design -top hamamastu -part xc7a200tfbg484-1
@@ -15,11 +15,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3352 
+INFO: Helper process launched with PID 14888 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 418.668 ; gain = 96.809
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 416.113 ; gain = 96.270
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'hamamastu' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:18]
+INFO: [Synth 8-6157] synthesizing module 'hamamastu' [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:18]
 	Parameter endPt_count bound to: 1 - type: integer 
 	Parameter STATE_INIT bound to: 8'b00000000 
 	Parameter STATE_SPI_RESET bound to: 8'b00000001 
@@ -29,7 +29,7 @@ INFO: [Synth 8-6157] synthesizing module 'hamamastu' [C:/Users/cakulev2/ham/hama
 INFO: [Synth 8-6157] synthesizing module 'okWireOR' [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v:119]
 	Parameter N bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'okWireOR' (1#1) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v:119]
-INFO: [Synth 8-6157] synthesizing module 'ClockGenerator' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/imports/Downloads/ClockGenerator.v:19]
+INFO: [Synth 8-6157] synthesizing module 'ClockGenerator' [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/imports/Downloads/ClockGenerator.v:19]
 INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter DIFF_TERM bound to: FALSE - type: string 
@@ -37,31 +37,27 @@ INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2018.3/scri
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (2#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
-INFO: [Synth 8-6155] done synthesizing module 'ClockGenerator' (3#1) [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/imports/Downloads/ClockGenerator.v:19]
-INFO: [Synth 8-6157] synthesizing module 'spi_spo' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'ClockGenerator' (3#1) [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/imports/Downloads/ClockGenerator.v:19]
+INFO: [Synth 8-6157] synthesizing module 'spi_spo' [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/spi_spo.v:19]
 	Parameter STATE_INIT bound to: 9'b000000000 
 	Parameter READ bound to: 1'b0 
 	Parameter WRITE bound to: 1'b1 
-WARNING: [Synth 8-6014] Unused sequential element data_write_reg was removed.  [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:80]
-INFO: [Synth 8-6155] done synthesizing module 'spi_spo' (4#1) [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:19]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:207]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:267]
-INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/.Xil/Vivado-2912-ECEB-4022-14/realtime/ila_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ila_0' (5#1) [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/.Xil/Vivado-2912-ECEB-4022-14/realtime/ila_0_stub.v:6]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi_rw'. This will prevent further optimization [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:177]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_sample12'. This will prevent further optimization [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:267]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'clock'. This will prevent further optimization [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:167]
-WARNING: [Synth 8-6014] Unused sequential element write_reset_reg was removed.  [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:210]
-WARNING: [Synth 8-6014] Unused sequential element read_reset_reg was removed.  [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:211]
-WARNING: [Synth 8-6014] Unused sequential element write_enable_reg was removed.  [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:212]
-WARNING: [Synth 8-3848] Net VDD_C_EN in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:49]
-WARNING: [Synth 8-3848] Net N15_EN in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:50]
-WARNING: [Synth 8-3848] Net N2_EN in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:51]
-WARNING: [Synth 8-3848] Net PLL_RESET in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:63]
-WARNING: [Synth 8-3848] Net M_START in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:64]
-WARNING: [Synth 8-3848] Net okHU in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:68]
-WARNING: [Synth 8-3848] Net okEHx in module/entity hamamastu does not have driver. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:91]
-INFO: [Synth 8-6155] done synthesizing module 'hamamastu' (6#1) [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'spi_spo' (4#1) [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/spi_spo.v:19]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:210]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:272]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/hshanbha/ham/ham/Christmas_Ham.runs/synth_1/.Xil/Vivado-12980-ECEB-4022-13/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (5#1) [C:/Users/hshanbha/ham/ham/Christmas_Ham.runs/synth_1/.Xil/Vivado-12980-ECEB-4022-13/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'clock'. This will prevent further optimization [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:168]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_sample12'. This will prevent further optimization [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:272]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi_rw'. This will prevent further optimization [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:178]
+WARNING: [Synth 8-3848] Net VDD_C_EN in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:49]
+WARNING: [Synth 8-3848] Net N15_EN in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:50]
+WARNING: [Synth 8-3848] Net N2_EN in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:51]
+WARNING: [Synth 8-3848] Net PLL_RESET in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:63]
+WARNING: [Synth 8-3848] Net M_START in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:64]
+WARNING: [Synth 8-3848] Net okHU in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:68]
+WARNING: [Synth 8-3848] Net okEHx in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'hamamastu' (6#1) [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:18]
 WARNING: [Synth 8-3917] design hamamastu has port VDD_A_EN driven by constant 1
 WARNING: [Synth 8-3917] design hamamastu has port VDD_D_EN driven by constant 1
 WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[31]
@@ -143,14 +139,6 @@ WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[11]
 WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[10]
 WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[9]
 WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[8]
-WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[7]
-WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[6]
-WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[5]
-WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[4]
-WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[3]
-WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[2]
-WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[1]
-WARNING: [Synth 8-3331] design spi_spo has unconnected port data_input[0]
 WARNING: [Synth 8-3331] design hamamastu has unconnected port VDD_C_EN
 WARNING: [Synth 8-3331] design hamamastu has unconnected port N15_EN
 WARNING: [Synth 8-3331] design hamamastu has unconnected port N2_EN
@@ -164,9 +152,17 @@ WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[30]
 WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[29]
 WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[28]
 WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[27]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[26]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[25]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[24]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[23]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[22]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[21]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[20]
+WARNING: [Synth 8-3331] design hamamastu has unconnected port okUHU[19]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 473.742 ; gain = 151.883
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.727 ; gain = 151.883
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -175,80 +171,80 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[64] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[63] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[62] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[61] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[60] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[59] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[58] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[57] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[56] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[55] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[54] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[53] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[52] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[51] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[50] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[49] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[48] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[47] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[46] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[45] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[44] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[43] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[42] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[41] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[40] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[39] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[38] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[37] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[36] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[35] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[34] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[33] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[32] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[31] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[30] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[29] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[28] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[27] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[26] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[25] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[24] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[23] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[22] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[21] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[20] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[19] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[18] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[17] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[16] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[15] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[14] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[13] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[12] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[11] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[10] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[9] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[8] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[7] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[6] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[5] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[4] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[3] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[2] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[1] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[0] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
-WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[1] to constant 0 [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:177]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[64] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[63] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[62] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[61] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[60] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[59] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[58] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[57] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[56] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[55] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[54] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[53] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[52] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[51] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[50] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[49] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[48] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[47] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[46] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[45] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[44] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[43] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[42] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[41] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[40] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[39] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[38] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[37] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[36] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[35] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[34] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[33] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[32] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[31] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[30] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[29] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[28] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[27] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[26] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[25] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[24] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[23] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[22] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[21] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[20] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[19] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[18] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[17] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[16] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[15] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[14] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[13] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[12] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[11] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[10] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[9] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[8] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[7] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[6] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[5] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[4] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[3] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[2] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[1] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin wireOR:okEHx[0] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:92]
+WARNING: [Synth 8-3295] tying undriven pin spi_rw:rw_flag[1] to constant 0 [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:178]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 473.742 ; gain = 151.883
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.727 ; gain = 151.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 473.742 ; gain = 151.883
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.727 ; gain = 151.883
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -257,143 +253,143 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
-Finished Parsing XDC File [c:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
-Parsing XDC File [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
-WARNING: [Vivado 12-627] No clocks matched 'mmcm0_clk0'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:96]
-WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:101]
-WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:102]
-WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:103]
-WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:272]
-WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:273]
-WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:338]
-WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:339]
-WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:340]
-WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:341]
-WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:342]
-WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:343]
-WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:344]
-WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:345]
-WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:346]
-WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:347]
-WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:348]
-WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:349]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:352]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:353]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:354]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:355]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:356]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:357]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:358]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:359]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:360]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:361]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:362]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:363]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:364]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:365]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:366]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:367]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:368]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:369]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:370]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[19]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:371]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[20]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:372]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[21]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:373]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[22]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:374]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[23]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:375]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[24]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:376]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[25]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:377]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[26]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:378]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[27]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:379]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[28]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:380]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[29]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:381]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[30]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:382]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[31]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:383]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:384]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:385]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[0]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:387]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[1]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:388]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[2]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:389]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[3]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:390]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[4]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:391]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[5]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:392]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[6]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:393]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[7]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:394]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[8]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:395]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[9]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:396]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[10]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:397]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[11]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:398]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[12]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:399]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[13]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:400]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[14]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:401]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:402]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:403]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[0]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:405]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[1]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:406]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[2]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:407]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:408]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:409]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:411]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:412]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:413]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:415]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:416]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:417]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:419]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:420]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:421]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:423]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:424]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:425]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[0]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:427]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:428]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:429]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[0]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:431]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:432]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:433]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[0]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:435]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[1]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:436]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[2]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:437]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[3]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:438]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:439]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[*]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:440]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[0]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:442]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_n[0]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:443]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[1]'. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:444]
-INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:444]
-Finished Parsing XDC File [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/hamamastu_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hamamastu_propImpl.xdc].
+Parsing XDC File [c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
+Finished Parsing XDC File [c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
+Parsing XDC File [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
+WARNING: [Vivado 12-627] No clocks matched 'mmcm0_clk0'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:272]
+WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:273]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:338]
+WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:339]
+WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:340]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:341]
+WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:342]
+WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:343]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:344]
+WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:345]
+WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:346]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:347]
+WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:348]
+WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:349]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:352]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:353]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:354]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:355]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:356]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:357]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:358]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:359]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:360]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:361]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:362]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:363]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:364]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:365]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:366]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:367]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:368]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:369]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:370]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[19]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:371]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[20]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:372]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[21]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:373]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[22]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:374]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[23]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:375]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[24]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:376]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[25]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:377]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[26]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:378]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[27]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:379]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[28]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:380]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[29]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:381]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[30]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:382]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[31]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:383]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:384]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:385]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:387]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[1]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:388]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[2]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:389]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[3]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:390]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[4]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:391]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[5]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:392]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[6]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:393]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[7]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:394]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[8]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:395]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[9]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:396]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[10]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:397]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[11]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:398]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[12]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:399]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[13]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:400]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[14]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:401]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:402]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:403]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:405]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[1]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:406]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[2]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:407]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:408]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:409]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:411]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:412]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:413]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:415]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:416]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:417]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:419]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:420]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:421]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:423]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:424]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:425]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:427]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:428]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:429]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:431]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:432]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:433]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:435]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[1]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:436]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[2]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:437]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[3]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:438]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:439]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:440]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:442]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_n[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:443]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[1]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:444]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:444]
+Finished Parsing XDC File [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/hamamastu_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hamamastu_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/hamamastu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 831.164 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 829.375 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 831.164 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 829.375 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IBUFGDS => IBUFDS: 1 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 831.164 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 831.164 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 829.375 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 829.375 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 831.164 ; gain = 509.305
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 829.375 ; gain = 509.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 831.164 ; gain = 509.305
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 829.375 ; gain = 509.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for ila_sample12. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 831.164 ; gain = 509.305
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 829.375 ; gain = 509.531
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "MASTER_CLK" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ILA_CLK" won't be mapped to RAM because it is too sparse
@@ -401,16 +397,20 @@ INFO: [Synth 8-5546] ROM "SPI_gen_CLK" won't be mapped to RAM because it is too 
 INFO: [Synth 8-5546] ROM "State" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLK" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CS" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "MOSI" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "error_bit0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'hamamastu'
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "delay2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SPI_RESET_REG" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "delay0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TG_RESET_REG" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "TG_RESET_REG" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "tg_counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "delay1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "State" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "SPI_RESET_REG_reg0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -422,7 +422,7 @@ INFO: [Synth 8-5546] ROM "SPI_RESET_REG_reg0" won't be mapped to RAM because it 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'hamamastu'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 831.164 ; gain = 509.305
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 829.375 ; gain = 509.531
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -436,21 +436,25 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     24 Bit       Adders := 3     
-	   2 Input      3 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 4     
 +---Registers : 
 	               24 Bit    Registers := 3     
 	                9 Bit    Registers := 1     
-	                8 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
 	                7 Bit    Registers := 1     
-	                3 Bit    Registers := 3     
-	                1 Bit    Registers := 12    
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 11    
 +---Muxes : 
 	   2 Input     24 Bit        Muxes := 3     
 	  72 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 17    
-	  72 Input      1 Bit        Muxes := 6     
-	   5 Input      1 Bit        Muxes := 6     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	  72 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	  72 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 7     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -461,13 +465,15 @@ Hierarchical RTL Component report
 Module hamamastu 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      3 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 4     
 +---Registers : 
-	                3 Bit    Registers := 3     
+	                3 Bit    Registers := 4     
 	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input      1 Bit        Muxes := 6     
-	   5 Input      1 Bit        Muxes := 6     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 7     
 Module ClockGenerator 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -482,14 +488,16 @@ Module spi_spo
 Detailed RTL Component Info : 
 +---Registers : 
 	                9 Bit    Registers := 1     
-	                8 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
 	                7 Bit    Registers := 1     
-	                1 Bit    Registers := 6     
+	                1 Bit    Registers := 5     
 +---Muxes : 
 	  72 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
-	  72 Input      1 Bit        Muxes := 6     
+	  72 Input      2 Bit        Muxes := 1     
+	  72 Input      1 Bit        Muxes := 5     
 	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -511,17 +519,13 @@ INFO: [Synth 8-5546] ROM "SPI_gen_CLK" won't be mapped to RAM because it is too 
 INFO: [Synth 8-5546] ROM "ILA_CLK" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "error_bit0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "delay1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tg_counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "TG_RESET_REG" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "delay0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 WARNING: [Synth 8-3917] design hamamastu has port VDD_A_EN driven by constant 1
 WARNING: [Synth 8-3917] design hamamastu has port VDD_D_EN driven by constant 1
 INFO: [Synth 8-3886] merging instance 'spi_rw/State_reg[7]' (FDE) to 'spi_rw/State_reg[8]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_rw/\State_reg[8] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 831.164 ; gain = 509.305
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 829.375 ; gain = 509.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -547,13 +551,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 843.613 ; gain = 521.754
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 843.102 ; gain = 523.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 863.953 ; gain = 542.094
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 863.785 ; gain = 543.941
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -565,7 +569,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 864.723 ; gain = 542.863
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 864.551 ; gain = 544.707
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -623,9 +627,9 @@ WARNING: [Synth 8-3295] tying undriven pin data_input_inferred:in0[31] to consta
 WARNING: [Synth 8-3295] tying undriven pin data_input_inferred:in0[30] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin data_input_inferred:in0[29] to constant 0
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:78]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/spi_spo.v:62]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 864.551 ; gain = 544.707
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -638,7 +642,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 864.551 ; gain = 544.707
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -650,25 +654,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 864.551 ; gain = 544.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 864.551 ; gain = 544.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 864.551 ; gain = 544.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 864.551 ; gain = 544.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -690,50 +694,52 @@ Report Cell Usage:
 |3     |CARRY4  |    26|
 |4     |LUT1    |    76|
 |5     |LUT2    |     8|
-|6     |LUT3    |     6|
-|7     |LUT4    |    30|
-|8     |LUT5    |    18|
-|9     |LUT6    |    18|
-|10    |FDRE    |   150|
-|11    |IBUF    |     1|
-|12    |IBUFGDS |     1|
-|13    |OBUF    |    16|
-|14    |OBUFT   |     8|
+|6     |LUT3    |     5|
+|7     |LUT4    |    39|
+|8     |LUT5    |    17|
+|9     |LUT6    |    21|
+|10    |MUXF7   |     2|
+|11    |MUXF8   |     1|
+|12    |FDRE    |   160|
+|13    |IBUF    |     1|
+|14    |IBUFGDS |     1|
+|15    |OBUF    |    16|
+|16    |OBUFT   |     8|
 +------+--------+------+
 
 Report Instance Areas: 
 +------+---------+---------------+------+
 |      |Instance |Module         |Cells |
 +------+---------+---------------+------+
-|1     |top      |               |   359|
+|1     |top      |               |   382|
 |2     |  clock  |ClockGenerator |   127|
-|3     |  spi_rw |spi_spo        |    65|
+|3     |  spi_rw |spi_spo        |    76|
 +------+---------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 864.551 ; gain = 544.707
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 237 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 864.723 ; gain = 185.441
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 864.723 ; gain = 542.863
+Synthesis finished with 0 errors, 0 critical warnings and 229 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 864.551 ; gain = 187.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 864.551 ; gain = 544.707
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 867.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 867.625 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IBUFGDS => IBUFDS: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-62 Infos, 321 Warnings, 0 Critical Warnings and 0 Errors encountered.
+62 Infos, 317 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 867.027 ; gain = 546.895
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 867.625 ; gain = 549.508
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 867.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 867.625 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/cakulev2/ham/hamamatsu/Christmas_Ham.runs/synth_1/hamamastu.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hshanbha/ham/ham/Christmas_Ham.runs/synth_1/hamamastu.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file hamamastu_utilization_synth.rpt -pb hamamastu_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 23 11:49:10 2019...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 28 15:52:58 2019...

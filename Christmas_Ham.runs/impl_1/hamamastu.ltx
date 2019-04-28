@@ -258,8 +258,25 @@
                                 ]
                             },
                             {
-                                "name": "probe1",
+                                "name": "probe0",
                                 "id": 9,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 32,
+                                "rightIndex": 32,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "M_CLOCK_OBUF",
+                                        "isBus": false,
+                                        "parentNetId": 31
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 10,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
@@ -275,7 +292,7 @@
                             },
                             {
                                 "name": "probe1",
-                                "id": 10,
+                                "id": 11,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
@@ -286,6 +303,39 @@
                                     {
                                         "name": "SPI_gen_CLK",
                                         "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 31,
+                        "name": "clock/MASTER_CLK_BUFG",
+                        "state_reg": [
+                            {
+                                "name": "FSM_onehot_State_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "STATE_INIT",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "STATE_SPI_RESET",
+                                        "val": "00010"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY0",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "STATE_TG_RESET",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY1",
+                                        "val": "10000"
                                     }
                                 ]
                             }

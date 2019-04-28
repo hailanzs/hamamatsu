@@ -39,9 +39,9 @@ module ClockGenerator(
          
     // Initialize the two registers used in this module  
     initial begin
-        MASTER_CLK <= 1'b0;  
-        SPI_gen_CLK <= 1'b0;     
-        ILA_CLK <= 1'b0;
+        MASTER_CLK = 1'b0;  
+        SPI_gen_CLK = 1'b0;     
+        ILA_CLK = 1'b0;
     end
  
    
@@ -69,7 +69,7 @@ module ClockGenerator(
 
     // spi clock signal
     always @(posedge clk) begin        
-        if (ClkDiv_S == 21) begin                // 2*(10+1) = ??. 200 MHz / 22 = ?? MHz
+        if (ClkDiv_S == 21) begin                // 2*(21+1) = 44. 200 MHz / 44 = 4.5 MHz
             SPI_gen_CLK <= !SPI_gen_CLK;                       
             ClkDiv_S <= 0;
         end else begin                        

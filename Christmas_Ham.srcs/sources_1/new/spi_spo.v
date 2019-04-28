@@ -47,15 +47,16 @@ module spi_spo(
     localparam WRITE = 1'b1;
     
     // state machine registers
-    reg [8:0] State;       // state register
+    reg [8:0] State = STATE_INIT;       // state register
     reg rw_bit;                         // read or write bit
-    reg RESET, MOSI, CS, CLK, MISO;     // copys of imager pins
+    reg MOSI, CS, CLK, MISO;     // copys of imager pins
     reg [6:0] register;
     reg [7:0] data_write, data_read;
+    
     // debugging
     reg error_bit;  
+    
     // transfering from state machine to imager
-    // assign SPI_RESET = RESET;
     assign SPI_MOSI = MOSI;
     assign SPI_CS = CS;
     assign SPI_CLK = CLK;
@@ -65,17 +66,16 @@ module spi_spo(
 
     //assign led[7] = error_bit;
     assign State_copy = State;
+    
     // initial settings
     initial begin
         error_bit <= 1'b1;
         CLK <= 1'b0;
         CS <= 1'b1;
-        State <= STATE_INIT;
     end
     
     // transfering from imager to state machine
     always @(posedge clock) begin
-        MISO <= SPI_MISO;
         register <= register_input;
         data_write <= data_input;
     end
@@ -106,7 +106,6 @@ module spi_spo(
             
             // begin write sequence
             9'd1: begin
-               
                 CLK <= 1'b0;                // init states of the lines
                 CS <= 1'b1;
                 State <= State + 1'b1;
@@ -293,7 +292,7 @@ module spi_spo(
             // read/write bit 7
             9'd34: begin
                 CLK <= 1'b0;
-                if(rw_bit == 31'd2)
+                if(rw_bit == WRITE)
                     MOSI <= data_write[7];
                 State <= State + 1'b1;
             end
@@ -310,15 +309,15 @@ module spi_spo(
             
             9'd37: begin
                 CLK <= 1'b1;
-                if(rw_bit == 31'd1)             
-                    data_read[7] <= MISO;
+                if(rw_bit == READ)             
+                    data_read[7] <= SPI_MISO;
                 State <= State + 1'b1;
             end
             
             // read/write bit 6
             9'd38: begin
                 CLK <= 1'b0;
-                if(rw_bit == 31'd2)             
+                if(rw_bit == WRITE)             
                     MOSI <= data_write[6];
                 State <= State + 1'b1;
             end
@@ -335,15 +334,15 @@ module spi_spo(
             
             9'd41: begin
                 CLK <= 1'b1;
-                if(rw_bit == 31'd1)             
-                    data_read[6] <= MISO;
+                if(rw_bit == READ)             
+                    data_read[6] <= SPI_MISO;
                 State <= State + 1'b1;
             end
             
             // read/write bit 5
             9'd42: begin
                 CLK <= 1'b0;
-                if(rw_bit == 31'd2)             
+                if(rw_bit == WRITE)             
                     MOSI <= data_write[5];
                 State <= State + 1'b1;
             end
@@ -360,15 +359,15 @@ module spi_spo(
             
             9'd45: begin
                 CLK <= 1'b1;
-                if(rw_bit == 31'd1)             
-                    data_read[5] <= MISO;
+                if(rw_bit == READ)             
+                    data_read[5] <= SPI_MISO;
                 State <= State + 1'b1;
             end
             
             // read/write bit 4
             9'd46: begin
                 CLK <= 1'b0;
-                if(rw_bit == 31'd2)
+                if(rw_bit == WRITE)
                     MOSI <= data_write[4];
                 State <= State + 1'b1;
             end
@@ -385,15 +384,15 @@ module spi_spo(
             
             9'd49: begin
                 CLK <= 1'b1;
-                if(rw_bit == 31'd1)             
-                    data_read[4] <= MISO;
+                if(rw_bit == READ)             
+                    data_read[4] <= SPI_MISO;
                 State <= State + 1'b1;
             end
             
             // read/write bit 3
             9'd50: begin
                 CLK <= 1'b0;
-                if(rw_bit == 31'd2)
+                if(rw_bit == WRITE)
                     MOSI <= data_write[3];
                 State <= State + 1'b1;
             end
@@ -410,15 +409,15 @@ module spi_spo(
             
             9'd53: begin
                 CLK <= 1'b1;
-                if(rw_bit == 31'd1)             
-                    data_read[3] <= MISO;
+                if(rw_bit == READ)             
+                    data_read[3] <= SPI_MISO;
                 State <= State + 1'b1;
             end
             
             // read/write bit 2
             9'd54: begin
                 CLK <= 1'b0;
-                if(rw_bit == 31'd2)
+                if(rw_bit == WRITE)
                     MOSI <= data_write[2];
                 State <= State + 1'b1;
             end
@@ -435,15 +434,15 @@ module spi_spo(
             
             9'd57: begin
                 CLK <= 1'b1;
-                if(rw_bit == 31'd1)             
-                    data_read[2] <= MISO;
+                if(rw_bit == READ)             
+                    data_read[2] <= SPI_MISO;
                 State <= State + 1'b1;
             end
             
             // read/write bit 1
             9'd58: begin
                 CLK <= 1'b0;
-                if(rw_bit == 31'd2)
+                if(rw_bit == WRITE)
                     MOSI <= data_write[1];
                 State <= State + 1'b1;
             end
@@ -460,15 +459,15 @@ module spi_spo(
             
             9'd61: begin
                 CLK <= 1'b1;
-                if(rw_bit == 31'd1)             
-                    data_read[1] <= MISO;
+                if(rw_bit == READ)             
+                    data_read[1] <= SPI_MISO;
                 State <= State + 1'b1;
             end
             
             // read/write bit 0
             9'd62: begin
                 CLK <= 1'b0;
-                if(rw_bit == 31'd2)
+                if(rw_bit == WRITE)
                     MOSI <= data_write[0];
                 State <= State + 1'b1;
             end
@@ -485,8 +484,8 @@ module spi_spo(
             
             9'd65: begin
                 CLK <= 1'b1;
-                if(rw_bit == 31'd1)             
-                    data_read[0] <= MISO;
+                if(rw_bit == READ)             
+                    data_read[0] <= SPI_MISO;
                 State <= State + 1'b1;
             end
             
