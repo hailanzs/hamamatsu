@@ -60,7 +60,7 @@ module spi_spo(
     assign SPI_MOSI = MOSI;
     assign SPI_CS = CS;
     assign SPI_CLK = CLK;
-    assign data_output = data_read;
+    assign data_output[7:0] = data_read;
     assign error = error_bit;
     
 
@@ -76,8 +76,8 @@ module spi_spo(
     
     // transfering from imager to state machine
     always @(posedge clock) begin
-        register <= register_input;
-        data_write <= data_input;
+        register <= register_input[6:0];
+        data_write <= data_input[7:0];
     end
     
     // running at 20MHZ so that SPI_CLK runs at 10 MHHz

@@ -275,8 +275,74 @@
                                 ]
                             },
                             {
-                                "name": "probe1",
+                                "name": "probe0",
                                 "id": 10,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 33,
+                                "rightIndex": 33,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "TG_RESET_OBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe0",
+                                "id": 11,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 34,
+                                "rightIndex": 41,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "State",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "State[7]",
+                                                "parentNetId": 33
+                                            },
+                                            {
+                                                "name": "State[6]",
+                                                "parentNetId": 34
+                                            },
+                                            {
+                                                "name": "State[5]",
+                                                "parentNetId": 35
+                                            },
+                                            {
+                                                "name": "State[4]",
+                                                "parentNetId": 36
+                                            },
+                                            {
+                                                "name": "State[3]",
+                                                "parentNetId": 37
+                                            },
+                                            {
+                                                "name": "State[2]",
+                                                "parentNetId": 38
+                                            },
+                                            {
+                                                "name": "State[1]",
+                                                "parentNetId": 39
+                                            },
+                                            {
+                                                "name": "State[0]",
+                                                "parentNetId": 40
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 12,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
@@ -292,7 +358,7 @@
                             },
                             {
                                 "name": "probe1",
-                                "id": 11,
+                                "id": 13,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
@@ -315,27 +381,347 @@
                         "name": "clock/MASTER_CLK_BUFG",
                         "state_reg": [
                             {
-                                "name": "FSM_onehot_State_reg[0]",
+                                "name": "State_reg[0]",
                                 "states": [
                                     {
+                                        "name": "iSTATE",
+                                        "val": "01100100"
+                                    },
+                                    {
                                         "name": "STATE_INIT",
-                                        "val": "00001"
+                                        "val": "00000000"
                                     },
                                     {
                                         "name": "STATE_SPI_RESET",
-                                        "val": "00010"
+                                        "val": "00000001"
                                     },
                                     {
                                         "name": "STATE_DELAY0",
-                                        "val": "00100"
+                                        "val": "00000010"
                                     },
                                     {
                                         "name": "STATE_TG_RESET",
-                                        "val": "01000"
+                                        "val": "00000011"
                                     },
                                     {
                                         "name": "STATE_DELAY1",
-                                        "val": "10000"
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "STATE_SPI",
+                                        "val": "00000101"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 33,
+                        "name": "State[7]",
+                        "state_reg": [
+                            {
+                                "name": "State_reg[7]",
+                                "states": [
+                                    {
+                                        "name": "iSTATE",
+                                        "val": "01100100"
+                                    },
+                                    {
+                                        "name": "STATE_INIT",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "STATE_SPI_RESET",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY0",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "STATE_TG_RESET",
+                                        "val": "00000011"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY1",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "STATE_SPI",
+                                        "val": "00000101"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 34,
+                        "name": "State[6]",
+                        "state_reg": [
+                            {
+                                "name": "State_reg[6]",
+                                "states": [
+                                    {
+                                        "name": "iSTATE",
+                                        "val": "01100100"
+                                    },
+                                    {
+                                        "name": "STATE_INIT",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "STATE_SPI_RESET",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY0",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "STATE_TG_RESET",
+                                        "val": "00000011"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY1",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "STATE_SPI",
+                                        "val": "00000101"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 35,
+                        "name": "State[5]",
+                        "state_reg": [
+                            {
+                                "name": "State_reg[5]",
+                                "states": [
+                                    {
+                                        "name": "iSTATE",
+                                        "val": "01100100"
+                                    },
+                                    {
+                                        "name": "STATE_INIT",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "STATE_SPI_RESET",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY0",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "STATE_TG_RESET",
+                                        "val": "00000011"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY1",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "STATE_SPI",
+                                        "val": "00000101"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 36,
+                        "name": "State[4]",
+                        "state_reg": [
+                            {
+                                "name": "State_reg[4]",
+                                "states": [
+                                    {
+                                        "name": "iSTATE",
+                                        "val": "01100100"
+                                    },
+                                    {
+                                        "name": "STATE_INIT",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "STATE_SPI_RESET",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY0",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "STATE_TG_RESET",
+                                        "val": "00000011"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY1",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "STATE_SPI",
+                                        "val": "00000101"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 37,
+                        "name": "State[3]",
+                        "state_reg": [
+                            {
+                                "name": "State_reg[3]",
+                                "states": [
+                                    {
+                                        "name": "iSTATE",
+                                        "val": "01100100"
+                                    },
+                                    {
+                                        "name": "STATE_INIT",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "STATE_SPI_RESET",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY0",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "STATE_TG_RESET",
+                                        "val": "00000011"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY1",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "STATE_SPI",
+                                        "val": "00000101"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 38,
+                        "name": "State[2]",
+                        "state_reg": [
+                            {
+                                "name": "State_reg[2]",
+                                "states": [
+                                    {
+                                        "name": "iSTATE",
+                                        "val": "01100100"
+                                    },
+                                    {
+                                        "name": "STATE_INIT",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "STATE_SPI_RESET",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY0",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "STATE_TG_RESET",
+                                        "val": "00000011"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY1",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "STATE_SPI",
+                                        "val": "00000101"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 39,
+                        "name": "State[1]",
+                        "state_reg": [
+                            {
+                                "name": "State_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "iSTATE",
+                                        "val": "01100100"
+                                    },
+                                    {
+                                        "name": "STATE_INIT",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "STATE_SPI_RESET",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY0",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "STATE_TG_RESET",
+                                        "val": "00000011"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY1",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "STATE_SPI",
+                                        "val": "00000101"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 40,
+                        "name": "State[0]",
+                        "state_reg": [
+                            {
+                                "name": "State_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "iSTATE",
+                                        "val": "01100100"
+                                    },
+                                    {
+                                        "name": "STATE_INIT",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "STATE_SPI_RESET",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY0",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "STATE_TG_RESET",
+                                        "val": "00000011"
+                                    },
+                                    {
+                                        "name": "STATE_DELAY1",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "STATE_SPI",
+                                        "val": "00000101"
                                     }
                                 ]
                             }

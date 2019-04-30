@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sun Apr 28 15:55:24 2019
-| Host             : ECEB-4022-13 running 64-bit major release  (build 9200)
+| Date             : Tue Apr 30 11:15:17 2019
+| Host             : ECEB-4022-15 running 64-bit major release  (build 9200)
 | Command          : report_power -file hamamastu_power_routed.rpt -pb hamamastu_power_summary_routed.pb -rpx hamamastu_power_routed.rpx
 | Design           : hamamastu
 | Device           : xc7a200tfbg484-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.162        |
+| Total On-Chip Power (W)  | 0.160        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.016        |
+| Dynamic (W)              | 0.015        |
 | Device Static (W)        | 0.146        |
 | Effective TJA (C/W)      | 2.5          |
 | Max Ambient (C)          | 84.6         |
@@ -52,21 +52,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.005 |        5 |       --- |             --- |
-| Slice Logic              |     0.003 |     8181 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     2559 |    133800 |            1.91 |
-|   Register               |    <0.001 |     3996 |    267600 |            1.49 |
+| Clocks                   |     0.004 |        5 |       --- |             --- |
+| Slice Logic              |     0.003 |     8235 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     2581 |    133800 |            1.93 |
+|   Register               |    <0.001 |     4029 |    267600 |            1.51 |
 |   CARRY4                 |    <0.001 |      133 |     33450 |            0.40 |
-|   LUT as Shift Register  |    <0.001 |      248 |     46200 |            0.54 |
+|   LUT as Shift Register  |    <0.001 |      253 |     46200 |            0.55 |
 |   LUT as Distributed RAM |    <0.001 |      152 |     46200 |            0.33 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
-|   F7/F8 Muxes            |    <0.001 |       99 |    133800 |            0.07 |
-|   Others                 |     0.000 |      494 |       --- |             --- |
-| Signals                  |     0.003 |     5404 |       --- |             --- |
-| Block RAM                |    <0.001 |        1 |       365 |            0.27 |
+|   F7/F8 Muxes            |    <0.001 |       94 |    133800 |            0.07 |
+|   Others                 |     0.000 |      497 |       --- |             --- |
+| Signals                  |     0.003 |     5466 |       --- |             --- |
+| Block RAM                |    <0.001 |      1.5 |       365 |            0.41 |
 | I/O                      |     0.005 |       27 |       285 |            9.47 |
 | Static Power             |     0.146 |          |           |                 |
-| Total                    |     0.162 |          |           |                 |
+| Total                    |     0.160 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,9 +76,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.042 |       0.012 |      0.030 |
+| Vccint    |       1.000 |     0.041 |       0.011 |      0.030 |
 | Vccaux    |       1.800 |     0.032 |       0.001 |      0.031 |
-| Vcco33    |       3.300 |     0.006 |       0.001 |      0.005 |
+| Vcco33    |       3.300 |     0.005 |       0.000 |      0.005 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.005 |       0.000 |      0.005 |
@@ -146,8 +146,8 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| hamamastu                |     0.016 |
-|   clock                  |     0.008 |
+| hamamastu                |     0.015 |
+|   clock                  |     0.007 |
 |   dbg_hub                |     0.002 |
 |     inst                 |     0.002 |
 |       BSCANID.u_xsdbm_id |     0.002 |

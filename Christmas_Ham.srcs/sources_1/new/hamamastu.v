@@ -104,6 +104,7 @@ module hamamastu(
     //delay counters
     reg [2:0] delay0, delay1, delay2, tg_counter;
     reg tiger;
+    reg[1:0] rw_flag_tiger;
     
 /* ASSIGNING WIRES AND REGISTERS TO VALUES */
     
@@ -116,7 +117,7 @@ module hamamastu(
    
     reg [29:0] counter;
     assign TrigerEvent = tiger;
-    assign rw_flag[0] = tiger;
+    assign rw_flag[0] = rw_flag_tiger[0];
     assign led[6] = ~tiger;
     assign led[7] = error;
     assign led[5:0] = ~counter[27:22];
@@ -127,8 +128,9 @@ module hamamastu(
     localparam STATE_DELAY0 = 8'd2;
     localparam STATE_TG_RESET = 8'd3;
     localparam STATE_DELAY1 = 8'd4;
+    localparam STATE_SPI = 8'd5;
     
-    reg [7:0] State = STATE_INIT;
+    reg [7:0] State = 8'd100;
     
 /* INSTANTIATING MODULES */
 
@@ -183,7 +185,7 @@ module hamamastu(
         .SPI_CLK(SPI_CLK),
         .SPI_MISO(SPI_MISO),
         .rw_flag(rw_flag),
-        .register_input(32'd0),
+        .register_input(32'd40),
         .data_input(32'd0),
         .data_output(data_output),
         .State_copy(State_copy)
@@ -199,6 +201,7 @@ module hamamastu(
             tg_counter <= 3'b0;
             counter <= 30'd0;
             tiger <= 1'b0;
+            rw_flag_tiger <= 2'b0;
         end
         
    always @(posedge MASTER_CLK) begin
@@ -208,6 +211,10 @@ module hamamastu(
             counter <= counter + 1'b1;
             
        case(State)
+           8'd100: begin
+                if(tiger == 1'b1) 
+                    State <= STATE_INIT;
+           end
            STATE_INIT:
                begin
                    if(delay2 == 3'd5)
@@ -256,7 +263,8 @@ module hamamastu(
                    if(delay1 == 3'd5)
                        begin
                            TG_RESET_REG <= 1'b0;
-                           State <= STATE_DELAY1;
+                           delay2 <= 3'b0;
+                           State <= STATE_SPI;
                        end
                    else
                        begin
@@ -264,6 +272,20 @@ module hamamastu(
                            State <= STATE_DELAY1;
                        end
                 end
+           STATE_SPI: 
+               begin
+                   if(delay2 == 3'd4) 
+                       begin
+                           rw_flag_tiger[0] <= 1'b1;
+                           State <= STATE_SPI;
+                       end 
+                   else
+                       begin
+                           delay2 <= delay2 + 1'b1;
+                           State <= STATE_SPI;
+                       end  
+               end
+                
            
         endcase
     end   
@@ -271,7 +293,7 @@ module hamamastu(
         
     ila_0 ila_sample12 ( 
         .clk(ILA_CLK),
-        .probe0({M_CLOCK, SPI_CS, rw_flag[1:0], data_output[7:0], data_input[7:0], SPI_MISO, SPI_MOSI, SPI_RESET, State_copy, SPI_CLK}),                             
+        .probe0({State, TG_RESET, M_CLOCK, SPI_CS, rw_flag[1:0], data_output[7:0], data_input[7:0], SPI_MISO, SPI_MOSI, SPI_RESET, State_copy, SPI_CLK}),                             
         .probe1({SPI_gen_CLK, TrigerEvent})
     );
 
