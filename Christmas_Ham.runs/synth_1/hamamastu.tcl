@@ -34,7 +34,10 @@ set_property ip_output_repo c:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.cache/
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/imports/Downloads/ClockGenerator.v
+  {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v}
   {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v}
+  {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okWireIn.v}
+  {C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okWireOut.v}
   C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v
   C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v
 }

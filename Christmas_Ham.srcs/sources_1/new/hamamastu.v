@@ -98,13 +98,13 @@ module hamamastu(
     wire [31:0] data_output;            // data to read from
     wire error;
     //fifo controller registers
-    reg write_reset, read_reset, write_enable;
+//    reg write_reset, read_reset, write_enable;
     //reset registers
     reg TG_RESET_REG, SPI_RESET_REG;
     //delay counters
     reg [2:0] delay0, delay1, delay2, tg_counter;
-    reg tiger;
-    reg[1:0] rw_flag_tiger;
+//    reg tiger;
+//    reg[1:0] rw_flag_tiger;
     
 /* ASSIGNING WIRES AND REGISTERS TO VALUES */
     
@@ -115,12 +115,12 @@ module hamamastu(
     assign VDD_A_EN = 1'b1;                         // set up regulators VDD(D) and VDD(A)
     assign VDD_D_EN = 1'b1;
    
-    reg [29:0] counter;
-    assign TrigerEvent = tiger;
-    assign rw_flag[0] = rw_flag_tiger[0];
-    assign led[6] = ~tiger;
+//    reg [29:0] counter;
+//    assign TrigerEvent = tiger;
+//    assign rw_flag[0] = rw_flag_tiger[0];
+//    assign led[6] = ~tiger;
     assign led[7] = error;
-    assign led[5:0] = ~counter[27:22];
+//    assign led[5:0] = ~counter[27:22];
     
     // state parameters
     localparam STATE_INIT = 8'd0;
@@ -136,32 +136,32 @@ module hamamastu(
 
     /* OKWIRE INSTANTIATIONS */
     //This is the OK host that allows data to be sent or recived    
-//    okHost hostIF (     
-//        .okUH(okUH),
-//        .okHU(okHU),
-//        .okUHU(okUHU),
-//        .okClk(okClk),
-//        .okAA(okAA),
-//        .okHE(okHE),
-//        .okEH(okEH)
-//    );
+    okHost hostIF (     
+        .okUH(okUH),
+        .okHU(okHU),
+        .okUHU(okUHU),
+        .okClk(okClk),
+        .okAA(okAA),
+        .okHE(okHE),
+        .okEH(okEH)
+    );
     
-//   okWireIn wire10 (    .okHE(okHE), 
-//                        .ep_addr(8'h00), 
-//                        .ep_dataout(data_input));
+   okWireIn wire10 (    .okHE(okHE), 
+                        .ep_addr(8'h00), 
+                        .ep_dataout(data_input));
    
-//   okWireIn wire11 (    .okHE(okHE), 
-//                        .ep_addr(8'h01), 
-//                        .ep_dataout(register_input));
+   okWireIn wire11 (    .okHE(okHE), 
+                        .ep_addr(8'h01), 
+                        .ep_dataout(register_input));
                         
-//   okWireIn wire12 (    .okHE(okHE), 
-//                        .ep_addr(8'h02), 
-//                        .ep_dataout(rw_flag));
+   okWireIn wire12 (    .okHE(okHE), 
+                        .ep_addr(8'h02), 
+                        .ep_dataout(rw_flag));
                        
-//   okWireOut wire20 (  .okHE(okHE), 
-//                        .okEH(okEHx[ 0*65 +: 65 ]),
-//                        .ep_addr(8'h20), 
-//                        .ep_datain(data_output));
+   okWireOut wire20 (  .okHE(okHE), 
+                        .okEH(okEHx[ 0*65 +: 65 ]),
+                        .ep_addr(8'h20), 
+                        .ep_datain(data_output));
     
         
     
@@ -185,8 +185,8 @@ module hamamastu(
         .SPI_CLK(SPI_CLK),
         .SPI_MISO(SPI_MISO),
         .rw_flag(rw_flag),
-        .register_input(32'd40),
-        .data_input(32'd0),
+        .register_input(register_input),
+        .data_input(data_input),
         .data_output(data_output),
         .State_copy(State_copy)
     );
@@ -199,20 +199,20 @@ module hamamastu(
             delay1 <= 3'b0;
             delay2 <= 3'b0;
             tg_counter <= 3'b0;
-            counter <= 30'd0;
-            tiger <= 1'b0;
-            rw_flag_tiger <= 2'b0;
+//            counter <= 30'd0;
+//            tiger <= 1'b0;
+//            rw_flag_tiger <= 2'b0;
         end
         
    always @(posedge MASTER_CLK) begin
-       if(counter >= 30'd268435456)
-            tiger <= 1'b1;
-       else
-            counter <= counter + 1'b1;
+//       if(counter >= 30'd268435456)
+//            tiger <= 1'b1;
+//       else
+//            counter <= counter + 1'b1;
             
        case(State)
            8'd100: begin
-                if(tiger == 1'b1) 
+//                if(tiger == 1'b1) 
                     State <= STATE_INIT;
            end
            STATE_INIT:
@@ -274,16 +274,16 @@ module hamamastu(
                 end
            STATE_SPI: 
                begin
-                   if(delay2 == 3'd4) 
-                       begin
-                           rw_flag_tiger[0] <= 1'b1;
-                           State <= STATE_SPI;
-                       end 
-                   else
-                       begin
-                           delay2 <= delay2 + 1'b1;
-                           State <= STATE_SPI;
-                       end  
+//                   if(delay2 == 3'd4) 
+//                       begin
+//                           rw_flag_tiger[0] <= 1'b1;
+//                           State <= STATE_SPI;
+//                       end 
+//                   else
+//                       begin
+//                           delay2 <= delay2 + 1'b1;
+//                           State <= STATE_SPI;
+//                       end  
                end
                 
            
