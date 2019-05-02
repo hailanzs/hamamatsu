@@ -90,7 +90,7 @@ module hamamastu(
     localparam  endPt_count = 1;
     wire [endPt_count*65-1:0] okEHx;
     okWireOR # (.N(endPt_count)) wireOR (okEH, okEHx);
-                          
+    wire p_clk;                      
     // wires for communicating
     wire [31:0] rw_flag;                // read/write flag
     wire [31:0] register_input;         // register to read/write to
@@ -133,7 +133,11 @@ module hamamastu(
     reg [7:0] State = 8'd100;
     
 /* INSTANTIATING MODULES */
-
+IBUFGDS pee_clk(
+        .O(p_clk),
+        .I(P_CLK),
+        .IB(P_CLK_N)
+    );    
     /* OKWIRE INSTANTIATIONS */
     //This is the OK host that allows data to be sent or recived    
     okHost hostIF (     
@@ -323,10 +327,10 @@ module hamamastu(
 //    );       
             
     // select io for lvds lines instantitation
-/*    selectio_wiz_0 lvds_input ( 
-        .data_in_from_pins_p(), 
-        .data_in_from_pins_n(), 
-        .clk_in(clk),
+    selectio_wiz_0 lvds_input ( 
+        .data_in_from_pins_p({LVDS_OUT_A, LVDS_OUT_B, LVDS_OUT_C, LVDS_OUT_D, LVDS_OUT_E}), 
+        .data_in_from_pins_n({LVDS_OUT_AN, LVDS_OUT_BN, LVDS_OUT_CN, LVDS_OUT_DN, LVDS_OUT_EN}), 
+        .clk_in(p_clk),
         .io_reset(), 
         .delay_clk(), 
         .in_delay_reset(), 
@@ -338,7 +342,7 @@ module hamamastu(
         .delay_locked(), 
         .clk_out(clk_out)
     );
- */                                    
+                                    
     
 
                                 

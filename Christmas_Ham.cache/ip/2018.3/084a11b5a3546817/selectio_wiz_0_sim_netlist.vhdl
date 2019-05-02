@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Fri Apr 12 14:24:30 2019
--- Host        : ECEB-4022-13 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top selectio_wiz_0 -prefix
---               selectio_wiz_0_ selectio_wiz_0_sim_netlist.vhdl
+-- Date        : Thu May  2 10:54:42 2019
+-- Host        : ECEB-4022-15 running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+--               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ selectio_wiz_0_sim_netlist.vhdl
 -- Design      : selectio_wiz_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,11 +14,11 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity selectio_wiz_0_selectio_wiz_0_selectio_wiz is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_selectio_wiz_0_selectio_wiz is
   port (
     data_in_from_pins_p : in STD_LOGIC_VECTOR ( 0 to 0 );
     data_in_from_pins_n : in STD_LOGIC_VECTOR ( 0 to 0 );
-    data_in_to_device : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    data_in_to_device : out STD_LOGIC_VECTOR ( 5 downto 0 );
     in_delay_reset : in STD_LOGIC;
     in_delay_data_ce : in STD_LOGIC_VECTOR ( 0 to 0 );
     in_delay_data_inc : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -33,14 +33,14 @@ entity selectio_wiz_0_selectio_wiz_0_selectio_wiz is
     io_reset : in STD_LOGIC
   );
   attribute DEV_W : integer;
-  attribute DEV_W of selectio_wiz_0_selectio_wiz_0_selectio_wiz : entity is 4;
+  attribute DEV_W of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_selectio_wiz_0_selectio_wiz : entity is 6;
   attribute SYS_W : integer;
-  attribute SYS_W of selectio_wiz_0_selectio_wiz_0_selectio_wiz : entity is 1;
+  attribute SYS_W of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_selectio_wiz_0_selectio_wiz : entity is 1;
   attribute num_serial_bits : integer;
-  attribute num_serial_bits of selectio_wiz_0_selectio_wiz_0_selectio_wiz : entity is 4;
-end selectio_wiz_0_selectio_wiz_0_selectio_wiz;
+  attribute num_serial_bits of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_selectio_wiz_0_selectio_wiz : entity is 6;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_selectio_wiz_0_selectio_wiz;
 
-architecture STRUCTURE of selectio_wiz_0_selectio_wiz_0_selectio_wiz is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_selectio_wiz_0_selectio_wiz is
   signal \^clk_div_out\ : STD_LOGIC;
   signal clk_in_bufmr : STD_LOGIC;
   signal clk_in_int : STD_LOGIC;
@@ -49,8 +49,6 @@ architecture STRUCTURE of selectio_wiz_0_selectio_wiz_0_selectio_wiz is
   signal data_in_from_pins_int : STD_LOGIC;
   signal ref_clock_bufg : STD_LOGIC;
   signal \NLW_pins[0].iserdese2_master_O_UNCONNECTED\ : STD_LOGIC;
-  signal \NLW_pins[0].iserdese2_master_Q5_UNCONNECTED\ : STD_LOGIC;
-  signal \NLW_pins[0].iserdese2_master_Q6_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_pins[0].iserdese2_master_Q7_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_pins[0].iserdese2_master_Q8_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_pins[0].iserdese2_master_SHIFTOUT1_UNCONNECTED\ : STD_LOGIC;
@@ -95,7 +93,7 @@ bufmr_in_clk_inst: unisim.vcomponents.BUFMR
     );
 clkout_buf_inst: unisim.vcomponents.BUFR
     generic map(
-      BUFR_DIVIDE => "2",
+      BUFR_DIVIDE => "3",
       SIM_DEVICE => "7SERIES"
     )
         port map (
@@ -155,7 +153,7 @@ ibuf_clk_inst: unisim.vcomponents.IBUF
 \pins[0].iserdese2_master\: unisim.vcomponents.ISERDESE2
     generic map(
       DATA_RATE => "DDR",
-      DATA_WIDTH => 4,
+      DATA_WIDTH => 6,
       DYN_CLKDIV_INV_EN => "FALSE",
       DYN_CLK_INV_EN => "FALSE",
       INIT_Q1 => '0',
@@ -195,12 +193,12 @@ ibuf_clk_inst: unisim.vcomponents.IBUF
       OCLK => '0',
       OCLKB => '0',
       OFB => '0',
-      Q1 => data_in_to_device(3),
-      Q2 => data_in_to_device(2),
-      Q3 => data_in_to_device(1),
-      Q4 => data_in_to_device(0),
-      Q5 => \NLW_pins[0].iserdese2_master_Q5_UNCONNECTED\,
-      Q6 => \NLW_pins[0].iserdese2_master_Q6_UNCONNECTED\,
+      Q1 => data_in_to_device(5),
+      Q2 => data_in_to_device(4),
+      Q3 => data_in_to_device(3),
+      Q4 => data_in_to_device(2),
+      Q5 => data_in_to_device(1),
+      Q6 => data_in_to_device(0),
       Q7 => \NLW_pins[0].iserdese2_master_Q7_UNCONNECTED\,
       Q8 => \NLW_pins[0].iserdese2_master_Q8_UNCONNECTED\,
       RST => io_reset,
@@ -219,11 +217,11 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity selectio_wiz_0 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   port (
     data_in_from_pins_p : in STD_LOGIC_VECTOR ( 0 to 0 );
     data_in_from_pins_n : in STD_LOGIC_VECTOR ( 0 to 0 );
-    data_in_to_device : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    data_in_to_device : out STD_LOGIC_VECTOR ( 5 downto 0 );
     in_delay_reset : in STD_LOGIC;
     in_delay_data_ce : in STD_LOGIC_VECTOR ( 0 to 0 );
     in_delay_data_inc : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -238,20 +236,20 @@ entity selectio_wiz_0 is
     io_reset : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
-  attribute NotValidForBitStream of selectio_wiz_0 : entity is true;
+  attribute NotValidForBitStream of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is true;
   attribute DEV_W : integer;
-  attribute DEV_W of selectio_wiz_0 : entity is 4;
+  attribute DEV_W of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is 6;
   attribute SYS_W : integer;
-  attribute SYS_W of selectio_wiz_0 : entity is 1;
-end selectio_wiz_0;
+  attribute SYS_W of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is 1;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
 
-architecture STRUCTURE of selectio_wiz_0 is
-  attribute DEV_W of inst : label is 4;
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
+  attribute DEV_W of inst : label is 6;
   attribute SYS_W of inst : label is 1;
   attribute num_serial_bits : integer;
-  attribute num_serial_bits of inst : label is 4;
+  attribute num_serial_bits of inst : label is 6;
 begin
-inst: entity work.selectio_wiz_0_selectio_wiz_0_selectio_wiz
+inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_selectio_wiz_0_selectio_wiz
      port map (
       bitslip(0) => bitslip(0),
       clk_div_out => clk_div_out,
@@ -259,7 +257,7 @@ inst: entity work.selectio_wiz_0_selectio_wiz_0_selectio_wiz
       clk_reset => clk_reset,
       data_in_from_pins_n(0) => data_in_from_pins_n(0),
       data_in_from_pins_p(0) => data_in_from_pins_p(0),
-      data_in_to_device(3 downto 0) => data_in_to_device(3 downto 0),
+      data_in_to_device(5 downto 0) => data_in_to_device(5 downto 0),
       delay_locked => delay_locked,
       in_delay_data_ce(0) => in_delay_data_ce(0),
       in_delay_data_inc(0) => in_delay_data_inc(0),

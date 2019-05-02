@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 -- Date        : Fri Apr 12 14:24:30 2019
 -- Host        : ECEB-4022-13 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top selectio_wiz_0 -prefix
+--               selectio_wiz_0_ selectio_wiz_0_stub.vhdl
 -- Design      : selectio_wiz_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a200tfbg484-1

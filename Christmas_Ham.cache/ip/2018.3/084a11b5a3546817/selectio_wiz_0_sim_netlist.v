@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Fri Apr 12 14:24:30 2019
-// Host        : ECEB-4022-13 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top selectio_wiz_0 -prefix
-//               selectio_wiz_0_ selectio_wiz_0_sim_netlist.v
+// Date        : Thu May  2 10:54:42 2019
+// Host        : ECEB-4022-15 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ selectio_wiz_0_sim_netlist.v
 // Design      : selectio_wiz_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,9 +12,9 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* DEV_W = "4" *) (* SYS_W = "1" *) 
+(* DEV_W = "6" *) (* SYS_W = "1" *) 
 (* NotValidForBitStream *)
-module selectio_wiz_0
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
    (data_in_from_pins_p,
     data_in_from_pins_n,
     data_in_to_device,
@@ -32,7 +32,7 @@ module selectio_wiz_0
     io_reset);
   input [0:0]data_in_from_pins_p;
   input [0:0]data_in_from_pins_n;
-  output [3:0]data_in_to_device;
+  output [5:0]data_in_to_device;
   input in_delay_reset;
   input [0:0]in_delay_data_ce;
   input [0:0]in_delay_data_inc;
@@ -52,7 +52,7 @@ module selectio_wiz_0
   wire clk_reset;
   (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) (* IOSTANDARD = "LVDS_25" *) wire [0:0]data_in_from_pins_n;
   (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) (* IOSTANDARD = "LVDS_25" *) wire [0:0]data_in_from_pins_p;
-  wire [3:0]data_in_to_device;
+  wire [5:0]data_in_to_device;
   wire delay_locked;
   wire [0:0]in_delay_data_ce;
   wire [0:0]in_delay_data_inc;
@@ -62,10 +62,10 @@ module selectio_wiz_0
   wire io_reset;
   wire ref_clock;
 
-  (* DEV_W = "4" *) 
+  (* DEV_W = "6" *) 
   (* SYS_W = "1" *) 
-  (* num_serial_bits = "4" *) 
-  selectio_wiz_0_selectio_wiz_0_selectio_wiz inst
+  (* num_serial_bits = "6" *) 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_selectio_wiz_0_selectio_wiz inst
        (.bitslip(bitslip),
         .clk_div_out(clk_div_out),
         .clk_in(clk_in),
@@ -83,8 +83,8 @@ module selectio_wiz_0
         .ref_clock(ref_clock));
 endmodule
 
-(* DEV_W = "4" *) (* SYS_W = "1" *) (* num_serial_bits = "4" *) 
-module selectio_wiz_0_selectio_wiz_0_selectio_wiz
+(* DEV_W = "6" *) (* SYS_W = "1" *) (* num_serial_bits = "6" *) 
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_selectio_wiz_0_selectio_wiz
    (data_in_from_pins_p,
     data_in_from_pins_n,
     data_in_to_device,
@@ -102,7 +102,7 @@ module selectio_wiz_0_selectio_wiz_0_selectio_wiz
     io_reset);
   input [0:0]data_in_from_pins_p;
   input [0:0]data_in_from_pins_n;
-  output [3:0]data_in_to_device;
+  output [5:0]data_in_to_device;
   input in_delay_reset;
   input [0:0]in_delay_data_ce;
   input [0:0]in_delay_data_inc;
@@ -127,7 +127,7 @@ module selectio_wiz_0_selectio_wiz_0_selectio_wiz
   wire data_in_from_pins_int;
   wire [0:0]data_in_from_pins_n;
   wire [0:0]data_in_from_pins_p;
-  wire [3:0]data_in_to_device;
+  wire [5:0]data_in_to_device;
   wire delay_locked;
   wire [0:0]in_delay_data_ce;
   wire [0:0]in_delay_data_inc;
@@ -138,8 +138,6 @@ module selectio_wiz_0_selectio_wiz_0_selectio_wiz
   wire ref_clock;
   wire ref_clock_bufg;
   wire \NLW_pins[0].iserdese2_master_O_UNCONNECTED ;
-  wire \NLW_pins[0].iserdese2_master_Q5_UNCONNECTED ;
-  wire \NLW_pins[0].iserdese2_master_Q6_UNCONNECTED ;
   wire \NLW_pins[0].iserdese2_master_Q7_UNCONNECTED ;
   wire \NLW_pins[0].iserdese2_master_Q8_UNCONNECTED ;
   wire \NLW_pins[0].iserdese2_master_SHIFTOUT1_UNCONNECTED ;
@@ -155,7 +153,7 @@ module selectio_wiz_0_selectio_wiz_0_selectio_wiz
         .O(clk_in_int));
   (* BOX_TYPE = "PRIMITIVE" *) 
   BUFR #(
-    .BUFR_DIVIDE("2"),
+    .BUFR_DIVIDE("3"),
     .SIM_DEVICE("7SERIES")) 
     clkout_buf_inst
        (.CE(1'b1),
@@ -217,7 +215,7 @@ module selectio_wiz_0_selectio_wiz_0_selectio_wiz
   (* OPT_MODIFIED = "MLO " *) 
   ISERDESE2 #(
     .DATA_RATE("DDR"),
-    .DATA_WIDTH(4),
+    .DATA_WIDTH(6),
     .DYN_CLKDIV_INV_EN("FALSE"),
     .DYN_CLK_INV_EN("FALSE"),
     .INIT_Q1(1'b0),
@@ -256,12 +254,12 @@ module selectio_wiz_0_selectio_wiz_0_selectio_wiz
         .OCLK(1'b0),
         .OCLKB(1'b0),
         .OFB(1'b0),
-        .Q1(data_in_to_device[3]),
-        .Q2(data_in_to_device[2]),
-        .Q3(data_in_to_device[1]),
-        .Q4(data_in_to_device[0]),
-        .Q5(\NLW_pins[0].iserdese2_master_Q5_UNCONNECTED ),
-        .Q6(\NLW_pins[0].iserdese2_master_Q6_UNCONNECTED ),
+        .Q1(data_in_to_device[5]),
+        .Q2(data_in_to_device[4]),
+        .Q3(data_in_to_device[3]),
+        .Q4(data_in_to_device[2]),
+        .Q5(data_in_to_device[1]),
+        .Q6(data_in_to_device[0]),
         .Q7(\NLW_pins[0].iserdese2_master_Q7_UNCONNECTED ),
         .Q8(\NLW_pins[0].iserdese2_master_Q8_UNCONNECTED ),
         .RST(io_reset),

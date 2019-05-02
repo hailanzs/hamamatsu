@@ -13,7 +13,7 @@ import ok     # OpalKelly library
 # load the bit file in the FPGA
 dev = ok.okCFrontPanel()  # define a device for FrontPanel communication
 SerialStatus=dev.OpenBySerial("")      # open USB communicaiton with the OK board
-ConfigStatus=dev.ConfigureFPGA("C:\\Users\\cakulev2\\ham\\hamamatsu\\Christmas_Ham.runs\\impl_1\\hamamastu.bit"); # Configure the FPGA with this bit file
+ConfigStatus=dev.ConfigureFPGA("C:\\Users\\hshanbha\\ham\\hamamatsu\\Christmas_Ham.runs\\impl_1\\hamamastu.bit"); # Configure the FPGA with this bit file
 
 # Check if FrontPanel is initialized correctly and if the bit file is loaded.
 # Otherwise terminate the program

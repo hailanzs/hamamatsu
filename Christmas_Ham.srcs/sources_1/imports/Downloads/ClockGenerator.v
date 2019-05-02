@@ -36,7 +36,7 @@ module ClockGenerator(
         .I(sys_clkp),
         .IB(sys_clkn)
     );    
-         
+          
     // Initialize the two registers used in this module  
     initial begin
         MASTER_CLK = 1'b0;  
