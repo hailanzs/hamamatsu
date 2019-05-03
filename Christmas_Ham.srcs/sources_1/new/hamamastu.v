@@ -90,13 +90,28 @@ module hamamastu(
     localparam  endPt_count = 1;
     wire [endPt_count*65-1:0] okEHx;
     okWireOR # (.N(endPt_count)) wireOR (okEH, okEHx);
-    wire p_clk;                      
+    wire p_clk;  
+    
+    //lvds wires
+    wire io_reset; 
+    wire delay_clk;
+    wire in_delay_reset;
+    wire in_delay_tap_in;
+    wire in_delay_data_ce; 
+    wire in_delay_data_inc;
+    wire in_delay_tap_out;
+    wire delay_locked, clk_reset, data_in_to_device;
+                        
     // wires for communicating
     wire [31:0] rw_flag;                // read/write flag
     wire [31:0] register_input;         // register to read/write to
     wire [31:0] data_input;             // data to write
     wire [31:0] data_output;            // data to read from
-    wire error;
+    wire error, spi_flag;
+    reg spi_flag_r;
+    
+    assign spi_flag = spi_flag_r;
+    
     //fifo controller registers
 //    reg write_reset, read_reset, write_enable;
     //reset registers
@@ -138,6 +153,7 @@ IBUFGDS pee_clk(
         .I(P_CLK),
         .IB(P_CLK_N)
     );    
+    
     /* OKWIRE INSTANTIATIONS */
     //This is the OK host that allows data to be sent or recived    
     okHost hostIF (     
@@ -173,7 +189,8 @@ IBUFGDS pee_clk(
     /* CLOCK INSTATIATION */
     ClockGenerator clock(   
         .sys_clkn(sys_clkn),
-        .sys_clkp(sys_clkp),    
+        .sys_clkp(sys_clkp),
+        .clk(clk),   
         .MASTER_CLK(MASTER_CLK),
         .SPI_gen_CLK(SPI_gen_CLK),
         .ILA_CLK(ILA_CLK)
@@ -195,6 +212,20 @@ IBUFGDS pee_clk(
         .State_copy(State_copy)
     );
     
+    //lvds modules
+    LVDS elvedees(
+            .p_clk(p_clk),
+            .clk_reset(clk_reset),
+            .io_reset(io_reset),                  
+            .in_delay_reset(in_delay_reset),    
+            .in_delay_tap_in(in_delay_tap_in),   
+            .in_delay_data_ce(in_delay_data_ce),  
+            .in_delay_data_inc(in_delay_data_inc),
+            .spi_flag(spi_flag)
+    );
+    
+    
+
     initial
         begin 
             SPI_RESET_REG <= 1'b1;
@@ -203,6 +234,7 @@ IBUFGDS pee_clk(
             delay1 <= 3'b0;
             delay2 <= 3'b0;
             tg_counter <= 3'b0;
+            spi_flag_r <= 1'b0;
 //            counter <= 30'd0;
 //            tiger <= 1'b0;
 //            rw_flag_tiger <= 2'b0;
@@ -269,6 +301,7 @@ IBUFGDS pee_clk(
                            TG_RESET_REG <= 1'b0;
                            delay2 <= 3'b0;
                            State <= STATE_SPI;
+                           spi_flag_r <= 1'b1;
                        end
                    else
                        begin
@@ -328,19 +361,22 @@ IBUFGDS pee_clk(
             
     // select io for lvds lines instantitation
     selectio_wiz_0 lvds_input ( 
-        .data_in_from_pins_p({LVDS_OUT_A, LVDS_OUT_B, LVDS_OUT_C, LVDS_OUT_D, LVDS_OUT_E}), 
-        .data_in_from_pins_n({LVDS_OUT_AN, LVDS_OUT_BN, LVDS_OUT_CN, LVDS_OUT_DN, LVDS_OUT_EN}), 
-        .clk_in(p_clk),
-        .io_reset(), 
-        .delay_clk(), 
-        .in_delay_reset(), 
-        .in_delay_tap_in(),
-        .in_delay_data_ce(), 
-        .in_delay_data_inc(), 
-        .ref_clock(), 
-        .in_delay_tap_out(),
-        .delay_locked(), 
-        .clk_out(clk_out)
+        .clk_in_p(P_CLK),
+        .clk_in_n(P_CLK_N),
+        .data_in_from_pins_p({LVDS_OUT_A, LVDS_OUT_B, LVDS_OUT_C, LVDS_OUT_D, LVDS_OUT_E, 1'b0}), 
+        .data_in_from_pins_n({LVDS_OUT_AN, LVDS_OUT_BN, LVDS_OUT_CN, LVDS_OUT_DN, LVDS_OUT_EN, 1'b0}), 
+        .clk_reset(clk_reset),
+        .io_reset(io_reset),
+        .in_delay_reset(in_delay_reset), 
+        .in_delay_tap_in(in_delay_tap_in),
+        .in_delay_data_ce(in_delay_data_ce), 
+        .in_delay_data_inc(in_delay_data_inc), 
+        .ref_clock(clk), 
+        .bitslip(16'b0),
+        .in_delay_tap_out(in_delay_tap_out),
+        .delay_locked(delay_locked), 
+        .clk_div_out(clk_out),
+        .data_in_to_device(data_in_to_device)
     );
                                     
     

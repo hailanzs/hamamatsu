@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc rfile:../../../Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc rfile:../../../Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y19 [get_ports {okHU[0]}]
 set_property src_info {type:XDC file:1 line:19 export:INPUT save:INPUT read:READ} [current_design]

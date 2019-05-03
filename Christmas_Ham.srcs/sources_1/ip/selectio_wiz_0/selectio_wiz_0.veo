@@ -57,19 +57,20 @@
   selectio_wiz_0 
   instance_name
  (
-   .data_in_from_pins_p(data_in_from_pins_p), // input [0:0] data_in_from_pins_p
-   .data_in_from_pins_n(data_in_from_pins_n), // input [0:0] data_in_from_pins_n
-   .data_in_to_device(data_in_to_device), // output [3:0] data_in_to_device
+   .data_in_from_pins_p(data_in_from_pins_p), // input [15:0] data_in_from_pins_p
+   .data_in_from_pins_n(data_in_from_pins_n), // input [15:0] data_in_from_pins_n
+   .data_in_to_device(data_in_to_device), // output [63:0] data_in_to_device
    .in_delay_reset(in_delay_reset), // input in_delay_reset                    
-   .in_delay_data_ce(in_delay_data_ce), // input [0  :0] in_delay_data_ce      
-   .in_delay_data_inc(in_delay_data_inc), // input [0  :0] in_delay_data_inc     
-   .in_delay_tap_in(in_delay_tap_in), // input [24:0] in_delay_tap_in          
-   .in_delay_tap_out(in_delay_tap_out), // output [24:0] in_delay_tap_out          
+   .in_delay_data_ce(in_delay_data_ce), // input [15  :0] in_delay_data_ce      
+   .in_delay_data_inc(in_delay_data_inc), // input [15  :0] in_delay_data_inc     
+   .in_delay_tap_in(in_delay_tap_in), // input [399:0] in_delay_tap_in          
+   .in_delay_tap_out(in_delay_tap_out), // output [399:0] in_delay_tap_out          
  
    .delay_locked(delay_locked), // output delay_locked                      
    .ref_clock(ref_clock), // input ref_clock                         
    .bitslip(bitslip), // input bitslip                           
-   .clk_in(clk_in), // input clk_in                            
+   .clk_in_p(clk_in_p), // input clk_in_p                          
+   .clk_in_n(clk_in_n), // input clk_in_n
    .clk_div_out(clk_div_out), // output clk_div_out                       
    .clk_reset(clk_reset), // input clk_reset
    .io_reset(io_reset) // input io_reset

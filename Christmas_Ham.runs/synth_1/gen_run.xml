@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1556808447">
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1556920014">
   <File Type="PA-TCL" Name="hamamastu.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="hamamastu_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="hamamastu_reports.tcl"/>
   <File Type="RDS-RDS" Name="hamamastu.vds"/>
   <File Type="RDS-UTIL" Name="hamamastu_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="hamamastu_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="hamamastu.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="hamamastu_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="hamamastu_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Downloads/ClockGenerator.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="//ad.uillinois.edu/engr-ews/hshanbha/Downloads/ClockGenerator.v"/>
         <Attr Name="ImportTime" Val="1554684683"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LVDS.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -150,4 +160,5 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="selectio_wiz_0"/>
 </GenRun>

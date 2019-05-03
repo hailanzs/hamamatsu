@@ -55,9 +55,9 @@
 
 module selectio_wiz_0_selectio_wiz
    // width of the data for the system
- #(parameter SYS_W = 1,
+ #(parameter SYS_W = 16,
    // width of the data for the device
-   parameter DEV_W = 4)
+   parameter DEV_W = 64)
  (
   // From the system into the device
   input  [SYS_W-1:0] data_in_from_pins_p,
@@ -73,7 +73,8 @@ module selectio_wiz_0_selectio_wiz
   input              ref_clock,      // Reference clock for IDELAYCTRL. Has to come from BUFG.
   input  [SYS_W-1:0]             bitslip,       // Bitslip module is enabled in NETWORKING mode
                                     // User should tie it to '0' if not needed
-  input              clk_in,        // Single ended clock from IOB
+  input              clk_in_p,      // Differential clock from IOB
+  input              clk_in_n,
   output             clk_div_out,   // Slow clock output
   input              clk_reset,
   input              io_reset);
@@ -93,24 +94,108 @@ module selectio_wiz_0_selectio_wiz
   // Array to use intermediately from the serdes to the internal
   //  devices. bus "0" is the leftmost bus
   wire [SYS_W-1:0]  iserdes_q[0:13];   // fills in starting with 0
-  wire clk_in_bufmr;
-   assign in_delay_ce = {                      in_delay_data_ce[0]};
-   assign in_delay_inc_dec = {                      in_delay_data_inc[0]};
+   assign in_delay_ce = { 
+                     in_delay_data_ce[15],
+
+                     in_delay_data_ce[14],
+
+                     in_delay_data_ce[13],
+
+                     in_delay_data_ce[12],
+
+                     in_delay_data_ce[11],
+
+                     in_delay_data_ce[10],
+
+                     in_delay_data_ce[9],
+
+                     in_delay_data_ce[8],
+
+                     in_delay_data_ce[7],
+
+                     in_delay_data_ce[6],
+
+                     in_delay_data_ce[5],
+
+                     in_delay_data_ce[4],
+
+                     in_delay_data_ce[3],
+
+                     in_delay_data_ce[2],
+
+                     in_delay_data_ce[1],
+                     in_delay_data_ce[0]};
+   assign in_delay_inc_dec = { 
+                     in_delay_data_inc[15],
+
+                     in_delay_data_inc[14],
+
+                     in_delay_data_inc[13],
+
+                     in_delay_data_inc[12],
+
+                     in_delay_data_inc[11],
+
+                     in_delay_data_inc[10],
+
+                     in_delay_data_inc[9],
+
+                     in_delay_data_inc[8],
+
+                     in_delay_data_inc[7],
+
+                     in_delay_data_inc[6],
+
+                     in_delay_data_inc[5],
+
+                     in_delay_data_inc[4],
+
+                     in_delay_data_inc[3],
+
+                     in_delay_data_inc[2],
+
+                     in_delay_data_inc[1],
+                     in_delay_data_inc[0]};
    assign in_delay_tap_in_int[0] = in_delay_tap_in[5*(0 + 1) -1:5*(0)] ;
+   assign in_delay_tap_in_int[1] = in_delay_tap_in[5*(1 + 1) -1:5*(1)] ;
+   assign in_delay_tap_in_int[2] = in_delay_tap_in[5*(2 + 1) -1:5*(2)] ;
+   assign in_delay_tap_in_int[3] = in_delay_tap_in[5*(3 + 1) -1:5*(3)] ;
+   assign in_delay_tap_in_int[4] = in_delay_tap_in[5*(4 + 1) -1:5*(4)] ;
+   assign in_delay_tap_in_int[5] = in_delay_tap_in[5*(5 + 1) -1:5*(5)] ;
+   assign in_delay_tap_in_int[6] = in_delay_tap_in[5*(6 + 1) -1:5*(6)] ;
+   assign in_delay_tap_in_int[7] = in_delay_tap_in[5*(7 + 1) -1:5*(7)] ;
+   assign in_delay_tap_in_int[8] = in_delay_tap_in[5*(8 + 1) -1:5*(8)] ;
+   assign in_delay_tap_in_int[9] = in_delay_tap_in[5*(9 + 1) -1:5*(9)] ;
+   assign in_delay_tap_in_int[10] = in_delay_tap_in[5*(10 + 1) -1:5*(10)] ;
+   assign in_delay_tap_in_int[11] = in_delay_tap_in[5*(11 + 1) -1:5*(11)] ;
+   assign in_delay_tap_in_int[12] = in_delay_tap_in[5*(12 + 1) -1:5*(12)] ;
+   assign in_delay_tap_in_int[13] = in_delay_tap_in[5*(13 + 1) -1:5*(13)] ;
+   assign in_delay_tap_in_int[14] = in_delay_tap_in[5*(14 + 1) -1:5*(14)] ;
+   assign in_delay_tap_in_int[15] = in_delay_tap_in[5*(15 + 1) -1:5*(15)] ;
    assign in_delay_tap_out[5*(0 + 1) -1:5*(0)] = in_delay_tap_out_int[0];
+   assign in_delay_tap_out[5*(1 + 1) -1:5*(1)] = in_delay_tap_out_int[1];
+   assign in_delay_tap_out[5*(2 + 1) -1:5*(2)] = in_delay_tap_out_int[2];
+   assign in_delay_tap_out[5*(3 + 1) -1:5*(3)] = in_delay_tap_out_int[3];
+   assign in_delay_tap_out[5*(4 + 1) -1:5*(4)] = in_delay_tap_out_int[4];
+   assign in_delay_tap_out[5*(5 + 1) -1:5*(5)] = in_delay_tap_out_int[5];
+   assign in_delay_tap_out[5*(6 + 1) -1:5*(6)] = in_delay_tap_out_int[6];
+   assign in_delay_tap_out[5*(7 + 1) -1:5*(7)] = in_delay_tap_out_int[7];
+   assign in_delay_tap_out[5*(8 + 1) -1:5*(8)] = in_delay_tap_out_int[8];
+   assign in_delay_tap_out[5*(9 + 1) -1:5*(9)] = in_delay_tap_out_int[9];
+   assign in_delay_tap_out[5*(10 + 1) -1:5*(10)] = in_delay_tap_out_int[10];
+   assign in_delay_tap_out[5*(11 + 1) -1:5*(11)] = in_delay_tap_out_int[11];
+   assign in_delay_tap_out[5*(12 + 1) -1:5*(12)] = in_delay_tap_out_int[12];
+   assign in_delay_tap_out[5*(13 + 1) -1:5*(13)] = in_delay_tap_out_int[13];
+   assign in_delay_tap_out[5*(14 + 1) -1:5*(14)] = in_delay_tap_out_int[14];
+   assign in_delay_tap_out[5*(15 + 1) -1:5*(15)] = in_delay_tap_out_int[15];
   // Create the clock logic
 
-  IBUF
-    #(.IOSTANDARD ("LVCMOS33"))
-   ibuf_clk_inst
-     (.I          (clk_in),
-      .O          (clk_in_bufmr));
-
-    BUFMR 
-     bufmr_in_clk_inst 
-     (.I          (clk_in_bufmr),          
+  IBUFDS
+    #(.IOSTANDARD ("LVDS_25"))
+   ibufds_clk_inst
+     (.I          (clk_in_p),
+      .IB         (clk_in_n),
       .O          (clk_in_int));
-
 
 // High Speed BUFIO clock buffer
  BUFIO bufio_inst
@@ -238,11 +323,11 @@ module selectio_wiz_0_selectio_wiz
      ////---------------------------------------------------------
      for (slice_count = 0; slice_count < num_serial_bits; slice_count = slice_count + 1) begin: in_slices
         // This places the first data in time on the right
-        assign data_in_to_device[slice_count] =
+        assign data_in_to_device[slice_count*SYS_W+:SYS_W] =
           iserdes_q[num_serial_bits-slice_count-1];
         // To place the first data in time on the left, use the
         //   following code, instead
-        // assign data_in_to_device[slice_count] =
+        // assign data_in_to_device[slice_count*SYS_W+:SYS_W] =
         //   iserdes_q[slice_count];
      end
   end

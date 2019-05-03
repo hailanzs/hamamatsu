@@ -18,18 +18,19 @@
 
 module ClockGenerator(
     input sys_clkn,
-    input sys_clkp,    
+    input sys_clkp,  
+    output clk,  
     output reg MASTER_CLK,
     output reg SPI_gen_CLK,
     output reg ILA_CLK
     );
 
     //Generate high speed main clock from two differential clock signals        
-    wire clk;
+    //wire clk;
     reg [23:0] ClkDiv_M = 24'd0; 
     reg [23:0] ClkDiv_S = 24'd0;  
     reg [23:0] ClkDivILA = 24'd0;      
-
+    
     // clock signal
     IBUFGDS osc_clk(
         .O(clk),

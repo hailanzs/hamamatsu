@@ -1,50 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1556808447">
+<GenRun Id="impl_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1556920014">
+  <File Type="BITSTR-BMM" Name="hamamastu_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="hamamastu_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="hamamastu_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="hamamastu_power_routed.rpt"/>
   <File Type="PA-TCL" Name="hamamastu.tcl"/>
-  <File Type="BITSTR-BMM" Name="hamamastu_bd.bmm"/>
+  <File Type="OPT-TIMING" Name="hamamastu_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="hamamastu_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="hamamastu_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="hamamastu_reports.tcl"/>
-  <File Type="OPT-DCP" Name="hamamastu_opt.dcp"/>
   <File Type="OPT-DRC" Name="hamamastu_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="hamamastu.hwdef"/>
   <File Type="PWROPT-DCP" Name="hamamastu_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="hamamastu_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="hamamastu_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="hamamastu_placed.dcp"/>
   <File Type="PLACE-IO" Name="hamamastu_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="hamamastu_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="hamamastu_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="hamamastu_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="hamamastu_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="hamamastu_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="hamamastu_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="hamamastu.bgn"/>
+  <File Type="PLACE-TIMING" Name="hamamastu_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="hamamastu_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="hamamastu.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="hamamastu_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="hamamastu_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="hamamastu_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="hamamastu.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="hamamastu_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="hamamastu_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="hamamastu_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="hamamastu_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="hamamastu_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="hamamastu_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="hamamastu_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="hamamastu.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="hamamastu_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="hamamastu_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="hamamastu.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="hamamastu_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="hamamastu_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="hamamastu_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="hamamastu.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="hamamastu_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="hamamastu_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="hamamastu_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="hamamastu_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="hamamastu_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="hamamastu_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="hamamastu_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="hamamastu_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="hamamastu_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="hamamastu_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="hamamastu_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="hamamastu_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="hamamastu_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="hamamastu_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="hamamastu_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="hamamastu_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="hamamastu_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="hamamastu_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="hamamastu_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="hamamastu.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="hamamastu_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="hamamastu.rbt"/>
   <File Type="BITSTR-NKY" Name="hamamastu.nky"/>
   <File Type="BG-DRC" Name="hamamastu.drc"/>
@@ -56,6 +75,13 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="//ad.uillinois.edu/engr-ews/hshanbha/Downloads/ClockGenerator.v"/>
         <Attr Name="ImportTime" Val="1554684683"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LVDS.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -202,4 +228,5 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="selectio_wiz_0"/>
 </GenRun>
