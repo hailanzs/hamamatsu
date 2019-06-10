@@ -10,7 +10,7 @@
 // 
 // Revision:
 // Revision 0.01 - File Created
-// Additional Comments:
+// Additional Comments: jtag is funky
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -82,14 +82,14 @@ module hamamastu(
     wire TrigerEvent;                               // jtag debugging wire
     
     // okWire stuff!!
-    wire okClk;                                     //These are FrontPanel wires needed to IO communication    
-    wire [112:0] okHE;      //These are FrontPanel wires needed to IO communication    
-    wire [64:0] okEH;       //These are FrontPanel wires needed to IO communication     
+    //wire okClk;                                     //These are FrontPanel wires needed to IO communication    
+    //wire [112:0] okHE;      //These are FrontPanel wires needed to IO communication    
+   // wire [64:0] okEH;       //These are FrontPanel wires needed to IO communication     
     
     //ok memory spacing for block throttle and other opal kelly wires
     localparam  endPt_count = 1;
     wire [endPt_count*65-1:0] okEHx;
-    okWireOR # (.N(endPt_count)) wireOR (okEH, okEHx);
+    //okWireOR # (.N(endPt_count)) wireOR (okEH, okEHx);
     wire p_clk;  
     
     //lvds wires
@@ -101,7 +101,7 @@ module hamamastu(
     wire in_delay_data_inc;
     wire in_delay_tap_out;
     wire delay_locked, clk_reset, data_in_to_device;
-                        
+    wire [2:0] A,B,C,D,E;                    
     // wires for communicating
     wire [31:0] rw_flag;                // read/write flag
     wire [31:0] register_input;         // register to read/write to
@@ -116,22 +116,24 @@ module hamamastu(
 //    reg write_reset, read_reset, write_enable;
     //reset registers
     reg TG_RESET_REG, SPI_RESET_REG;
+    reg [31:0] rw_flag_reg;
     //delay counters
     reg [2:0] delay0, delay1, delay2, tg_counter;
-//    reg tiger;
+    reg tiger;
 //    reg[1:0] rw_flag_tiger;
     
 /* ASSIGNING WIRES AND REGISTERS TO VALUES */
     
     // assigning statements
+    assign rw_flag = rw_flag_reg;
     assign TG_RESET = TG_RESET_REG;
     assign SPI_RESET = SPI_RESET_REG;
     assign M_CLOCK = MASTER_CLK;
     assign VDD_A_EN = 1'b1;                         // set up regulators VDD(D) and VDD(A)
     assign VDD_D_EN = 1'b1;
    
-//    reg [29:0] counter;
-//    assign TrigerEvent = tiger;
+    reg [29:0] counter;
+    assign TrigerEvent = tiger;
 //    assign rw_flag[0] = rw_flag_tiger[0];
 //    assign led[6] = ~tiger;
     assign led[7] = error;
@@ -148,40 +150,40 @@ module hamamastu(
     reg [7:0] State = 8'd100;
     
 /* INSTANTIATING MODULES */
-IBUFGDS pee_clk(
-        .O(p_clk),
-        .I(P_CLK),
-        .IB(P_CLK_N)
-    );    
+//IBUFGDS pee_clk(
+//        .O(p_clk),
+//        .I(P_CLK),
+//        .IB(P_CLK_N)
+//    );    
     
     /* OKWIRE INSTANTIATIONS */
     //This is the OK host that allows data to be sent or recived    
-    okHost hostIF (     
-        .okUH(okUH),
-        .okHU(okHU),
-        .okUHU(okUHU),
-        .okClk(okClk),
-        .okAA(okAA),
-        .okHE(okHE),
-        .okEH(okEH)
-    );
+//    okHost hostIF (     
+//        .okUH(okUH),
+//        .okHU(okHU),
+//        .okUHU(okUHU),
+//        .okClk(okClk),
+//        .okAA(okAA),
+//        .okHE(okHE),
+//        .okEH(okEH)
+//    );
     
-   okWireIn wire10 (    .okHE(okHE), 
-                        .ep_addr(8'h00), 
-                        .ep_dataout(data_input));
+//   okWireIn wire10 (    .okHE(okHE), 
+//                        .ep_addr(8'h00), 
+//                        .ep_dataout(data_input));
    
-   okWireIn wire11 (    .okHE(okHE), 
-                        .ep_addr(8'h01), 
-                        .ep_dataout(register_input));
+//   okWireIn wire11 (    .okHE(okHE), 
+//                        .ep_addr(8'h01), 
+//                        .ep_dataout(register_input));
                         
-   okWireIn wire12 (    .okHE(okHE), 
-                        .ep_addr(8'h02), 
-                        .ep_dataout(rw_flag));
+//   okWireIn wire12 (    .okHE(okHE), 
+//                        .ep_addr(8'h02), 
+//                        .ep_dataout(rw_flag));
                        
-   okWireOut wire20 (  .okHE(okHE), 
-                        .okEH(okEHx[ 0*65 +: 65 ]),
-                        .ep_addr(8'h20), 
-                        .ep_datain(data_output));
+//   okWireOut wire20 (  .okHE(okHE), 
+//                        .okEH(okEHx[ 0*65 +: 65 ]),
+//                        .ep_addr(8'h20), 
+//                        .ep_datain(data_output));
     
         
     
@@ -190,6 +192,8 @@ IBUFGDS pee_clk(
     ClockGenerator clock(   
         .sys_clkn(sys_clkn),
         .sys_clkp(sys_clkp),
+        .p_clkn(P_CLK_N),
+        .p_clkp(P_CLK),
         .clk(clk),   
         .MASTER_CLK(MASTER_CLK),
         .SPI_gen_CLK(SPI_gen_CLK),
@@ -206,8 +210,8 @@ IBUFGDS pee_clk(
         .SPI_CLK(SPI_CLK),
         .SPI_MISO(SPI_MISO),
         .rw_flag(rw_flag),
-        .register_input(register_input),
-        .data_input(data_input),
+        .register_input(32'd17),
+        .data_input(32'd1),
         .data_output(data_output),
         .State_copy(State_copy)
     );
@@ -223,7 +227,7 @@ IBUFGDS pee_clk(
             .in_delay_data_inc(in_delay_data_inc),
             .spi_flag(spi_flag)
     );
-    
+  
     
 
     initial
@@ -235,21 +239,30 @@ IBUFGDS pee_clk(
             delay2 <= 3'b0;
             tg_counter <= 3'b0;
             spi_flag_r <= 1'b0;
-//            counter <= 30'd0;
-//            tiger <= 1'b0;
-//            rw_flag_tiger <= 2'b0;
+            rw_flag_reg <= 32'd0;
+            counter <= 30'd0;
+            tiger <= 1'b0;
         end
         
    always @(posedge MASTER_CLK) begin
-//       if(counter >= 30'd268435456)
-//            tiger <= 1'b1;
-//       else
-//            counter <= counter + 1'b1;
+       if(counter >= 30'd268435456)
+        begin
+            tiger <= 1'b1;
+            rw_flag_reg <= 32'd1;
+         end
+       else
+            counter <= counter + 1'b1;
             
        case(State)
            8'd100: begin
-//                if(tiger == 1'b1) 
+               if(tiger == 1'b1) 
+                begin
                     State <= STATE_INIT;
+                end
+                else
+                    begin
+                        State <= 8'd100;
+                    end
            end
            STATE_INIT:
                begin
@@ -330,7 +343,7 @@ IBUFGDS pee_clk(
         
     ila_0 ila_sample12 ( 
         .clk(ILA_CLK),
-        .probe0({State, TG_RESET, M_CLOCK, SPI_CS, rw_flag[1:0], data_output[7:0], data_input[7:0], SPI_MISO, SPI_MOSI, SPI_RESET, State_copy, SPI_CLK}),                             
+        .probe0({SPI_CS, data_output[7:0], SPI_RESET, SPI_MISO, SPI_MOSI, State_copy, SPI_CLK}),                             
         .probe1({SPI_gen_CLK, TrigerEvent})
     );
 
@@ -360,24 +373,24 @@ IBUFGDS pee_clk(
 //    );       
             
     // select io for lvds lines instantitation
-    selectio_wiz_0 lvds_input ( 
-        .clk_in_p(P_CLK),
-        .clk_in_n(P_CLK_N),
-        .data_in_from_pins_p({LVDS_OUT_A, LVDS_OUT_B, LVDS_OUT_C, LVDS_OUT_D, LVDS_OUT_E, 1'b0}), 
-        .data_in_from_pins_n({LVDS_OUT_AN, LVDS_OUT_BN, LVDS_OUT_CN, LVDS_OUT_DN, LVDS_OUT_EN, 1'b0}), 
-        .clk_reset(clk_reset),
-        .io_reset(io_reset),
-        .in_delay_reset(in_delay_reset), 
-        .in_delay_tap_in(in_delay_tap_in),
-        .in_delay_data_ce(in_delay_data_ce), 
-        .in_delay_data_inc(in_delay_data_inc), 
-        .ref_clock(clk), 
-        .bitslip(16'b0),
-        .in_delay_tap_out(in_delay_tap_out),
-        .delay_locked(delay_locked), 
-        .clk_div_out(clk_out),
-        .data_in_to_device(data_in_to_device)
-    );
+//    selectio_wiz_0 lvds_input ( 
+//        .clk_in_p(P_CLK),
+//        .clk_in_n(P_CLK_N),
+//        .data_in_from_pins_p(LVDS_OUT_A), 
+//        .data_in_from_pins_n(LVDS_OUT_AN), 
+//        .clk_reset(clk_reset),
+//        .io_reset(io_reset),
+//        .in_delay_reset(in_delay_reset), 
+//        .in_delay_tap_in(in_delay_tap_in),
+//        .in_delay_data_ce(in_delay_data_ce), 
+//        .in_delay_data_inc(in_delay_data_inc), 
+//        .ref_clock(clk), 
+//        .bitslip(3'b0),
+//        .in_delay_tap_out(in_delay_tap_out),
+//        .delay_locked(delay_locked), 
+//        .clk_div_out(clk_out),
+//        .data_in_to_device(data_in_to_device)
+//    );
                                     
     
 

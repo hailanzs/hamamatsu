@@ -1,0 +1,675 @@
+
+*** Running vivado
+    with args -log SPIe.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SPIe.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source SPIe.tcl -notrace
+Command: synth_design -top SPIe -part xc7a200tfbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9796 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 875.063 ; gain = 177.426
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SPIe' [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPIe.v:23]
+	Parameter STATE_INIT bound to: 8'b00000000 
+	Parameter STATE_SPI_RST bound to: 8'b00000001 
+	Parameter STATE_DELAY0 bound to: 8'b00000010 
+	Parameter STATE_TG_RST bound to: 8'b00000011 
+	Parameter STATE_SPI bound to: 8'b00000100 
+INFO: [Synth 8-6157] synthesizing module 'ClockGenerator' [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/imports/Downloads/ClockGenerator.v:19]
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33335]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33335]
+INFO: [Synth 8-6155] done synthesizing module 'ClockGenerator' (2#1) [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/imports/Downloads/ClockGenerator.v:19]
+INFO: [Synth 8-6157] synthesizing module 'SPI' [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPI.v:23]
+	Parameter STATE_INIT bound to: 9'b000000000 
+	Parameter READ bound to: 1'b0 
+	Parameter WRITE bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'SPI' (3#1) [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPI.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPIe.v:84]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.runs/synth_1/.Xil/Vivado-22608-LAPTOP-59L230FR/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (4#1) [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.runs/synth_1/.Xil/Vivado-22608-LAPTOP-59L230FR/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPIe.v:110]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'russianspi'. This will prevent further optimization [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPIe.v:71]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_sample12'. This will prevent further optimization [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPIe.v:84]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'clock'. This will prevent further optimization [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPIe.v:62]
+WARNING: [Synth 8-6014] Unused sequential element SPI_RESET_REG_reg was removed.  [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPIe.v:125]
+WARNING: [Synth 8-6014] Unused sequential element TG_RESET_REG_reg was removed.  [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPIe.v:145]
+WARNING: [Synth 8-3848] Net led in module/entity SPIe does not have driver. [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPIe.v:24]
+WARNING: [Synth 8-3848] Net M_CLOCK in module/entity SPIe does not have driver. [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPIe.v:39]
+WARNING: [Synth 8-3848] Net PLL_RESET in module/entity SPIe does not have driver. [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPIe.v:40]
+WARNING: [Synth 8-3848] Net M_START in module/entity SPIe does not have driver. [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPIe.v:41]
+WARNING: [Synth 8-3848] Net okHU in module/entity SPIe does not have driver. [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPIe.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'SPIe' (5#1) [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPIe.v:23]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[7]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[6]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[5]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[4]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[3]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[2]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[1]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[0]
+WARNING: [Synth 8-3331] design SPIe has unconnected port M_CLOCK
+WARNING: [Synth 8-3331] design SPIe has unconnected port PLL_RESET
+WARNING: [Synth 8-3331] design SPIe has unconnected port M_START
+WARNING: [Synth 8-3331] design SPIe has unconnected port okHU[2]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okHU[1]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okHU[0]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[31]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[30]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[29]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[28]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[27]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[26]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[25]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[24]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[23]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[22]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[21]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[20]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[19]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[18]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[17]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[16]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[15]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[14]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[13]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[12]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[11]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[10]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[9]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[8]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[7]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[6]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[5]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[4]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[3]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[2]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[1]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[0]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okAA
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUH[4]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUH[3]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUH[2]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUH[1]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUH[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 941.559 ; gain = 243.922
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 941.559 ; gain = 243.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 941.559 ; gain = 243.922
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
+Finished Parsing XDC File [c:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
+Parsing XDC File [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
+WARNING: [Vivado 12-627] No clocks matched 'mmcm0_clk0'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_A[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_A[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_A[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_A[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_A[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_A[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_B[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_B[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_B[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_B[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_B[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_B[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_C[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_C[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_C[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_C[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_C[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_C[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_D[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_D[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_D[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_D[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_D[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_D[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_E[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_E[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:156]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_E[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:159]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_E[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:160]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_E[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_E[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:164]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_AN[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_AN[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:168]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_AN[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:171]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_AN[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:172]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_AN[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:175]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_AN[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:176]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_BN[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:179]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_BN[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:180]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_BN[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:183]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_BN[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:184]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_BN[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:187]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_BN[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:188]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_CN[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:191]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_CN[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:192]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_CN[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:195]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_CN[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:196]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_CN[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:199]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_CN[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:200]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_DN[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:203]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_DN[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:204]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_DN[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:207]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_DN[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:208]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_DN[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:211]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_DN[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:212]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_EN[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:215]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_EN[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:216]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_EN[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:219]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_EN[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:220]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_EN[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:223]
+WARNING: [Vivado 12-584] No ports matched 'LVDS_OUT_EN[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:224]
+WARNING: [Vivado 12-584] No ports matched 'CTR'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:227]
+WARNING: [Vivado 12-584] No ports matched 'CTR'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:228]
+WARNING: [Vivado 12-584] No ports matched 'CTR_N'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:231]
+WARNING: [Vivado 12-584] No ports matched 'CTR_N'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:232]
+WARNING: [Vivado 12-584] No ports matched 'P_CLK'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:235]
+WARNING: [Vivado 12-584] No ports matched 'P_CLK'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:236]
+WARNING: [Vivado 12-584] No ports matched 'P_CLK_N'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:239]
+WARNING: [Vivado 12-584] No ports matched 'P_CLK_N'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:240]
+WARNING: [Vivado 12-584] No ports matched 'VSYNC'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:243]
+WARNING: [Vivado 12-584] No ports matched 'VSYNC'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:244]
+WARNING: [Vivado 12-584] No ports matched 'HSYNC'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:247]
+WARNING: [Vivado 12-584] No ports matched 'HSYNC'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:248]
+WARNING: [Vivado 12-584] No ports matched 'VSYNC_N'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:251]
+WARNING: [Vivado 12-584] No ports matched 'VSYNC_N'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:252]
+WARNING: [Vivado 12-584] No ports matched 'HSYNC_N'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:255]
+WARNING: [Vivado 12-584] No ports matched 'HSYNC_N'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:256]
+WARNING: [Vivado 12-584] No ports matched 'VDD_A_EN'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:260]
+WARNING: [Vivado 12-584] No ports matched 'VDD_A_EN'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:261]
+WARNING: [Vivado 12-584] No ports matched 'VDD_C_EN'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:264]
+WARNING: [Vivado 12-584] No ports matched 'VDD_C_EN'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:265]
+WARNING: [Vivado 12-584] No ports matched 'VDD_D_EN'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:268]
+WARNING: [Vivado 12-584] No ports matched 'VDD_D_EN'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:269]
+WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:272]
+WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:273]
+WARNING: [Vivado 12-584] No ports matched 'N15_EN'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:276]
+WARNING: [Vivado 12-584] No ports matched 'N15_EN'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:277]
+WARNING: [Vivado 12-584] No ports matched 'N2_EN'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:280]
+WARNING: [Vivado 12-584] No ports matched 'N2_EN'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:281]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:338]
+WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:339]
+WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:340]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:341]
+WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:342]
+WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:343]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:344]
+WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:345]
+WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:346]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:346]
+Finished Parsing XDC File [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/SPIe_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SPIe_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SPIe_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1036.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1036.133 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1036.133 ; gain = 338.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1036.133 ; gain = 338.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ila_sample12. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1036.133 ; gain = 338.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'SPI'
+INFO: [Synth 8-5546] ROM "CS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'SPIe'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_INIT | 00000000000000000000000000000000000000000000000000000000000000000000001 |                        000000000
+                iSTATE48 | 00000000000000000000000000000000000000000000000000000000000000000000010 |                        000000001
+                iSTATE45 | 00000000000000000000000000000000000000000000000000000000000000000000100 |                        000000010
+                iSTATE44 | 00000000000000000000000000000000000000000000000000000000000000000001000 |                        000000011
+                iSTATE41 | 00000000000000000000000000000000000000000000000000000000000000000010000 |                        000000100
+                iSTATE40 | 00000000000000000000000000000000000000000000000000000000000000000100000 |                        000000101
+                iSTATE37 | 00000000000000000000000000000000000000000000000000000000000000001000000 |                        000000110
+                iSTATE35 | 00000000000000000000000000000000000000000000000000000000000000010000000 |                        000000111
+                 iSTATE0 | 00000000000000000000000000000000000000000000000000000000000000100000000 |                        000001000
+                  iSTATE | 00000000000000000000000000000000000000000000000000000000000001000000000 |                        000001001
+                iSTATE66 | 00000000000000000000000000000000000000000000000000000000000010000000000 |                        000001010
+                iSTATE65 | 00000000000000000000000000000000000000000000000000000000000100000000000 |                        000001011
+                iSTATE58 | 00000000000000000000000000000000000000000000000000000000001000000000000 |                        000001100
+                iSTATE57 | 00000000000000000000000000000000000000000000000000000000010000000000000 |                        000001101
+                iSTATE53 | 00000000000000000000000000000000000000000000000000000000100000000000000 |                        000001110
+                iSTATE51 | 00000000000000000000000000000000000000000000000000000001000000000000000 |                        000001111
+                 iSTATE2 | 00000000000000000000000000000000000000000000000000000010000000000000000 |                        000010000
+                 iSTATE1 | 00000000000000000000000000000000000000000000000000000100000000000000000 |                        000010001
+                iSTATE68 | 00000000000000000000000000000000000000000000000000001000000000000000000 |                        000010010
+                iSTATE67 | 00000000000000000000000000000000000000000000000000010000000000000000000 |                        000010011
+                iSTATE60 | 00000000000000000000000000000000000000000000000000100000000000000000000 |                        000010100
+                iSTATE59 | 00000000000000000000000000000000000000000000000001000000000000000000000 |                        000010101
+                iSTATE56 | 00000000000000000000000000000000000000000000000010000000000000000000000 |                        000010110
+                iSTATE55 | 00000000000000000000000000000000000000000000000100000000000000000000000 |                        000010111
+                iSTATE25 | 00000000000000000000000000000000000000000000001000000000000000000000000 |                        000011000
+                iSTATE24 | 00000000000000000000000000000000000000000000010000000000000000000000000 |                        000011001
+                iSTATE23 | 00000000000000000000000000000000000000000000100000000000000000000000000 |                        000011010
+                iSTATE22 | 00000000000000000000000000000000000000000001000000000000000000000000000 |                        000011011
+                iSTATE10 | 00000000000000000000000000000000000000000010000000000000000000000000000 |                        000011100
+                 iSTATE9 | 00000000000000000000000000000000000000000100000000000000000000000000000 |                        000011101
+                 iSTATE8 | 00000000000000000000000000000000000000001000000000000000000000000000000 |                        000011110
+                 iSTATE7 | 00000000000000000000000000000000000000010000000000000000000000000000000 |                        000011111
+                 iSTATE6 | 00000000000000000000000000000000000000100000000000000000000000000000000 |                        000100000
+                 iSTATE5 | 00000000000000000000000000000000000001000000000000000000000000000000000 |                        000100001
+                 iSTATE4 | 00000000000000000000000000000000000010000000000000000000000000000000000 |                        000100010
+                 iSTATE3 | 00000000000000000000000000000000000100000000000000000000000000000000000 |                        000100011
+                iSTATE64 | 00000000000000000000000000000000001000000000000000000000000000000000000 |                        000100100
+                iSTATE63 | 00000000000000000000000000000000010000000000000000000000000000000000000 |                        000100101
+                iSTATE62 | 00000000000000000000000000000000100000000000000000000000000000000000000 |                        000100110
+                iSTATE61 | 00000000000000000000000000000001000000000000000000000000000000000000000 |                        000100111
+                iSTATE36 | 00000000000000000000000000000010000000000000000000000000000000000000000 |                        000101000
+                iSTATE34 | 00000000000000000000000000000100000000000000000000000000000000000000000 |                        000101001
+                iSTATE29 | 00000000000000000000000000001000000000000000000000000000000000000000000 |                        000101010
+                iSTATE28 | 00000000000000000000000000010000000000000000000000000000000000000000000 |                        000101011
+                iSTATE19 | 00000000000000000000000000100000000000000000000000000000000000000000000 |                        000101100
+                iSTATE18 | 00000000000000000000000001000000000000000000000000000000000000000000000 |                        000101101
+                iSTATE13 | 00000000000000000000000010000000000000000000000000000000000000000000000 |                        000101110
+                iSTATE12 | 00000000000000000000000100000000000000000000000000000000000000000000000 |                        000101111
+                iSTATE39 | 00000000000000000000001000000000000000000000000000000000000000000000000 |                        000110000
+                iSTATE38 | 00000000000000000000010000000000000000000000000000000000000000000000000 |                        000110001
+                iSTATE32 | 00000000000000000000100000000000000000000000000000000000000000000000000 |                        000110010
+                iSTATE30 | 00000000000000000001000000000000000000000000000000000000000000000000000 |                        000110011
+                iSTATE21 | 00000000000000000010000000000000000000000000000000000000000000000000000 |                        000110100
+                iSTATE20 | 00000000000000000100000000000000000000000000000000000000000000000000000 |                        000110101
+                iSTATE16 | 00000000000000001000000000000000000000000000000000000000000000000000000 |                        000110110
+                iSTATE14 | 00000000000000010000000000000000000000000000000000000000000000000000000 |                        000110111
+                iSTATE54 | 00000000000000100000000000000000000000000000000000000000000000000000000 |                        000111000
+                iSTATE52 | 00000000000001000000000000000000000000000000000000000000000000000000000 |                        000111001
+                iSTATE50 | 00000000000010000000000000000000000000000000000000000000000000000000000 |                        000111010
+                iSTATE49 | 00000000000100000000000000000000000000000000000000000000000000000000000 |                        000111011
+                iSTATE47 | 00000000001000000000000000000000000000000000000000000000000000000000000 |                        000111100
+                iSTATE46 | 00000000010000000000000000000000000000000000000000000000000000000000000 |                        000111101
+                iSTATE43 | 00000000100000000000000000000000000000000000000000000000000000000000000 |                        000111110
+                iSTATE42 | 00000001000000000000000000000000000000000000000000000000000000000000000 |                        000111111
+                iSTATE33 | 00000010000000000000000000000000000000000000000000000000000000000000000 |                        001000000
+                iSTATE31 | 00000100000000000000000000000000000000000000000000000000000000000000000 |                        001000001
+                iSTATE27 | 00001000000000000000000000000000000000000000000000000000000000000000000 |                        001000010
+                iSTATE26 | 00010000000000000000000000000000000000000000000000000000000000000000000 |                        001000011
+                iSTATE17 | 00100000000000000000000000000000000000000000000000000000000000000000000 |                        001000100
+                iSTATE15 | 01000000000000000000000000000000000000000000000000000000000000000000000 |                        001000101
+                iSTATE11 | 10000000000000000000000000000000000000000000000000000000000000000000000 |                        001000110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'SPI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_INIT |                            00001 |                         00000000
+           STATE_SPI_RST |                            00010 |                         00000001
+            STATE_DELAY0 |                            00100 |                         00000010
+            STATE_TG_RST |                            01000 |                         00000011
+               STATE_SPI |                            10000 |                         00000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'SPIe'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1036.133 ; gain = 338.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	  71 Input     71 Bit        Muxes := 1     
+	   3 Input     71 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 3     
+	  71 Input      9 Bit        Muxes := 1     
+	  71 Input      8 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	  71 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SPIe 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 4     
+Module ClockGenerator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+Module SPI 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  71 Input     71 Bit        Muxes := 1     
+	   3 Input     71 Bit        Muxes := 1     
+	  71 Input      9 Bit        Muxes := 1     
+	  71 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  71 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[7]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[6]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[5]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[4]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[3]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[2]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[1]
+WARNING: [Synth 8-3331] design SPIe has unconnected port led[0]
+WARNING: [Synth 8-3331] design SPIe has unconnected port M_CLOCK
+WARNING: [Synth 8-3331] design SPIe has unconnected port PLL_RESET
+WARNING: [Synth 8-3331] design SPIe has unconnected port M_START
+WARNING: [Synth 8-3331] design SPIe has unconnected port okHU[2]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okHU[1]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okHU[0]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[31]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[30]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[29]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[28]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[27]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[26]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[25]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[24]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[23]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[22]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[21]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[20]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[19]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[18]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[17]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[16]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[15]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[14]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[13]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[12]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[11]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[10]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[9]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[8]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[7]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[6]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[5]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[4]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[3]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[2]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[1]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUHU[0]
+WARNING: [Synth 8-3331] design SPIe has unconnected port okAA
+WARNING: [Synth 8-3331] design SPIe has unconnected port okUH[4]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'Trigger_reg[0]' (FDSE) to 'cmdr_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cmdr_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1036.133 ; gain = 338.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1036.133 ; gain = 338.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1053.980 ; gain = 356.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1054.746 ; gain = 357.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin SPI_RESET_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin TG_RESET_inferred:in0 to constant 0
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.srcs/sources_1/new/SPI.v:46]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1061.520 ; gain = 363.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1061.520 ; gain = 363.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1061.520 ; gain = 363.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1061.520 ; gain = 363.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1061.520 ; gain = 363.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1061.520 ; gain = 363.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |ila_0   |     1|
+|2     |BUFG    |     1|
+|3     |CARRY4  |    18|
+|4     |LUT1    |     6|
+|5     |LUT2    |    12|
+|6     |LUT3    |     7|
+|7     |LUT4    |    53|
+|8     |LUT5    |    18|
+|9     |LUT6    |    30|
+|10    |FDRE    |   188|
+|11    |IBUF    |     1|
+|12    |IBUFGDS |     1|
+|13    |OBUF    |     3|
+|14    |OBUFT   |    16|
++------+--------+------+
+
+Report Instance Areas: 
++------+-------------+---------------+------+
+|      |Instance     |Module         |Cells |
++------+-------------+---------------+------+
+|1     |top          |               |   354|
+|2     |  clock      |ClockGenerator |   125|
+|3     |  russianspi |SPI            |   175|
++------+-------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1061.520 ; gain = 363.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 55 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1061.520 ; gain = 269.309
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1061.520 ; gain = 363.883
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1076.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 215 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1076.160 ; gain = 668.789
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1076.160 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/cakfi/ham/hamamatsu/SPI_TEST/SPI_TEST.runs/synth_1/SPIe.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SPIe_utilization_synth.rpt -pb SPIe_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  7 11:57:07 2019...

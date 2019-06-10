@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="ila_0_synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1556640530">
+<GenRun Id="ila_0_synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1559929471">
   <File Type="PA-TCL" Name="ila_0.tcl"/>
   <File Type="REPORTS-TCL" Name="ila_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="ila_0.vds"/>
@@ -10,7 +10,6 @@
     <File Path="$PSRCDIR/sources_1/ip/ila_0/ila_0.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
@@ -23,7 +22,6 @@
     <File Path="$PSRCDIR/sources_1/ip/ila_0/ila_0.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
@@ -39,7 +37,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

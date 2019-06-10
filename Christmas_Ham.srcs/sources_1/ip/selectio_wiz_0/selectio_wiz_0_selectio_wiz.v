@@ -55,9 +55,9 @@
 
 module selectio_wiz_0_selectio_wiz
    // width of the data for the system
- #(parameter SYS_W = 16,
+ #(parameter SYS_W = 3,
    // width of the data for the device
-   parameter DEV_W = 64)
+   parameter DEV_W = 12)
  (
   // From the system into the device
   input  [SYS_W-1:0] data_in_from_pins_p,
@@ -95,63 +95,11 @@ module selectio_wiz_0_selectio_wiz
   //  devices. bus "0" is the leftmost bus
   wire [SYS_W-1:0]  iserdes_q[0:13];   // fills in starting with 0
    assign in_delay_ce = { 
-                     in_delay_data_ce[15],
-
-                     in_delay_data_ce[14],
-
-                     in_delay_data_ce[13],
-
-                     in_delay_data_ce[12],
-
-                     in_delay_data_ce[11],
-
-                     in_delay_data_ce[10],
-
-                     in_delay_data_ce[9],
-
-                     in_delay_data_ce[8],
-
-                     in_delay_data_ce[7],
-
-                     in_delay_data_ce[6],
-
-                     in_delay_data_ce[5],
-
-                     in_delay_data_ce[4],
-
-                     in_delay_data_ce[3],
-
                      in_delay_data_ce[2],
 
                      in_delay_data_ce[1],
                      in_delay_data_ce[0]};
    assign in_delay_inc_dec = { 
-                     in_delay_data_inc[15],
-
-                     in_delay_data_inc[14],
-
-                     in_delay_data_inc[13],
-
-                     in_delay_data_inc[12],
-
-                     in_delay_data_inc[11],
-
-                     in_delay_data_inc[10],
-
-                     in_delay_data_inc[9],
-
-                     in_delay_data_inc[8],
-
-                     in_delay_data_inc[7],
-
-                     in_delay_data_inc[6],
-
-                     in_delay_data_inc[5],
-
-                     in_delay_data_inc[4],
-
-                     in_delay_data_inc[3],
-
                      in_delay_data_inc[2],
 
                      in_delay_data_inc[1],
@@ -159,35 +107,9 @@ module selectio_wiz_0_selectio_wiz
    assign in_delay_tap_in_int[0] = in_delay_tap_in[5*(0 + 1) -1:5*(0)] ;
    assign in_delay_tap_in_int[1] = in_delay_tap_in[5*(1 + 1) -1:5*(1)] ;
    assign in_delay_tap_in_int[2] = in_delay_tap_in[5*(2 + 1) -1:5*(2)] ;
-   assign in_delay_tap_in_int[3] = in_delay_tap_in[5*(3 + 1) -1:5*(3)] ;
-   assign in_delay_tap_in_int[4] = in_delay_tap_in[5*(4 + 1) -1:5*(4)] ;
-   assign in_delay_tap_in_int[5] = in_delay_tap_in[5*(5 + 1) -1:5*(5)] ;
-   assign in_delay_tap_in_int[6] = in_delay_tap_in[5*(6 + 1) -1:5*(6)] ;
-   assign in_delay_tap_in_int[7] = in_delay_tap_in[5*(7 + 1) -1:5*(7)] ;
-   assign in_delay_tap_in_int[8] = in_delay_tap_in[5*(8 + 1) -1:5*(8)] ;
-   assign in_delay_tap_in_int[9] = in_delay_tap_in[5*(9 + 1) -1:5*(9)] ;
-   assign in_delay_tap_in_int[10] = in_delay_tap_in[5*(10 + 1) -1:5*(10)] ;
-   assign in_delay_tap_in_int[11] = in_delay_tap_in[5*(11 + 1) -1:5*(11)] ;
-   assign in_delay_tap_in_int[12] = in_delay_tap_in[5*(12 + 1) -1:5*(12)] ;
-   assign in_delay_tap_in_int[13] = in_delay_tap_in[5*(13 + 1) -1:5*(13)] ;
-   assign in_delay_tap_in_int[14] = in_delay_tap_in[5*(14 + 1) -1:5*(14)] ;
-   assign in_delay_tap_in_int[15] = in_delay_tap_in[5*(15 + 1) -1:5*(15)] ;
    assign in_delay_tap_out[5*(0 + 1) -1:5*(0)] = in_delay_tap_out_int[0];
    assign in_delay_tap_out[5*(1 + 1) -1:5*(1)] = in_delay_tap_out_int[1];
    assign in_delay_tap_out[5*(2 + 1) -1:5*(2)] = in_delay_tap_out_int[2];
-   assign in_delay_tap_out[5*(3 + 1) -1:5*(3)] = in_delay_tap_out_int[3];
-   assign in_delay_tap_out[5*(4 + 1) -1:5*(4)] = in_delay_tap_out_int[4];
-   assign in_delay_tap_out[5*(5 + 1) -1:5*(5)] = in_delay_tap_out_int[5];
-   assign in_delay_tap_out[5*(6 + 1) -1:5*(6)] = in_delay_tap_out_int[6];
-   assign in_delay_tap_out[5*(7 + 1) -1:5*(7)] = in_delay_tap_out_int[7];
-   assign in_delay_tap_out[5*(8 + 1) -1:5*(8)] = in_delay_tap_out_int[8];
-   assign in_delay_tap_out[5*(9 + 1) -1:5*(9)] = in_delay_tap_out_int[9];
-   assign in_delay_tap_out[5*(10 + 1) -1:5*(10)] = in_delay_tap_out_int[10];
-   assign in_delay_tap_out[5*(11 + 1) -1:5*(11)] = in_delay_tap_out_int[11];
-   assign in_delay_tap_out[5*(12 + 1) -1:5*(12)] = in_delay_tap_out_int[12];
-   assign in_delay_tap_out[5*(13 + 1) -1:5*(13)] = in_delay_tap_out_int[13];
-   assign in_delay_tap_out[5*(14 + 1) -1:5*(14)] = in_delay_tap_out_int[14];
-   assign in_delay_tap_out[5*(15 + 1) -1:5*(15)] = in_delay_tap_out_int[15];
   // Create the clock logic
 
   IBUFDS
@@ -332,6 +254,8 @@ module selectio_wiz_0_selectio_wiz
      end
   end
   endgenerate
+  
+//// NO ODELAY
 
 // IDELAYCTRL is needed for calibration
 (* IODELAY_GROUP = "selectio_wiz_0_group" *)

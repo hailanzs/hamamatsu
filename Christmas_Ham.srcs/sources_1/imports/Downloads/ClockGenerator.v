@@ -18,7 +18,10 @@
 
 module ClockGenerator(
     input sys_clkn,
-    input sys_clkp,  
+    input sys_clkp,
+    input p_clkn,
+    input p_clkp,
+    output p_clk,  
     output clk,  
     output reg MASTER_CLK,
     output reg SPI_gen_CLK,
@@ -37,7 +40,12 @@ module ClockGenerator(
         .I(sys_clkp),
         .IB(sys_clkn)
     );    
-          
+    
+    IBUFDS osc_clk2(
+        .O(p_clk),
+        .I(p_clkp),
+        .IB(p_clkn)
+    );         
     // Initialize the two registers used in this module  
     initial begin
         MASTER_CLK = 1'b0;  

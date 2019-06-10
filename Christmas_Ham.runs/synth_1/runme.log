@@ -3,23 +3,23 @@
     with args -log hamamastu.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hamamastu.tcl
 
 
-****** Vivado v2018.3 (64-bit)
-  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
-  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source hamamastu.tcl -notrace
 Command: synth_design -top hamamastu -part xc7a200tfbg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1328 
-WARNING: [Synth 8-2490] overwriting previous definition of module xpm_cdc_async_rst [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15361]
+INFO: Helper process launched with PID 10228 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 431.465 ; gain = 112.629
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 875.266 ; gain = 177.703
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'hamamastu' [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:18]
+INFO: [Synth 8-6157] synthesizing module 'hamamastu' [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:18]
 	Parameter endPt_count bound to: 1 - type: integer 
 	Parameter STATE_INIT bound to: 8'b00000000 
 	Parameter STATE_SPI_RESET bound to: 8'b00000001 
@@ -27,289 +27,61 @@ INFO: [Synth 8-6157] synthesizing module 'hamamastu' [C:/Users/hshanbha/ham/ham/
 	Parameter STATE_TG_RESET bound to: 8'b00000011 
 	Parameter STATE_DELAY1 bound to: 8'b00000100 
 	Parameter STATE_SPI bound to: 8'b00000101 
-INFO: [Synth 8-6157] synthesizing module 'okWireOR' [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v:119]
-	Parameter N bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'okWireOR' (1#1) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v:119]
-INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
+INFO: [Synth 8-6157] synthesizing module 'ClockGenerator' [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/imports/Downloads/ClockGenerator.v:19]
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33335]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter DIFF_TERM bound to: FALSE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (2#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
-INFO: [Synth 8-6157] synthesizing module 'okHost' [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v:10]
-INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
-	Parameter DRIVE bound to: 12 - type: integer 
-	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
-	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (3#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
-INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
-	Parameter INIT bound to: 1'b0 
-	Parameter IS_C_INVERTED bound to: 1'b0 
-	Parameter IS_D_INVERTED bound to: 1'b0 
-	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'FDRE' (4#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
-INFO: [Synth 8-6157] synthesizing module 'IBUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20852]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33335]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32871]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IBUFG' (5#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20852]
-INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26837]
-	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
-	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKIN1_PERIOD bound to: 9.920000 - type: float 
-	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
-	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT0_PHASE bound to: 54.000000 - type: float 
-	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
-	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
-	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
-	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
-	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (6#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26837]
-WARNING: [Synth 8-350] instance 'mmcm0' of module 'MMCME2_BASE' requires 18 connections, but only 6 given [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okLibrary.v:53]
-INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (7#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
-INFO: [Synth 8-6157] synthesizing module 'GND' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4950]
-INFO: [Synth 8-6155] done synthesizing module 'GND' (8#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4950]
-INFO: [Synth 8-6157] synthesizing module 'VCC' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:53064]
-INFO: [Synth 8-6155] done synthesizing module 'VCC' (9#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:53064]
-INFO: [Synth 8-6157] synthesizing module 'LUT5' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5' (10#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6157] synthesizing module 'LUT6' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6' (11#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized0' (11#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
-INFO: [Synth 8-6155] done synthesizing module 'LUT3' (12#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
-INFO: [Synth 8-6157] synthesizing module 'LUT2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
-INFO: [Synth 8-6155] done synthesizing module 'LUT2' (13#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized1' (13#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized0' (13#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized1' (13#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6157] synthesizing module 'LUT4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4' (14#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
-INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (14#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized2' (14#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized3' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized3' (14#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26416]
-INFO: [Synth 8-6155] done synthesizing module 'LUT1' (15#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26416]
-INFO: [Synth 8-6157] synthesizing module 'FDSE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4107]
-INFO: [Synth 8-6155] done synthesizing module 'FDSE' (16#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4107]
-INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:968]
-INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (17#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:968]
-INFO: [Synth 8-6157] synthesizing module 'fifo_generator_v13_2_0' [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15469]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15982]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15983]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15984]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15985]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized2' (17#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
-INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (17#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
-INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
-INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized1' (17#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
-INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
-INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (17#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
-INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (17#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized3' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized3' (17#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized4' (17#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT1__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26416]
-INFO: [Synth 8-6155] done synthesizing module 'LUT1__parameterized0' (17#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26416]
-INFO: [Synth 8-6157] synthesizing module 'FDPE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
-INFO: [Synth 8-6155] done synthesizing module 'FDPE' (18#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
-INFO: [Synth 8-6157] synthesizing module 'FDCE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3755]
-INFO: [Synth 8-6155] done synthesizing module 'FDCE' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3755]
-INFO: [Synth 8-6157] synthesizing module 'RAMB18E1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:49848]
-INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:49848]
-INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
-INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:17097]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15361]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15371]
-INFO: [Synth 8-6157] synthesizing module 'FDPE__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
-INFO: [Synth 8-6155] done synthesizing module 'FDPE__parameterized0' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (21#1) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15361]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized4' (21#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized5' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized5' (21#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized6' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized6' (21#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (21#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (21#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized7' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized7' (21#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized8' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized8' (21#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized9' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized9' (21#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized10' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized10' (21#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized11' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized11' (21#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized5' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized5' (21#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_v13_2_0' (22#1) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A200/okCoreHarness.v:15469]
-INFO: [Synth 8-6157] synthesizing module 'DNA_PORT' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3039]
-INFO: [Synth 8-6155] done synthesizing module 'DNA_PORT' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3039]
-INFO: [Synth 8-6157] synthesizing module 'FDCE__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3755]
-INFO: [Synth 8-6155] done synthesizing module 'FDCE__parameterized0' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3755]
-INFO: [Synth 8-6157] synthesizing module 'FDPE__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
-INFO: [Synth 8-6155] done synthesizing module 'FDPE__parameterized1' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized12' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized12' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized0' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized13' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized13' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized14' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized14' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized1' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized2' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized3' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized3' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized15' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized15' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized4' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized16' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized16' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized5' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized5' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized17' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized17' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'RAM128X1S' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:44873]
-INFO: [Synth 8-6155] done synthesizing module 'RAM128X1S' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:44873]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized6' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized6' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized18' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized18' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized7' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized7' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'RAM32M' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:45120]
-INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:45120]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized8' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized8' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized9' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized9' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized10' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized10' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized11' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized11' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized19' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized19' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized20' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized20' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized12' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized12' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized13' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized13' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized21' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized21' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized14' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized14' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized15' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized15' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized16' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized16' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized22' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized22' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized17' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized17' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized18' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized18' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized19' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized19' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized20' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized20' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized23' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized23' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized24' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized24' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized21' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized21' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
-INFO: [Synth 8-6157] synthesizing module 'RAMB18E1__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:49848]
-INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1__parameterized0' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:49848]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized25' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized25' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized26' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized26' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized27' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized27' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized28' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized28' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized29' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized29' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized30' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized30' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized31' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized32' (27#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
-INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-350] instance 'hostIF' of module 'okHost' requires 9 connections, but only 7 given [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:158]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (2#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32871]
+INFO: [Synth 8-6155] done synthesizing module 'ClockGenerator' (3#1) [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/imports/Downloads/ClockGenerator.v:19]
+WARNING: [Synth 8-7023] instance 'clock' of module 'ClockGenerator' has 9 connections declared, but only 8 given [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:192]
+INFO: [Synth 8-6157] synthesizing module 'spi_spo' [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:19]
 	Parameter STATE_INIT bound to: 9'b000000000 
 	Parameter READ bound to: 1'b0 
 	Parameter WRITE bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'spi_spo' (4#1) [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:19]
+INFO: [Synth 8-6157] synthesizing module 'LVDS' [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/LVDS.v:23]
 	Parameter STATE_INIT bound to: 8'b00000000 
 	Parameter STATE_DELAY bound to: 8'b00000010 
 	Parameter STATE_SER_DELAY bound to: 8'b00000001 
 	Parameter STATE_IO bound to: 8'b00000011 
 	Parameter FINITO bound to: 8'b00000100 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/LVDS.v:86]
-WARNING: [Synth 8-3848] Net TG_RESET in module/entity LVDS does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/LVDS.v:43]
-WARNING: [Synth 8-3848] Net M_CLOCK in module/entity LVDS does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/LVDS.v:44]
-WARNING: [Synth 8-3848] Net PLL_RESET in module/entity LVDS does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/LVDS.v:45]
-WARNING: [Synth 8-3848] Net M_START in module/entity LVDS does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/LVDS.v:46]
-WARNING: [Synth 8-3848] Net in_delay_tap_in_r in module/entity LVDS does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/LVDS.v:65]
-WARNING: [Synth 8-3848] Net in_delay_data_c_r in module/entity LVDS does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/LVDS.v:65]
-WARNING: [Synth 8-3848] Net in_delay_data_inc_r in module/entity LVDS does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/LVDS.v:65]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:270]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:352]
-WARNING: [Synth 8-689] width (1) of port connection 'in_delay_tap_out' does not match port width (80) of module 'selectio_wiz_0' [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:396]
-WARNING: [Synth 8-689] width (1) of port connection 'data_in_to_device' does not match port width (64) of module 'selectio_wiz_0' [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:399]
-WARNING: [Synth 8-350] instance 'lvds_input' of module 'selectio_wiz_0' requires 16 connections, but only 15 given [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:384]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_sample12'. This will prevent further optimization [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:352]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi_rw'. This will prevent further optimization [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:200]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'clock'. This will prevent further optimization [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:189]
-WARNING: [Synth 8-3848] Net VDD_C_EN in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:49]
-WARNING: [Synth 8-3848] Net N15_EN in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:50]
-WARNING: [Synth 8-3848] Net N2_EN in module/entity hamamastu does not have driver. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/new/hamamastu.v:51]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/LVDS.v:86]
+WARNING: [Synth 8-3848] Net TG_RESET in module/entity LVDS does not have driver. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/LVDS.v:43]
+WARNING: [Synth 8-3848] Net M_CLOCK in module/entity LVDS does not have driver. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/LVDS.v:44]
+WARNING: [Synth 8-3848] Net PLL_RESET in module/entity LVDS does not have driver. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/LVDS.v:45]
+WARNING: [Synth 8-3848] Net M_START in module/entity LVDS does not have driver. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/LVDS.v:46]
+WARNING: [Synth 8-3848] Net in_delay_tap_in_r in module/entity LVDS does not have driver. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/LVDS.v:65]
+WARNING: [Synth 8-3848] Net in_delay_data_c_r in module/entity LVDS does not have driver. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/LVDS.v:65]
+WARNING: [Synth 8-3848] Net in_delay_data_inc_r in module/entity LVDS does not have driver. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/LVDS.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS' (5#1) [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/LVDS.v:23]
+WARNING: [Synth 8-7023] instance 'elvedees' of module 'LVDS' has 30 connections declared, but only 8 given [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:220]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:256]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:344]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.runs/synth_1/.Xil/Vivado-5612-LAPTOP-59L230FR/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (6#1) [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.runs/synth_1/.Xil/Vivado-5612-LAPTOP-59L230FR/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi_rw'. This will prevent further optimization [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:205]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_sample12'. This will prevent further optimization [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:344]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'clock'. This will prevent further optimization [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:192]
+WARNING: [Synth 8-3848] Net VDD_C_EN in module/entity hamamastu does not have driver. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:49]
+WARNING: [Synth 8-3848] Net N15_EN in module/entity hamamastu does not have driver. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:50]
+WARNING: [Synth 8-3848] Net N2_EN in module/entity hamamastu does not have driver. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:51]
+WARNING: [Synth 8-3848] Net PLL_RESET in module/entity hamamastu does not have driver. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:63]
+WARNING: [Synth 8-3848] Net M_START in module/entity hamamastu does not have driver. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:64]
+WARNING: [Synth 8-3848] Net okHU in module/entity hamamastu does not have driver. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:68]
+WARNING: [Synth 8-3848] Net p_clk in module/entity hamamastu does not have driver. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'hamamastu' (7#1) [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/hamamastu.v:18]
 WARNING: [Synth 8-3917] design hamamastu has port VDD_A_EN driven by constant 1
 WARNING: [Synth 8-3917] design hamamastu has port VDD_D_EN driven by constant 1
 WARNING: [Synth 8-3331] design LVDS has unconnected port TG_RESET
@@ -414,7 +186,7 @@ WARNING: [Synth 8-3331] design spi_spo has unconnected port rw_flag[2]
 WARNING: [Synth 8-3331] design spi_spo has unconnected port register_input[31]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 495.176 ; gain = 176.340
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 942.121 ; gain = 244.559
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -427,275 +199,158 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 495.176 ; gain = 176.340
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 942.121 ; gain = 244.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 495.176 ; gain = 176.340
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 942.121 ; gain = 244.559
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 148 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Device 21-403] Loading part xc7a200tfbg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
-Finished Parsing XDC File [c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
-Parsing XDC File [c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc] for cell 'lvds_input'
-Finished Parsing XDC File [c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc] for cell 'lvds_input'
-Parsing XDC File [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
-INFO: [Timing 38-2] Deriving generated clocks [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:96]
-WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:101]
-WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:102]
-WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:103]
-WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:272]
-WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:273]
-WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:338]
-WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:339]
-WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:340]
-WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:341]
-WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:342]
-WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:343]
-WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:344]
-WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:345]
-WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:346]
-WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:347]
-WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:348]
-WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:349]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:352]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:353]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:354]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:355]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:356]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:357]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:358]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:359]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:360]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:361]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:362]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:363]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:364]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:365]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:366]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:367]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:368]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:369]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:370]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[19]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:371]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[20]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:372]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[21]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:373]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[22]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:374]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[23]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:375]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[24]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:376]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[25]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:377]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[26]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:378]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[27]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:379]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[28]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:380]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[29]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:381]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[30]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:382]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[31]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:383]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:384]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:385]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:387]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[1]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:388]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[2]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:389]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[3]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:390]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[4]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:391]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[5]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:392]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[6]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:393]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[7]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:394]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[8]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:395]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[9]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:396]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[10]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:397]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[11]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:398]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[12]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:399]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[13]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:400]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[14]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:401]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:402]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:403]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:405]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[1]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:406]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[2]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:407]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:408]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:409]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:411]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:412]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:413]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:415]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:416]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:417]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:419]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:420]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:421]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:423]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:424]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:425]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:427]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:428]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:429]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:431]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:432]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:433]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:435]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[1]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:436]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[2]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:437]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[3]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:438]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:439]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[*]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:440]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:442]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_n[0]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:443]
-WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[1]'. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:444]
-INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:444]
-Finished Parsing XDC File [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/hamamastu_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hamamastu_propImpl.xdc].
+Parsing XDC File [c:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
+Finished Parsing XDC File [c:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
+Parsing XDC File [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:73]
+WARNING: [Vivado 12-627] No clocks matched 'mmcm0_clk0'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:272]
+WARNING: [Vivado 12-584] No ports matched 'VDD_D'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:273]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:338]
+WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:339]
+WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:340]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:341]
+WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:342]
+WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:343]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq0'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:344]
+WARNING: [Vivado 12-584] No ports matched 'spi_c'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:345]
+WARNING: [Vivado 12-584] No ports matched 'spi_s'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:346]
+WARNING: [Vivado 12-584] No ports matched 'spi_dq1'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:347]
+WARNING: [Vivado 12-584] No ports matched 'spi_w_dq2'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:348]
+WARNING: [Vivado 12-584] No ports matched 'spi_hold_dq3'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:349]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:352]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:353]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:354]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:355]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:356]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:357]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:358]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:359]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:360]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:361]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:362]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:363]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:364]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:365]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:366]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:367]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:368]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:369]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:370]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[19]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:371]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[20]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:372]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[21]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:373]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[22]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:374]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[23]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:375]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[24]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:376]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[25]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:377]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[26]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:378]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[27]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:379]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[28]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:380]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[29]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:381]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[30]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:382]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[31]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:383]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:384]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:385]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:387]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:388]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:389]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[3]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:390]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[4]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:391]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[5]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:392]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[6]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:393]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[7]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:394]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[8]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:395]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[9]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:396]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[10]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:397]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[11]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:398]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[12]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:399]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[13]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:400]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[14]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:401]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:402]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:403]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:405]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:406]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:407]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:408]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:409]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:411]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:412]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:413]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:415]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:416]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:417]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:419]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:420]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:421]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:423]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:424]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:425]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:427]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[*]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:428]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[*]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:429]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:431]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[*]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:432]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[*]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:433]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:435]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:436]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[2]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:437]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[3]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:438]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[*]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:439]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[*]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:440]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:442]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_n[0]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:443]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[1]'. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:444]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc:444]
+Finished Parsing XDC File [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/hamamastu_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/constrs_1/imports/new/Hamamatsu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hamamastu_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/hamamastu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 883.086 ; gain = 0.000
-Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hamamastu_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/hamamastu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 883.086 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 883.086 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1056.090 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 99 instances were transformed.
-  IBUFG => IBUF: 1 instances
-  IBUFGDS => IBUFDS: 2 instances
-  IOBUF => IOBUF (IBUF, OBUFT): 33 instances
-  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
-  MMCME2_BASE => MMCME2_ADV: 1 instances
-  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 8 instances
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 883.086 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 883.086 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1056.090 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 883.086 ; gain = 564.250
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1056.090 ; gain = 358.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 883.086 ; gain = 564.250
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1056.090 ; gain = 358.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for P_CLK_N. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 2).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for P_CLK_N. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 3).
-Applied set_property IO_BUFFER_TYPE = NONE for P_CLK. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for P_CLK. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 5).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_BN[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 8).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_BN[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 9).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_BN[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 10).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_BN[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 11).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_BN[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 12).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_BN[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 13).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_AN[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 14).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_AN[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 15).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_AN[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 16).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_AN[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 17).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_AN[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 18).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_AN[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 19).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_EN[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 20).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_EN[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 21).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_EN[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 22).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_EN[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 23).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_EN[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 24).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_EN[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 25).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_DN[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 26).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_DN[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 27).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_DN[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 28).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_DN[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 29).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_DN[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 30).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_DN[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 31).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_CN[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 32).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_CN[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 33).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_CN[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 34).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_CN[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 35).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_CN[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 36).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_CN[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 37).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_B[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 40).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_B[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 41).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_B[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 42).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_B[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 43).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_B[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 44).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_B[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 45).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_A[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 46).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_A[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 47).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_A[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 48).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_A[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 49).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_A[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 50).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_A[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 51).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_E[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 52).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_E[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 53).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_E[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 54).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_E[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 55).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_E[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 56).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_E[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 57).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_D[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 58).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_D[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 59).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_D[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 60).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_D[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 61).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_D[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 62).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_D[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 63).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_C[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 64).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_C[0]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 65).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_C[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 66).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_C[1]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 67).
-Applied set_property IO_BUFFER_TYPE = NONE for LVDS_OUT_C[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 68).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for LVDS_OUT_C[2]. (constraint file  c:/Users/hshanbha/ham/ham/Christmas_Ham.srcs/sources_1/ip/selectio_wiz_0/selectio_wiz_0/selectio_wiz_0_in_context.xdc, line 69).
 Applied set_property DONT_TOUCH = true for ila_sample12. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for lvds_input. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hostIF/core0/core0/\a0/cb0 /U0/\inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 883.086 ; gain = 564.250
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1056.090 ; gain = 358.527
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "MASTER_CLK" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "ILA_CLK" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "SPI_gen_CLK" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "State" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLK" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CS" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "error_bit0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'LVDS'
-INFO: [Synth 8-5546] ROM "io_reset_r" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "in_delay_reset_r" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "clk_reset_r" won't be mapped to RAM because it is too sparse
-.p 12
-.s 8
-	 Default Default 
-	 iSTATE STATE_INIT 
-	 STATE_INIT STATE_SPI_RESET 
-	 STATE_INIT STATE_INIT 
-	 STATE_SPI_RESET STATE_DELAY0 
-	 STATE_DELAY0 STATE_TG_RESET 
-	 STATE_DELAY0 STATE_DELAY0 
-	 STATE_TG_RESET STATE_DELAY1 
-	 STATE_TG_RESET STATE_TG_RESET 
-	 STATE_DELAY1 STATE_SPI 
-	 STATE_DELAY1 STATE_DELAY1 
-	 STATE_SPI STATE_SPI 
-.e
 INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'hamamastu'
-INFO: [Synth 8-5546] ROM "State" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "delay2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "delay2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "SPI_RESET_REG" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "SPI_RESET_REG_reg0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "delay0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "TG_RESET_REG" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tg_counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "delay1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -706,21 +361,20 @@ INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address si
                   FINITO |                            10000 |                         00000100
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'LVDS'
-INFO: [Synth 8-6159] Found Keep on FSM register 'State_reg' in module 'hamamastu', re-encoding will not be performed
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-*
-                  iSTATE |                         01100100 |                         01100100
-              STATE_INIT |                         00000000 |                         00000000
-         STATE_SPI_RESET |                         00000001 |                         00000001
-            STATE_DELAY0 |                         00000010 |                         00000010
-          STATE_TG_RESET |                         00000011 |                         00000011
-            STATE_DELAY1 |                         00000100 |                         00000100
-               STATE_SPI |                         00000101 |                         00000101
+                  iSTATE |                              000 |                         01100100
+              STATE_INIT |                              001 |                         00000000
+         STATE_SPI_RESET |                              010 |                         00000001
+            STATE_DELAY0 |                              011 |                         00000010
+          STATE_TG_RESET |                              100 |                         00000011
+            STATE_DELAY1 |                              101 |                         00000100
+               STATE_SPI |                              110 |                         00000101
 ---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'hamamastu'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 883.086 ; gain = 564.250
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1056.090 ; gain = 358.527
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -731,12 +385,84 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	  72 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 5     
+	  72 Input      2 Bit        Muxes := 1     
+	  72 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 16    
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 9     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module hamamastu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   7 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 8     
+	   7 Input      1 Bit        Muxes := 9     
+Module ClockGenerator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+Module spi_spo 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  72 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  72 Input      2 Bit        Muxes := 1     
+	  72 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 1     
+Module LVDS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -753,42 +479,63 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5544] ROM "delay2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "delay1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "delay2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "delay0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tg_counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "SPI_RESET_REG" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "TG_RESET_REG" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "State" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "SPI_RESET_REG_reg0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "MASTER_CLK" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "SPI_gen_CLK" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "ILA_CLK" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "error_bit0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "delay2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "delay1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "delay2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "delay0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tg_counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "SPI_RESET_REG" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "TG_RESET_REG" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "SPI_RESET_REG_reg0" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3917] design hamamastu has port VDD_A_EN driven by constant 1
 WARNING: [Synth 8-3917] design hamamastu has port VDD_D_EN driven by constant 1
+INFO: [Synth 8-3886] merging instance 'tiger_reg' (FDSE) to 'rw_flag_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[1]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[2]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[3]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[4]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[5]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[6]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[7]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[8]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[9]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[10]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[11]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[12]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[13]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[14]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[15]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[16]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[17]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[18]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[19]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[20]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[21]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[22]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[23]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[24]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[25]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[26]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[27]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[28]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[29]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rw_flag_reg_reg[30]' (FDRE) to 'rw_flag_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rw_flag_reg_reg[31] )
 WARNING: [Synth 8-3332] Sequential element (elvedees/FSM_onehot_State_reg[4]) is unused and will be removed from module hamamastu.
+WARNING: [Synth 8-3332] Sequential element (elvedees/FSM_onehot_State_reg[3]) is unused and will be removed from module hamamastu.
+WARNING: [Synth 8-3332] Sequential element (elvedees/FSM_onehot_State_reg[2]) is unused and will be removed from module hamamastu.
+WARNING: [Synth 8-3332] Sequential element (elvedees/FSM_onehot_State_reg[1]) is unused and will be removed from module hamamastu.
+WARNING: [Synth 8-3332] Sequential element (elvedees/FSM_onehot_State_reg[0]) is unused and will be removed from module hamamastu.
 INFO: [Synth 8-3886] merging instance 'spi_rw/State_reg[7]' (FDE) to 'spi_rw/State_reg[8]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_rw/\State_reg[8] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 883.086 ; gain = 564.250
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1056.090 ; gain = 358.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|spi_spo     | CLK        | 128x1         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -799,17 +546,14 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5578] Moved timing constraint from pin 'lvds_input/clk_div_out' to pin 'lvds_input/bbstub_clk_div_out/O'
-INFO: [Synth 8-5578] Moved timing constraint from pin 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst' to pin 'hostIF/core0/core0/a0/l62a5479e7989ce7f4d5507c695cc69cf_reg/Q'
-INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 883.086 ; gain = 564.250
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1056.090 ; gain = 358.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 883.086 ; gain = 564.250
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1056.320 ; gain = 358.758
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -821,7 +565,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 883.086 ; gain = 564.250
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1057.086 ; gain = 359.523
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -844,34 +588,121 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[15]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[14]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[13]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[12]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[11]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[10]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[9]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[8]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[7]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[6]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[5]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[4]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[3]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[2]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[1]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module lvds_input has unconnected pin bitslip[0]
-WARNING: [Synth 8-3295] tying undriven pin TrigerEvent_inferred:in0 to constant 0
-ERROR: [Synth 8-5535] port <P_CLK> has illegal connections. It is illegal to have a port connected to an input buffer and other components. The following are the port connections :
-Input Buffer:
-	Port I of instance pee_clk(IBUFGDS) in module <hamamastu>
-Other Components:
-	Port clk_in_p of instance lvds_input(selectio_wiz_0) in module hamamastu
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.srcs/sources_1/new/spi_spo.v:61]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1063.867 ; gain = 366.305
+---------------------------------------------------------------------------------
 
-ERROR: [Synth 8-2918] Failing due to illegal port connections
-ERROR: synthesis optimization failed, fatal insert_io failure.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 883.086 ; gain = 176.340
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1063.867 ; gain = 366.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1063.867 ; gain = 366.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1063.867 ; gain = 366.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1063.867 ; gain = 366.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1063.867 ; gain = 366.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |ila_0   |     1|
+|2     |BUFG    |     1|
+|3     |CARRY4  |    26|
+|4     |LUT1    |     7|
+|5     |LUT2    |     9|
+|6     |LUT3    |    12|
+|7     |LUT4    |    27|
+|8     |LUT5    |    15|
+|9     |LUT6    |    31|
+|10    |MUXF7   |     2|
+|11    |MUXF8   |     1|
+|12    |FDRE    |   157|
+|13    |FDSE    |     1|
+|14    |IBUF    |     1|
+|15    |IBUFDS  |     1|
+|16    |IBUFGDS |     1|
+|17    |OBUF    |     9|
+|18    |OBUFT   |    15|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+---------------+------+
+|      |Instance |Module         |Cells |
++------+---------+---------------+------+
+|1     |top      |               |   316|
+|2     |  clock  |ClockGenerator |   126|
+|3     |  spi_rw |spi_spo        |    79|
++------+---------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1063.867 ; gain = 366.305
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 200 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1063.867 ; gain = 252.336
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1063.867 ; gain = 366.305
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1089.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
 INFO: [Common 17-83] Releasing license: Synthesis
-285 Infos, 227 Warnings, 16 Critical Warnings and 3 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
-INFO: [Common 17-206] Exiting Vivado at Fri May  3 16:47:34 2019...
+76 Infos, 231 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1089.906 ; gain = 684.879
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1089.906 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.runs/synth_1/hamamastu.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file hamamastu_utilization_synth.rpt -pb hamamastu_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  7 16:08:16 2019...

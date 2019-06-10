@@ -3,21 +3,23 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="C:/Users/hshanbha/ham/hamamatsu/Christmas_Ham.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+      <db_ref path="C:/Users/cakfi/ham/hamamatsu/Christmas_Ham.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="50268fs"></ZoomEndTime>
-      <Cursor1Time time="12000fs"></Cursor1Time>
+      <ZoomEndTime time="1024001fs"></ZoomEndTime>
+      <Cursor1Time time="690000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="98"></ValueColumnWidth>
+      <ValueColumnWidth column_width="83"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="13" />
+   <WVObjectSize size="9" />
+   <wave_markers>
+   </wave_markers>
    <wvobject fp_name="SPI_CLK_OBUF" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">SPI_CLK_OBUF</obj_property>
@@ -51,33 +53,18 @@
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject fp_name="SPI_MISO_IBUF" type="logic">
-      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">SPI_MISO_IBUF</obj_property>
       <obj_property name="ObjectShortName">SPI_MISO_IBUF</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="data_input" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">data_input[7:0]</obj_property>
-      <obj_property name="ObjectShortName">data_input[7:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="label">SPI_MISO</obj_property>
    </wvobject>
    <wvobject fp_name="data_output" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">data_output[7:0]</obj_property>
-      <obj_property name="ObjectShortName">data_output[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="SPI_CS_OBUF" type="logic">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">SPI_CS_OBUF</obj_property>
-      <obj_property name="ObjectShortName">SPI_CS_OBUF</obj_property>
+      <obj_property name="ElementShortName">data_output[22:22]</obj_property>
+      <obj_property name="ObjectShortName">data_output[22:22]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
@@ -98,26 +85,10 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="rw_flag" type="array">
+   <wvobject fp_name="SPI_CS_OBUF" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">rw_flag[1:0]</obj_property>
-      <obj_property name="ObjectShortName">rw_flag[1:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="State" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">State[7:0]</obj_property>
-      <obj_property name="ObjectShortName">State[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="LABELRADIX">false</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="TG_RESET_OBUF" type="logic">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">TG_RESET_OBUF</obj_property>
-      <obj_property name="ObjectShortName">TG_RESET_OBUF</obj_property>
+      <obj_property name="ElementShortName">SPI_CS_OBUF</obj_property>
+      <obj_property name="ObjectShortName">SPI_CS_OBUF</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
